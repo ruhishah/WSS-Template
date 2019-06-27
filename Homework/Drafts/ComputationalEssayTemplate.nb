@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     44701,       1064]
-NotebookOptionsPosition[     42725,       1016]
-NotebookOutlinePosition[     43687,       1049]
-CellTagsIndexPosition[     43618,       1044]
+NotebookDataLength[     61458,       1457]
+NotebookOptionsPosition[     58142,       1390]
+NotebookOutlinePosition[     59104,       1423]
+CellTagsIndexPosition[     59035,       1418]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -996,25 +996,399 @@ Cell[BoxData[
 
 Cell["\<\
 In order to drink and then drive, you need to have BAC (Blood Alcohol \
-Content) below 0.08%. To calculate BAC, you need a couple of things. Please \
-enter them below:\
+Content) below 0.08%. To calculate BAC, you need a couple of things. Here is \
+my information (feel free to replace it with yours):\
 \>", "Text",
  CellChangeTimes->{{3.770582853920555*^9, 3.7705828730223*^9}, {
-  3.7705829241370907`*^9, 
-  3.770582950064891*^9}},ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-\
+  3.7705829241370907`*^9, 3.770582950064891*^9}, {3.770586520993882*^9, 
+  3.7705865260143423`*^9}, {3.7705887398704987`*^9, 
+  3.770588746073627*^9}},ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-\
 514168b99e2a"],
 
-Cell[BoxData[""], "Code",
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"bodyweight", " ", "=", " ", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{"100", ",", "\"\<pounds\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"gender", " ", "=", " ", "\"\<female\>\""}], ";"}]}], "Code",
  CellChangeTimes->{
   3.770582803167408*^9, {3.770583105600564*^9, 3.770583106372737*^9}, {
    3.770583356491271*^9, 3.7705833576480637`*^9}, {3.770583500293168*^9, 
    3.770583519920375*^9}, {3.770583891331833*^9, 3.7705838926094933`*^9}, {
-   3.77058396912465*^9, 
-   3.7705839780113*^9}},ExpressionUUID->"281aa690-bc33-4ae5-a68b-\
-60853be1652c"]
+   3.77058396912465*^9, 3.7705839780113*^9}, {3.7705865384813423`*^9, 
+   3.770586551845083*^9}, {3.7705866065960503`*^9, 3.770586611447405*^9}, {
+   3.7705866447311907`*^9, 3.770586655454475*^9}, {3.770586691225238*^9, 
+   3.770586693612587*^9}},ExpressionUUID->"281aa690-bc33-4ae5-a68b-\
+60853be1652c"],
+
+Cell["\<\
+To figure out how much I can drink for each specific drink and still drive, I \
+can do the following, where howManyDrinks is a function, the definition \
+appears later :\
+\>", "Text",
+ CellChangeTimes->{{3.7705874745404243`*^9, 3.770587497926798*^9}, {
+  3.770587549230391*^9, 3.770587550131415*^9}, {3.770588638701255*^9, 
+  3.770588699402087*^9}, {3.770588763574131*^9, 
+  3.770588768656766*^9}},ExpressionUUID->"037bf003-31b2-4646-9358-\
+64fe6ade9ac4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"numberofdrinksGeneral", "=", 
+  RowBox[{"AssociationThread", "[", 
+   RowBox[{
+    RowBox[{"Keys", "[", "alcoholicContent", "]"}], ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"howManyDrinks", "[", 
+       RowBox[{"bodyweight", ",", "#", ",", "gender"}], "]"}], "&"}], "/@", 
+     RowBox[{"Keys", "[", "alcoholicContent", "]"}]}]}], "]"}]}]], "Code",
+ CellChangeTimes->{3.7705875266910973`*^9},
+ CellLabel->
+  "In[748]:=",ExpressionUUID->"2f000637-9550-4df6-b568-4db6993bc167"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"Martini\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Martini::c6h98\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Martini::c6h98\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"1","\"drink\"","drink","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Vanilla extract\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"VanillaExtract::6g22f\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"VanillaExtract::6g22f\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"22","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Bloody mary\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"BloodyMary::328gx\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"BloodyMary::328gx\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"3","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Brandy\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Brandy::q5447\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Brandy::q5447\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"1","\"drink\"","drink","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Vermouth\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Vermouth::679s2\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Vermouth::679s2\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"2","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Cognac\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Cognac::y9462\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Cognac::y9462\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"1","\"drink\"","drink","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Beer, regular\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"BeerRegular::8x3f9\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"BeerRegular::8x3f9\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"8","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Egg nog\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"EggNog::3dwyy\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"EggNog::3dwyy\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"8","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Wine mulled\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"WineMulled::2t398\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"WineMulled::2t398\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"11","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Cider (average)\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"CiderAverage::5dtvm\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"CiderAverage::5dtvm\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"11","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Gin tonic\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"GinTonic::n5779\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"GinTonic::n5779\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"8","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Sangria\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Sangria::xmm5b\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Sangria::xmm5b\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"5","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Rum\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Rum::889s3\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Rum::889s3\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Tequila\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Tequila::nb2x5\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Tequila::nb2x5\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{
+     "\"Alcoholic beverage, pina colada, canned\"",RowBox[{"Entity", "[", 
+        RowBox[{
+         "\"Food\"", ",", "\"AlcoholicBeveragePinaColadaCanned::vv7h8\""}], 
+        "]"}],"\"Entity[\\\"Food\\\", \
+\\\"AlcoholicBeveragePinaColadaCanned::vv7h8\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"10","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Irish Coffee\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"IrishCoffee::6pv9d\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"IrishCoffee::6pv9d\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"5","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Wine, red\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"WineRed::qxm3p\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"WineRed::qxm3p\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"3","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.7705875286876593`*^9},
+ CellLabel->
+  "Out[748]=",ExpressionUUID->"9be312f4-6bbf-41b0-b02b-128d90ecd2e4"]
+}, Open  ]],
+
+Cell["\<\
+I also need some information on how much I\[CloseCurlyQuote]ve been drinking \
+and what I\[CloseCurlyQuote]ve been drinking.\
+\>", "Text",
+ CellChangeTimes->{{3.770586561783024*^9, 
+  3.770586583781509*^9}},ExpressionUUID->"1fb88b02-fc55-4f38-8a94-\
+b59825a860d5"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"drinktype", " ", "=", " ", 
+   TemplateBox[{"\"Martini\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"Martini::c6h98\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"Martini::c6h98\\\"]\"","\"food\""},
+    "Entity"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"numberofdrinks", " ", "=", " ", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{"3", ",", "\"\<drinks\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"timepassed", " ", "=", " ", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{"1", ",", "\"\<hour\>\""}], "]"}]}], ";"}]}], "Code",
+ CellChangeTimes->{{3.7705865933580437`*^9, 3.770586621898327*^9}, {
+  3.770586668302327*^9, 3.770586684532022*^9}, {3.770586990009568*^9, 
+  3.7705870196426277`*^9}, {3.770587175088025*^9, 3.770587175401863*^9}},
+ CellLabel->
+  "In[734]:=",ExpressionUUID->"79ed4d3a-cba6-431a-88e4-741a1817ee82"],
+
+Cell["\<\
+Now, with that information lets find out if you can drive! calculateBAC is a \
+function that takes in the previous parameters and figures out the BAC level. \
+canIDriveQ answers our question. \
+\>", "Text",
+ CellChangeTimes->{{3.770586287427122*^9, 3.770586333428841*^9}, {
+  3.770586810513852*^9, 
+  3.7705868449839487`*^9}},ExpressionUUID->"12611204-9c69-4e18-8d81-\
+2545ecfaec5e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"$AllowedBAC", " ", "=", " ", "0.08"}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"calculateBAC", "[", 
+    RowBox[{
+    "bodyweight_", ",", "drinktype_", ",", " ", "numberofdrinks_", ",", 
+     "gender_", ",", "timepassed_"}], "]"}], ":=", " ", 
+   InterpretationBox[
+    DynamicModuleBox[{Typeset`open = False}, 
+     TemplateBox[{"Expression",RowBox[{"Plus", "[", 
+         DynamicBox[
+          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+       GridBox[{{
+          RowBox[{
+            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            
+            TagBox["840", "IconizedItem"]}]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+       Typeset`open]},
+      "IconizedObject"]],
+    QuantityMagnitude[
+       $CellContext`alcoholPerDrink[$CellContext`drinktype]] 
+     QuantityMagnitude[$CellContext`numberofdrinks] 5.14/(
+     QuantityMagnitude[$CellContext`bodyweight] 
+     If[$CellContext`gender === "male", 0.73, 0.66]) - 0.015 
+    QuantityMagnitude[$CellContext`timepassed],
+    SelectWithContents->True,
+    Selectable->False]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"canIDriveQ", "[", "bac_", "]"}], ":=", " ", 
+    InterpretationBox[
+     DynamicModuleBox[{Typeset`open = False}, 
+      TemplateBox[{"Expression",RowBox[{"If", "[", 
+          DynamicBox[
+           FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+        GridBox[{{
+           RowBox[{
+             TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+             TagBox["184", "IconizedItem"]}]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+        Typeset`open]},
+       "IconizedObject"]],
+     If[$CellContext`bac <= $CellContext`$AllowedBAC, "Yes", "No"],
+     SelectWithContents->True,
+     Selectable->False]}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"BAC", " ", "=", " ", 
+    RowBox[{"calculateBAC", "[", 
+     RowBox[{
+     "bodyweight", ",", "drinktype", ",", " ", "numberofdrinks", ",", " ", 
+      "gender", ",", " ", "timepassed"}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\n", 
+ RowBox[{"canIDriveQ", "[", "BAC", "]"}]}], "Code",
+ CellChangeTimes->{{3.770586742740987*^9, 3.7705867584907217`*^9}, {
+  3.77058678862635*^9, 3.7705867947512283`*^9}, {3.770586848598895*^9, 
+  3.770586966403871*^9}, {3.770587027348384*^9, 3.7705870914636383`*^9}, {
+  3.770587122681159*^9, 3.770587165551326*^9}},
+ CellLabel->
+  "In[737]:=",ExpressionUUID->"04405d0a-959f-42af-808c-aa28d888ecd2"],
+
+Cell[BoxData["\<\"No\"\>"], "Output",
+ CellChangeTimes->{{3.770586963753179*^9, 3.770587013740533*^9}, 
+   3.7705871317932243`*^9, {3.77058716953399*^9, 3.77058717759202*^9}},
+ CellLabel->
+  "Out[741]=",ExpressionUUID->"3977ca13-bed2-4887-adab-bf8ddeb58fb0"]
+}, Open  ]],
+
+Cell["\<\
+Okay, now you realize you can\[CloseCurlyQuote]t drive. How long should you \
+wait until you can? howMuchLonger is a function that lets you know.\
+\>", "Text",
+ CellChangeTimes->{
+  3.7705863847014093`*^9, 3.7705871822711077`*^9, {3.770587300566887*^9, 
+   3.7705873092281637`*^9}},ExpressionUUID->"d0cb4cde-08e0-442b-a199-\
+0234a318a855"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"howMuchLonger", "[", 
+    RowBox[{
+    "bodyweight_", ",", "drinktype_", ",", " ", "numberofdrinks_", ",", 
+     "gender_", ",", "timepassed_"}], "]"}], ":=", " ", 
+   InterpretationBox[
+    DynamicModuleBox[{Typeset`open = False}, 
+     TemplateBox[{"Expression",RowBox[{"Quantity", "[", 
+         DynamicBox[
+          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+       GridBox[{{
+          RowBox[{
+            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            
+            TagBox["2320", "IconizedItem"]}]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+       Typeset`open]},
+      "IconizedObject"]],
+    Quantity[
+     If[(QuantityMagnitude[
+            $CellContext`alcoholPerDrink[$CellContext`drinktype]] 
+          QuantityMagnitude[$CellContext`numberofdrinks] 5.14/(
+          QuantityMagnitude[$CellContext`bodyweight] 
+          If[$CellContext`gender === "male", 0.73, 
+            0.66]) - $CellContext`$AllowedBAC)/0.015 - 
+       QuantityMagnitude[$CellContext`timepassed] > 0, (QuantityMagnitude[
+           $CellContext`alcoholPerDrink[$CellContext`drinktype]] 
+         QuantityMagnitude[$CellContext`numberofdrinks] 5.14/(
+         QuantityMagnitude[$CellContext`bodyweight] 
+         If[$CellContext`gender === "male", 0.73, 
+           0.66]) - $CellContext`$AllowedBAC)/0.015 - 
+      QuantityMagnitude[$CellContext`timepassed], 0], "hours"],
+    SelectWithContents->True,
+    Selectable->False]}], "\n"}], "\n", 
+ RowBox[{"howMuchLonger", "[", 
+  RowBox[{
+  "bodyweight", ",", "drinktype", ",", "numberofdrinks", ",", "gender", ",", 
+   "timepassed"}], "]"}]}], "Code",
+ CellChangeTimes->{{3.770587210381302*^9, 3.7705873818837833`*^9}},
+ CellLabel->
+  "In[746]:=",ExpressionUUID->"36f9df9a-6089-4673-b44a-07d5b1f8ee86"],
+
+Cell[BoxData[
+ TemplateBox[{"7.922967850228307`","\"h\"","hours","\"Hours\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.770587328424901*^9, 3.770587384398694*^9},
+ CellLabel->
+  "Out[747]=",ExpressionUUID->"05578c35-2faf-4236-8c16-00b34db274af"]
+}, Open  ]],
+
+Cell["\<\
+Yes! It takes that long. So you think you might have \
+\[OpenCurlyDoubleQuote]sobered up\[CloseCurlyDoubleQuote] but guess what, the \
+breathalyzer will not.\
+\>", "Text",
+ CellChangeTimes->{{3.770586413129643*^9, 3.770586441456712*^9}, {
+  3.7705874104698668`*^9, 
+  3.7705874414465218`*^9}},ExpressionUUID->"b4524fe3-d897-4876-8cee-\
+27d6955345ec"],
+
+Cell["\<\
+Regardless of this what this article says, drinking and driving is NOT a \
+joke. Just call an Uber! Public Transport! Walk! Wait! Don\[CloseCurlyQuote]t \
+drink! Its not that hard to save money, and some lives too. 
+\
+\>", "Text",
+ CellChangeTimes->{{3.770586450211026*^9, 
+  3.770586473966776*^9}},ExpressionUUID->"50fcf438-7984-4e2b-b20f-\
+0298625b26d5"]
 }, Open  ]]
 },
-WindowSize->{1440, 784},
+WindowSize->{1440, 788},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 DockedCells->{
   Cell[
@@ -1043,7 +1417,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 43479, 1038}
+ {"Title", 58896, 1412}
  }
 *)
 (*NotebookFileOutline
@@ -1063,8 +1437,27 @@ Cell[11004, 230, 709, 15, 72, "Code",ExpressionUUID->"97094917-bae8-47f1-a54f-56
 Cell[11716, 247, 5724, 127, 77, "Output",ExpressionUUID->"1b89e036-092f-4872-86f7-f91629044640"],
 Cell[17443, 376, 24508, 617, 268, "Output",ExpressionUUID->"833a34e4-d4fb-47fd-afaa-c013f596dab2"]
 }, Open  ]],
-Cell[41966, 996, 366, 8, 35, "Text",ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-514168b99e2a"],
-Cell[42335, 1006, 374, 7, 52, "Code",ExpressionUUID->"281aa690-bc33-4ae5-a68b-60853be1652c"]
+Cell[41966, 996, 501, 9, 35, "Text",ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-514168b99e2a"],
+Cell[42470, 1007, 809, 16, 72, "Code",ExpressionUUID->"281aa690-bc33-4ae5-a68b-60853be1652c"],
+Cell[43282, 1025, 465, 9, 35, "Text",ExpressionUUID->"037bf003-31b2-4646-9358-64fe6ade9ac4"],
+Cell[CellGroupData[{
+Cell[43772, 1038, 503, 12, 52, "Code",ExpressionUUID->"2f000637-9550-4df6-b568-4db6993bc167"],
+Cell[44278, 1052, 5714, 127, 108, "Output",ExpressionUUID->"9be312f4-6bbf-41b0-b02b-128d90ecd2e4"]
+}, Open  ]],
+Cell[50007, 1182, 274, 6, 35, "Text",ExpressionUUID->"1fb88b02-fc55-4f38-8a94-b59825a860d5"],
+Cell[50284, 1190, 907, 20, 101, "Code",ExpressionUUID->"79ed4d3a-cba6-431a-88e4-741a1817ee82"],
+Cell[51194, 1212, 393, 8, 35, "Text",ExpressionUUID->"12611204-9c69-4e18-8d81-2545ecfaec5e"],
+Cell[CellGroupData[{
+Cell[51612, 1224, 2868, 70, 199, "Code",ExpressionUUID->"04405d0a-959f-42af-808c-aa28d888ecd2"],
+Cell[54483, 1296, 258, 4, 34, "Output",ExpressionUUID->"3977ca13-bed2-4887-adab-bf8ddeb58fb0"]
+}, Open  ]],
+Cell[54756, 1303, 349, 7, 35, "Text",ExpressionUUID->"d0cb4cde-08e0-442b-a199-0234a318a855"],
+Cell[CellGroupData[{
+Cell[55130, 1314, 1998, 45, 98, "Code",ExpressionUUID->"36f9df9a-6089-4673-b44a-07d5b1f8ee86"],
+Cell[57131, 1361, 251, 5, 36, "Output",ExpressionUUID->"05578c35-2faf-4236-8c16-00b34db274af"]
+}, Open  ]],
+Cell[57397, 1369, 360, 8, 35, "Text",ExpressionUUID->"b4524fe3-d897-4876-8cee-27d6955345ec"],
+Cell[57760, 1379, 366, 8, 58, "Text",ExpressionUUID->"50fcf438-7984-4e2b-b20f-0298625b26d5"]
 }, Open  ]]
 }
 ]
