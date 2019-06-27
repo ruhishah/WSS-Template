@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     61458,       1457]
-NotebookOptionsPosition[     58142,       1390]
-NotebookOutlinePosition[     59104,       1423]
-CellTagsIndexPosition[     59035,       1418]
+NotebookDataLength[     63820,       1485]
+NotebookOptionsPosition[     60496,       1418]
+NotebookOutlinePosition[     61458,       1451]
+CellTagsIndexPosition[     61389,       1446]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -216,14 +216,22 @@ Cell[BoxData[
 }, Open  ]],
 
 Cell["\<\
-To find the amount of alcohol in each, I used to property \
+These were \[OpenCurlyDoubleQuote]Food\[CloseCurlyDoubleQuote] entities in \
+the Wolfram Language that have been recently updated (In version 11, there \
+was information on over 40000 foods). I used the EntityProperty function to \
+extract the food items that have the most amount of alcohol. I then manually \
+selected the drinks that the internet considered to be the most popular. To \
+find the amount of alcohol in each, I used the property \
 \[OpenCurlyDoubleQuote]AlcoholContentPerServing\[CloseCurlyDoubleQuote] which \
 gave the alcohol content in grams for each typical serving size. I visualized \
 it using a bar graph as well.\
 \>", "Text",
  CellChangeTimes->{{3.770582403551602*^9, 3.770582435740614*^9}, {
-  3.770582618855247*^9, 
-  3.770582625595351*^9}},ExpressionUUID->"d10e36bd-4e53-4145-830e-\
+   3.770582618855247*^9, 3.770582625595351*^9}, {3.770591640817587*^9, 
+   3.770591659631091*^9}, {3.77059170977556*^9, 3.770591752448324*^9}, 
+   3.7705917994305687`*^9, {3.770591868812035*^9, 3.770591915020488*^9}, {
+   3.770591956732791*^9, 
+   3.770592006394753*^9}},ExpressionUUID->"d10e36bd-4e53-4145-830e-\
 082808ccb6fe"],
 
 Cell[CellGroupData[{
@@ -996,13 +1004,19 @@ Cell[BoxData[
 
 Cell["\<\
 In order to drink and then drive, you need to have BAC (Blood Alcohol \
-Content) below 0.08%. To calculate BAC, you need a couple of things. Here is \
-my information (feel free to replace it with yours):\
+Content) below 0.08%. This value still seems a little high to me, even at \
+0.08%, there are several prominent effects of alcohol. Even more surprising \
+was the value in Canada, which was 0.15%. About 40% causes death, just for \
+reference. To calculate BAC, you need a couple of things. I used the \
+\[OpenCurlyDoubleQuote]Quantity\[CloseCurlyDoubleQuote] feature in Wolfram \
+Language to assign units to my values throughout this essay. Here is my \
+information, with units (feel free to replace it with yours):\
 \>", "Text",
  CellChangeTimes->{{3.770582853920555*^9, 3.7705828730223*^9}, {
   3.7705829241370907`*^9, 3.770582950064891*^9}, {3.770586520993882*^9, 
-  3.7705865260143423`*^9}, {3.7705887398704987`*^9, 
-  3.770588746073627*^9}},ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-\
+  3.7705865260143423`*^9}, {3.7705887398704987`*^9, 3.770588746073627*^9}, {
+  3.7705920291109056`*^9, 3.7705921305804167`*^9}, {3.770592302330172*^9, 
+  3.770592309728436*^9}},ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-\
 514168b99e2a"],
 
 Cell[BoxData[{
@@ -1025,13 +1039,15 @@ Cell[BoxData[{
 
 Cell["\<\
 To figure out how much I can drink for each specific drink and still drive, I \
-can do the following, where howManyDrinks is a function, the definition \
-appears later :\
+can do the following, where howManyDrinks is a function, for which the \
+definition appears later. Oh no! I can only drink 22 servings of vanilla \
+extract! That is good to know. \
 \>", "Text",
  CellChangeTimes->{{3.7705874745404243`*^9, 3.770587497926798*^9}, {
   3.770587549230391*^9, 3.770587550131415*^9}, {3.770588638701255*^9, 
-  3.770588699402087*^9}, {3.770588763574131*^9, 
-  3.770588768656766*^9}},ExpressionUUID->"037bf003-31b2-4646-9358-\
+  3.770588699402087*^9}, {3.770588763574131*^9, 3.770588768656766*^9}, {
+  3.770592143046364*^9, 3.770592144430695*^9}, {3.770592187360084*^9, 
+  3.7705922227250834`*^9}},ExpressionUUID->"037bf003-31b2-4646-9358-\
 64fe6ade9ac4"],
 
 Cell[CellGroupData[{
@@ -1182,10 +1198,13 @@ Cell[BoxData[
 
 Cell["\<\
 I also need some information on how much I\[CloseCurlyQuote]ve been drinking \
-and what I\[CloseCurlyQuote]ve been drinking.\
+and what I\[CloseCurlyQuote]ve been drinking. The type of drink can be \
+entered using free-form input (just type it in after ^=), or the entity can \
+easily be copy-pasted from anywhere above. \
 \>", "Text",
- CellChangeTimes->{{3.770586561783024*^9, 
-  3.770586583781509*^9}},ExpressionUUID->"1fb88b02-fc55-4f38-8a94-\
+ CellChangeTimes->{{3.770586561783024*^9, 3.770586583781509*^9}, {
+  3.77059222748638*^9, 
+  3.770592274491737*^9}},ExpressionUUID->"1fb88b02-fc55-4f38-8a94-\
 b59825a860d5"],
 
 Cell[BoxData[{
@@ -1303,11 +1322,12 @@ Cell[BoxData["\<\"No\"\>"], "Output",
 
 Cell["\<\
 Okay, now you realize you can\[CloseCurlyQuote]t drive. How long should you \
-wait until you can? howMuchLonger is a function that lets you know.\
+wait until you can? howMuchLonger is a function that lets you know. \
 \>", "Text",
  CellChangeTimes->{
   3.7705863847014093`*^9, 3.7705871822711077`*^9, {3.770587300566887*^9, 
-   3.7705873092281637`*^9}},ExpressionUUID->"d0cb4cde-08e0-442b-a199-\
+   3.7705873092281637`*^9}, 
+   3.770592325007951*^9},ExpressionUUID->"d0cb4cde-08e0-442b-a199-\
 0234a318a855"],
 
 Cell[CellGroupData[{
@@ -1370,25 +1390,33 @@ Cell[BoxData[
 Cell["\<\
 Yes! It takes that long. So you think you might have \
 \[OpenCurlyDoubleQuote]sobered up\[CloseCurlyDoubleQuote] but guess what, the \
-breathalyzer will not.\
+breathalyzer will not. Regardless of this what this article says, drinking \
+and driving is NOT a joke. Just call an Uber! Public Transport! Walk! Wait! \
+Don\[CloseCurlyQuote]t drink! Its not that hard to save money, and some lives \
+too. Also, you may not realize it, but you could still very much be under the \
+influence. Slow reaction time, lack of coordination, reduced concentration, \
+decreased vision, and inhibition of judgement is only a little bit of what \
+alcohol will do to you. This is also a very common issue, alcohol-related \
+vehicle crashes make up $44 million every year. That is $44 million that \
+could be used for research in science! Also, if you are in high school, \
+please do not drink and drive. In 2011, over 1 million students admitted to \
+drinking and driving. That is just not acceptable at all. Use this tool, \
+wait, or drink less, and be safe! \
 \>", "Text",
  CellChangeTimes->{{3.770586413129643*^9, 3.770586441456712*^9}, {
-  3.7705874104698668`*^9, 
-  3.7705874414465218`*^9}},ExpressionUUID->"b4524fe3-d897-4876-8cee-\
+  3.7705874104698668`*^9, 3.7705874414465218`*^9}, {3.7705912287165318`*^9, 
+  3.770591238172739*^9}, {3.770591272935774*^9, 3.770591348746229*^9}, {
+  3.770591396309957*^9, 3.770591457055241*^9}, {3.770591492654604*^9, 
+  3.7705915999525948`*^9}},ExpressionUUID->"b4524fe3-d897-4876-8cee-\
 27d6955345ec"],
 
-Cell["\<\
-Regardless of this what this article says, drinking and driving is NOT a \
-joke. Just call an Uber! Public Transport! Walk! Wait! Don\[CloseCurlyQuote]t \
-drink! Its not that hard to save money, and some lives too. 
-\
-\>", "Text",
- CellChangeTimes->{{3.770586450211026*^9, 
-  3.770586473966776*^9}},ExpressionUUID->"50fcf438-7984-4e2b-b20f-\
+Cell["", "Text",
+ CellChangeTimes->{{3.770586450211026*^9, 3.770586473966776*^9}, 
+   3.770591570766325*^9},ExpressionUUID->"50fcf438-7984-4e2b-b20f-\
 0298625b26d5"]
 }, Open  ]]
 },
-WindowSize->{1440, 788},
+WindowSize->{1440, 790},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 DockedCells->{
   Cell[
@@ -1417,7 +1445,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 58896, 1412}
+ {"Title", 61250, 1440}
  }
 *)
 (*NotebookFileOutline
@@ -1431,33 +1459,33 @@ Cell[CellGroupData[{
 Cell[2521, 58, 4091, 78, 90, "Code",ExpressionUUID->"e8e4429b-6163-491b-af83-8ab120447ef5"],
 Cell[6615, 138, 3901, 76, 75, "Output",ExpressionUUID->"ec5ac8ba-a108-4623-973b-96d75a853584"]
 }, Open  ]],
-Cell[10531, 217, 448, 9, 35, "Text",ExpressionUUID->"d10e36bd-4e53-4145-830e-082808ccb6fe"],
+Cell[10531, 217, 1056, 17, 81, "Text",ExpressionUUID->"d10e36bd-4e53-4145-830e-082808ccb6fe"],
 Cell[CellGroupData[{
-Cell[11004, 230, 709, 15, 72, "Code",ExpressionUUID->"97094917-bae8-47f1-a54f-56798c6fce18"],
-Cell[11716, 247, 5724, 127, 77, "Output",ExpressionUUID->"1b89e036-092f-4872-86f7-f91629044640"],
-Cell[17443, 376, 24508, 617, 268, "Output",ExpressionUUID->"833a34e4-d4fb-47fd-afaa-c013f596dab2"]
+Cell[11612, 238, 709, 15, 72, "Code",ExpressionUUID->"97094917-bae8-47f1-a54f-56798c6fce18"],
+Cell[12324, 255, 5724, 127, 77, "Output",ExpressionUUID->"1b89e036-092f-4872-86f7-f91629044640"],
+Cell[18051, 384, 24508, 617, 268, "Output",ExpressionUUID->"833a34e4-d4fb-47fd-afaa-c013f596dab2"]
 }, Open  ]],
-Cell[41966, 996, 501, 9, 35, "Text",ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-514168b99e2a"],
-Cell[42470, 1007, 809, 16, 72, "Code",ExpressionUUID->"281aa690-bc33-4ae5-a68b-60853be1652c"],
-Cell[43282, 1025, 465, 9, 35, "Text",ExpressionUUID->"037bf003-31b2-4646-9358-64fe6ade9ac4"],
+Cell[42574, 1004, 983, 15, 81, "Text",ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-514168b99e2a"],
+Cell[43560, 1021, 809, 16, 72, "Code",ExpressionUUID->"281aa690-bc33-4ae5-a68b-60853be1652c"],
+Cell[44372, 1039, 652, 11, 58, "Text",ExpressionUUID->"037bf003-31b2-4646-9358-64fe6ade9ac4"],
 Cell[CellGroupData[{
-Cell[43772, 1038, 503, 12, 52, "Code",ExpressionUUID->"2f000637-9550-4df6-b568-4db6993bc167"],
-Cell[44278, 1052, 5714, 127, 108, "Output",ExpressionUUID->"9be312f4-6bbf-41b0-b02b-128d90ecd2e4"]
+Cell[45049, 1054, 503, 12, 52, "Code",ExpressionUUID->"2f000637-9550-4df6-b568-4db6993bc167"],
+Cell[45555, 1068, 5714, 127, 108, "Output",ExpressionUUID->"9be312f4-6bbf-41b0-b02b-128d90ecd2e4"]
 }, Open  ]],
-Cell[50007, 1182, 274, 6, 35, "Text",ExpressionUUID->"1fb88b02-fc55-4f38-8a94-b59825a860d5"],
-Cell[50284, 1190, 907, 20, 101, "Code",ExpressionUUID->"79ed4d3a-cba6-431a-88e4-741a1817ee82"],
-Cell[51194, 1212, 393, 8, 35, "Text",ExpressionUUID->"12611204-9c69-4e18-8d81-2545ecfaec5e"],
+Cell[51284, 1198, 471, 9, 58, "Text",ExpressionUUID->"1fb88b02-fc55-4f38-8a94-b59825a860d5"],
+Cell[51758, 1209, 907, 20, 101, "Code",ExpressionUUID->"79ed4d3a-cba6-431a-88e4-741a1817ee82"],
+Cell[52668, 1231, 393, 8, 35, "Text",ExpressionUUID->"12611204-9c69-4e18-8d81-2545ecfaec5e"],
 Cell[CellGroupData[{
-Cell[51612, 1224, 2868, 70, 199, "Code",ExpressionUUID->"04405d0a-959f-42af-808c-aa28d888ecd2"],
-Cell[54483, 1296, 258, 4, 34, "Output",ExpressionUUID->"3977ca13-bed2-4887-adab-bf8ddeb58fb0"]
+Cell[53086, 1243, 2868, 70, 199, "Code",ExpressionUUID->"04405d0a-959f-42af-808c-aa28d888ecd2"],
+Cell[55957, 1315, 258, 4, 34, "Output",ExpressionUUID->"3977ca13-bed2-4887-adab-bf8ddeb58fb0"]
 }, Open  ]],
-Cell[54756, 1303, 349, 7, 35, "Text",ExpressionUUID->"d0cb4cde-08e0-442b-a199-0234a318a855"],
+Cell[56230, 1322, 376, 8, 35, "Text",ExpressionUUID->"d0cb4cde-08e0-442b-a199-0234a318a855"],
 Cell[CellGroupData[{
-Cell[55130, 1314, 1998, 45, 98, "Code",ExpressionUUID->"36f9df9a-6089-4673-b44a-07d5b1f8ee86"],
-Cell[57131, 1361, 251, 5, 36, "Output",ExpressionUUID->"05578c35-2faf-4236-8c16-00b34db274af"]
+Cell[56631, 1334, 1998, 45, 98, "Code",ExpressionUUID->"36f9df9a-6089-4673-b44a-07d5b1f8ee86"],
+Cell[58632, 1381, 251, 5, 36, "Output",ExpressionUUID->"05578c35-2faf-4236-8c16-00b34db274af"]
 }, Open  ]],
-Cell[57397, 1369, 360, 8, 35, "Text",ExpressionUUID->"b4524fe3-d897-4876-8cee-27d6955345ec"],
-Cell[57760, 1379, 366, 8, 58, "Text",ExpressionUUID->"50fcf438-7984-4e2b-b20f-0298625b26d5"]
+Cell[58898, 1389, 1414, 21, 127, "Text",ExpressionUUID->"b4524fe3-d897-4876-8cee-27d6955345ec"],
+Cell[60315, 1412, 165, 3, 35, "Text",ExpressionUUID->"50fcf438-7984-4e2b-b20f-0298625b26d5"]
 }, Open  ]]
 }
 ]
