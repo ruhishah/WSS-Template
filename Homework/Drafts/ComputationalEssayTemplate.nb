@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     63916,       1485]
-NotebookOptionsPosition[     60592,       1418]
-NotebookOutlinePosition[     61554,       1451]
-CellTagsIndexPosition[     61485,       1446]
+NotebookDataLength[     68518,       1580]
+NotebookOptionsPosition[     64993,       1506]
+NotebookOutlinePosition[     65955,       1539]
+CellTagsIndexPosition[     65886,       1534]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,7 +26,7 @@ Cell["You Drank, but can you Drive?", "Title",
   3.7703737875292807`*^9}, {3.77058160046406*^9, 3.770581605608176*^9}},
  CellTags->"Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd"],
 
-Cell["Ruhi Shah", "Text",
+Cell[TextData[StyleBox["Ruhi Shah", "Author"]], "Text",
  CellChangeTimes->{{3.549624168509506*^9, 3.549624171985794*^9}, {
   3.549624508772977*^9, 3.549624510775043*^9}, {3.5498187159613867`*^9, 
   3.5498187170087957`*^9}, {3.549819049020514*^9, 3.5498190533440437`*^9}, {
@@ -131,10 +131,13 @@ Cell[BoxData[
         RowBox[{"\"Food\"", ",", "\"WineRed::qxm3p\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"WineRed::qxm3p\\\"]\"","\"food\""},
      "Entity"]}], "}"}]}]], "Code",
+ InitializationCell->False,
  CellChangeTimes->{{3.7705822990652018`*^9, 3.77058232124965*^9}, {
   3.770582453531006*^9, 3.7705824592713747`*^9}, {3.770582596424089*^9, 
-  3.770582600606689*^9}},ExpressionUUID->"e8e4429b-6163-491b-af83-\
-8ab120447ef5"],
+  3.770582600606689*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "In[137]:=",ExpressionUUID->"e8e4429b-6163-491b-af83-8ab120447ef5"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -210,9 +213,13 @@ Cell[BoxData[
        RowBox[{"\"Food\"", ",", "\"WineRed::qxm3p\""}], "]"}],
      "\"Entity[\\\"Food\\\", \\\"WineRed::qxm3p\\\"]\"","\"food\""},
     "Entity"]}], "}"}]], "Output",
- CellChangeTimes->{{3.770582464637388*^9, 3.7705824647381067`*^9}},
+ CellChangeTimes->{{3.770582464637388*^9, 3.7705824647381067`*^9}, {
+   3.770659719468248*^9, 3.770659722184648*^9}, {3.7706599170191193`*^9, 
+   3.7706599220500183`*^9}, 3.7706599918258753`*^9, {3.770744866459074*^9, 
+   3.770744876543104*^9}, {3.7707449299563723`*^9, 3.7707449381467743`*^9}, 
+   3.770745221954072*^9, 3.770747758194129*^9},
  CellLabel->
-  "Out[484]=",ExpressionUUID->"ec5ac8ba-a108-4623-973b-96d75a853584"]
+  "Out[137]=",ExpressionUUID->"0aee0b16-c339-4426-9f3f-2cf8502b4ecb"]
 }, Open  ]],
 
 Cell["\<\
@@ -249,9 +256,11 @@ Cell[BoxData[{
    RowBox[{"AxesLabel", "\[Rule]", "Automatic"}], ",", " ", 
    RowBox[{"BarOrigin", "\[Rule]", " ", "Left"}], ",", " ", 
    RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "]"}]}], "Code",
+ InitializationCell->False,
  CellChangeTimes->{3.770582589006155*^9},
+ Background->GrayLevel[0.85],
  CellLabel->
-  "In[485]:=",ExpressionUUID->"97094917-bae8-47f1-a54f-56798c6fce18"],
+  "In[135]:=",ExpressionUUID->"97094917-bae8-47f1-a54f-56798c6fce18"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -378,9 +387,12 @@ Cell[BoxData[
      "Entity"], "\[Rule]", 
     TemplateBox[{"9.9`","\"g\"","grams","\"Grams\""},
      "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
- CellChangeTimes->{3.770582591983983*^9},
+ CellChangeTimes->{
+  3.770582591983983*^9, 3.770659719998301*^9, 3.770659919355818*^9, 
+   3.7706599943237677`*^9, {3.77074486688731*^9, 3.770744879290044*^9}, 
+   3.770744934910637*^9, 3.7707452238547373`*^9, 3.770747755855867*^9},
  CellLabel->
-  "Out[485]=",ExpressionUUID->"1b89e036-092f-4872-86f7-f91629044640"],
+  "Out[135]=",ExpressionUUID->"23fb601f-559d-4099-bffc-78e70e1f0a05"],
 
 Cell[BoxData[
  GraphicsBox[{
@@ -997,9 +1009,12 @@ Cell[BoxData[
      Scaled[0.02], 
      Scaled[0.02]}},
   Ticks->{Automatic, None}]], "Output",
- CellChangeTimes->{3.770582592241912*^9},
+ CellChangeTimes->{
+  3.770582591983983*^9, 3.770659719998301*^9, 3.770659919355818*^9, 
+   3.7706599943237677`*^9, {3.77074486688731*^9, 3.770744879290044*^9}, 
+   3.770744934910637*^9, 3.7707452238547373`*^9, 3.77074775614025*^9},
  CellLabel->
-  "Out[486]=",ExpressionUUID->"833a34e4-d4fb-47fd-afaa-c013f596dab2"]
+  "Out[136]=",ExpressionUUID->"4c0a3d7b-1c89-4457-8147-a05a406e6ff5"]
 }, Open  ]],
 
 Cell["\<\
@@ -1021,12 +1036,15 @@ information, with units (feel free to replace it with yours):\
 
 Cell[BoxData[{
  RowBox[{
+  RowBox[{
+   RowBox[{"$AllowedBAC", " ", "=", " ", "0.08"}], ";"}], "\n"}], "\n", 
+ RowBox[{
   RowBox[{"bodyweight", " ", "=", " ", 
    RowBox[{"Quantity", "[", 
-    RowBox[{"100", ",", "\"\<pounds\>\""}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+    RowBox[{"100", ",", " ", "\"\<Pounds\>\""}], "]"}]}], ";"}], "\n", 
  RowBox[{
   RowBox[{"gender", " ", "=", " ", "\"\<female\>\""}], ";"}]}], "Code",
+ InitializationCell->False,
  CellChangeTimes->{
   3.770582803167408*^9, {3.770583105600564*^9, 3.770583106372737*^9}, {
    3.770583356491271*^9, 3.7705833576480637`*^9}, {3.770583500293168*^9, 
@@ -1034,8 +1052,14 @@ Cell[BoxData[{
    3.77058396912465*^9, 3.7705839780113*^9}, {3.7705865384813423`*^9, 
    3.770586551845083*^9}, {3.7705866065960503`*^9, 3.770586611447405*^9}, {
    3.7705866447311907`*^9, 3.770586655454475*^9}, {3.770586691225238*^9, 
-   3.770586693612587*^9}},ExpressionUUID->"281aa690-bc33-4ae5-a68b-\
-60853be1652c"],
+   3.770586693612587*^9}, {3.7706595208654633`*^9, 3.7706596008768997`*^9}, {
+   3.770659640031115*^9, 3.770659694226856*^9}, {3.770659739478939*^9, 
+   3.770659803091745*^9}, {3.770659871311101*^9, 3.770659872325336*^9}, {
+   3.770744829197481*^9, 3.770744872993104*^9}, {3.7707471948707952`*^9, 
+   3.7707471971154213`*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "In[132]:=",ExpressionUUID->"281aa690-bc33-4ae5-a68b-60853be1652c"],
 
 Cell["\<\
 To figure out how much I can drink for each specific drink and still drive, I \
@@ -1052,7 +1076,27 @@ extract! That is good to know. \
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"howManyDrinks", "[", 
+   RowBox[{"bodyweight_", ",", "drinktype_", ",", "gender_"}], "]"}], ":=", 
+  " ", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{
+    RowBox[{"Floor", "[", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"$AllowedBAC", "*", 
+        RowBox[{"QuantityMagnitude", "@", "bodyweight"}], "*", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"gender", "===", "\"\<male\>\""}], ",", "0.73`", ",", 
+          "0.66`"}], "]"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"QuantityMagnitude", "@", "drinktype"}], "*", "5.14", "*", 
+        "0.035274"}], ")"}]}], "]"}], ",", "\"\<drinks\>\""}], 
+   "]"}]}], "\n", 
  RowBox[{"numberofdrinksGeneral", "=", 
   RowBox[{"AssociationThread", "[", 
    RowBox[{
@@ -1061,10 +1105,15 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"howManyDrinks", "[", 
        RowBox[{"bodyweight", ",", "#", ",", "gender"}], "]"}], "&"}], "/@", 
-     RowBox[{"Keys", "[", "alcoholicContent", "]"}]}]}], "]"}]}]], "Code",
- CellChangeTimes->{3.7705875266910973`*^9},
+     RowBox[{"Values", "[", "alcoholicContent", "]"}]}]}], "]"}]}]}], "Code",
+ InitializationCell->False,
+ CellChangeTimes->{
+  3.7705875266910973`*^9, {3.770747030260481*^9, 3.770747045059889*^9}, {
+   3.7707471447008333`*^9, 3.770747295413538*^9}, {3.7707473531004972`*^9, 
+   3.770747422326977*^9}},
+ Background->GrayLevel[0.85],
  CellLabel->
-  "In[748]:=",ExpressionUUID->"2f000637-9550-4df6-b568-4db6993bc167"],
+  "In[130]:=",ExpressionUUID->"2f000637-9550-4df6-b568-4db6993bc167"],
 
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", 
@@ -1081,21 +1130,21 @@ Cell[BoxData[
         RowBox[{"\"Food\"", ",", "\"VanillaExtract::6g22f\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"VanillaExtract::6g22f\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"22","\"drinks\"","drinks","\"Drinks\""},
+    TemplateBox[{"20","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}], ",", 
    RowBox[{
     TemplateBox[{"\"Bloody mary\"",RowBox[{"Entity", "[", 
         RowBox[{"\"Food\"", ",", "\"BloodyMary::328gx\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"BloodyMary::328gx\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"3","\"drinks\"","drinks","\"Drinks\""},
+    TemplateBox[{"2","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}], ",", 
    RowBox[{
     TemplateBox[{"\"Brandy\"",RowBox[{"Entity", "[", 
         RowBox[{"\"Food\"", ",", "\"Brandy::q5447\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"Brandy::q5447\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"1","\"drink\"","drink","\"Drinks\""},
+    TemplateBox[{"0","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}], ",", 
    RowBox[{
     TemplateBox[{"\"Vermouth\"",RowBox[{"Entity", "[", 
@@ -1109,42 +1158,42 @@ Cell[BoxData[
         RowBox[{"\"Food\"", ",", "\"Cognac::y9462\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"Cognac::y9462\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"1","\"drink\"","drink","\"Drinks\""},
+    TemplateBox[{"0","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}], ",", 
    RowBox[{
     TemplateBox[{"\"Beer, regular\"",RowBox[{"Entity", "[", 
         RowBox[{"\"Food\"", ",", "\"BeerRegular::8x3f9\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"BeerRegular::8x3f9\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"8","\"drinks\"","drinks","\"Drinks\""},
+    TemplateBox[{"7","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}], ",", 
    RowBox[{
     TemplateBox[{"\"Egg nog\"",RowBox[{"Entity", "[", 
         RowBox[{"\"Food\"", ",", "\"EggNog::3dwyy\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"EggNog::3dwyy\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"8","\"drinks\"","drinks","\"Drinks\""},
+    TemplateBox[{"7","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}], ",", 
    RowBox[{
     TemplateBox[{"\"Wine mulled\"",RowBox[{"Entity", "[", 
         RowBox[{"\"Food\"", ",", "\"WineMulled::2t398\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"WineMulled::2t398\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"11","\"drinks\"","drinks","\"Drinks\""},
+    TemplateBox[{"10","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}], ",", 
    RowBox[{
     TemplateBox[{"\"Cider (average)\"",RowBox[{"Entity", "[", 
         RowBox[{"\"Food\"", ",", "\"CiderAverage::5dtvm\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"CiderAverage::5dtvm\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"11","\"drinks\"","drinks","\"Drinks\""},
+    TemplateBox[{"10","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}], ",", 
    RowBox[{
     TemplateBox[{"\"Gin tonic\"",RowBox[{"Entity", "[", 
         RowBox[{"\"Food\"", ",", "\"GinTonic::n5779\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"GinTonic::n5779\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"8","\"drinks\"","drinks","\"Drinks\""},
+    TemplateBox[{"7","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}], ",", 
    RowBox[{
     TemplateBox[{"\"Sangria\"",RowBox[{"Entity", "[", 
@@ -1175,7 +1224,7 @@ Cell[BoxData[
         "]"}],"\"Entity[\\\"Food\\\", \
 \\\"AlcoholicBeveragePinaColadaCanned::vv7h8\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"10","\"drinks\"","drinks","\"Drinks\""},
+    TemplateBox[{"9","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}], ",", 
    RowBox[{
     TemplateBox[{"\"Irish Coffee\"",RowBox[{"Entity", "[", 
@@ -1189,11 +1238,17 @@ Cell[BoxData[
         RowBox[{"\"Food\"", ",", "\"WineRed::qxm3p\""}], "]"}],
       "\"Entity[\\\"Food\\\", \\\"WineRed::qxm3p\\\"]\"","\"food\""},
      "Entity"], "\[Rule]", 
-    TemplateBox[{"3","\"drinks\"","drinks","\"Drinks\""},
+    TemplateBox[{"2","\"drinks\"","drinks","\"Drinks\""},
      "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
- CellChangeTimes->{3.7705875286876593`*^9},
+ CellChangeTimes->{
+  3.7705875286876593`*^9, 3.770659721035448*^9, {3.77065992041276*^9, 
+   3.770659972057399*^9}, {3.770660008924922*^9, 3.7706600203073378`*^9}, {
+   3.7707448676566343`*^9, 3.770744883410185*^9}, 3.770744936041792*^9, 
+   3.770745225300702*^9, 3.770747267530911*^9, 3.77074729965696*^9, {
+   3.770747361341558*^9, 3.770747392682158*^9}, 3.770747423130237*^9, 
+   3.7707477518017073`*^9},
  CellLabel->
-  "Out[748]=",ExpressionUUID->"9be312f4-6bbf-41b0-b02b-128d90ecd2e4"]
+  "Out[131]=",ExpressionUUID->"82d13fa6-68e8-4826-a366-b1012a26cac5"]
 }, Open  ]],
 
 Cell["\<\
@@ -1223,11 +1278,15 @@ Cell[BoxData[{
   RowBox[{"timepassed", " ", "=", " ", 
    RowBox[{"Quantity", "[", 
     RowBox[{"1", ",", "\"\<hour\>\""}], "]"}]}], ";"}]}], "Code",
+ InitializationCell->False,
  CellChangeTimes->{{3.7705865933580437`*^9, 3.770586621898327*^9}, {
   3.770586668302327*^9, 3.770586684532022*^9}, {3.770586990009568*^9, 
-  3.7705870196426277`*^9}, {3.770587175088025*^9, 3.770587175401863*^9}},
+  3.7705870196426277`*^9}, {3.770587175088025*^9, 3.770587175401863*^9}, {
+  3.7706601005099077`*^9, 3.770660104747213*^9}, {3.770660185166313*^9, 
+  3.770660187695424*^9}, {3.770660220927803*^9, 3.770660229800684*^9}},
+ Background->GrayLevel[0.85],
  CellLabel->
-  "In[734]:=",ExpressionUUID->"79ed4d3a-cba6-431a-88e4-741a1817ee82"],
+  "In[127]:=",ExpressionUUID->"79ed4d3a-cba6-431a-88e4-741a1817ee82"],
 
 Cell["\<\
 Now, with that information lets find out if you can drive! calculateBAC is a \
@@ -1244,80 +1303,102 @@ Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"$AllowedBAC", " ", "=", " ", "0.08"}], ";"}], "\n"}], "\n", 
- RowBox[{
-  RowBox[{
    RowBox[{"calculateBAC", "[", 
     RowBox[{
     "bodyweight_", ",", "drinktype_", ",", " ", "numberofdrinks_", ",", 
      "gender_", ",", "timepassed_"}], "]"}], ":=", " ", 
-   InterpretationBox[
-    DynamicModuleBox[{Typeset`open = False}, 
-     TemplateBox[{"Expression",RowBox[{"Plus", "[", 
-         DynamicBox[
-          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
-       GridBox[{{
-          RowBox[{
-            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
-            
-            TagBox["840", "IconizedItem"]}]}}, 
-        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-        "Column", 
-        GridBoxItemSize -> {
-         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
-       Typeset`open]},
-      "IconizedObject"]],
-    QuantityMagnitude[
-       $CellContext`alcoholPerDrink[$CellContext`drinktype]] 
-     QuantityMagnitude[$CellContext`numberofdrinks] 5.14/(
-     QuantityMagnitude[$CellContext`bodyweight] 
-     If[$CellContext`gender === "male", 0.73, 0.66]) - 0.015 
-    QuantityMagnitude[$CellContext`timepassed],
-    SelectWithContents->True,
-    Selectable->False]}], ";"}], "\n", 
- RowBox[{
-  RowBox[{
    RowBox[{
-    RowBox[{"canIDriveQ", "[", "bac_", "]"}], ":=", " ", 
     InterpretationBox[
      DynamicModuleBox[{Typeset`open = False}, 
-      TemplateBox[{"Expression",RowBox[{"If", "[", 
+      TemplateBox[{"Expression",RowBox[{"Times", "[", 
           DynamicBox[
            FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
         GridBox[{{
            RowBox[{
              TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
-             TagBox["184", "IconizedItem"]}]}}, 
+             TagBox["680", "IconizedItem"]}]}}, 
          GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
          "Column", 
          GridBoxItemSize -> {
           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
         Typeset`open]},
        "IconizedObject"]],
-     If[$CellContext`bac <= $CellContext`$AllowedBAC, "Yes", "No"],
+     QuantityMagnitude[
+       EntityValue[$CellContext`drinktype, "AlcoholContentPerServing"]] 
+     0.035274 QuantityMagnitude[$CellContext`numberofdrinks] 5.14/(
+     QuantityMagnitude[$CellContext`bodyweight] 
+     If[$CellContext`gender === "male", 0.73, 0.66]),
      SelectWithContents->True,
-     Selectable->False]}], ";"}], "\n"}], "\n", 
+     Selectable->False], "-", 
+    InterpretationBox[
+     DynamicModuleBox[{Typeset`open = False}, 
+      TemplateBox[{"Expression",RowBox[{"Times", "[", 
+          DynamicBox[
+           FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+        GridBox[{{
+           RowBox[{
+             TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+             TagBox["120", "IconizedItem"]}]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+        Typeset`open]},
+       "IconizedObject"]],
+     0.015 QuantityMagnitude[$CellContext`timepassed],
+     SelectWithContents->True,
+     Selectable->False]}]}], ";"}], "\n", 
  RowBox[{
   RowBox[{
-   RowBox[{"BAC", " ", "=", " ", 
-    RowBox[{"calculateBAC", "[", 
-     RowBox[{
-     "bodyweight", ",", "drinktype", ",", " ", "numberofdrinks", ",", " ", 
-      "gender", ",", " ", "timepassed"}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]"}], "\n", 
+   RowBox[{"canIDriveQ", "[", "bac_", "]"}], ":=", " ", 
+   InterpretationBox[
+    DynamicModuleBox[{Typeset`open = False}, 
+     TemplateBox[{"Expression",RowBox[{"If", "[", 
+         DynamicBox[
+          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+       GridBox[{{
+          RowBox[{
+            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            
+            TagBox["184", "IconizedItem"]}]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+       Typeset`open]},
+      "IconizedObject"]],
+    If[$CellContext`bac <= $CellContext`$AllowedBAC, "Yes", "No"],
+    SelectWithContents->True,
+    Selectable->False]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"BAC", " ", "=", " ", 
+   RowBox[{"calculateBAC", "[", 
+    RowBox[{
+    "bodyweight", ",", "drinktype", ",", " ", "numberofdrinks", ",", " ", 
+     "gender", ",", " ", "timepassed"}], "]"}]}], ";"}], "\n", 
  RowBox[{"canIDriveQ", "[", "BAC", "]"}]}], "Code",
+ InitializationCell->False,
  CellChangeTimes->{{3.770586742740987*^9, 3.7705867584907217`*^9}, {
-  3.77058678862635*^9, 3.7705867947512283`*^9}, {3.770586848598895*^9, 
-  3.770586966403871*^9}, {3.770587027348384*^9, 3.7705870914636383`*^9}, {
-  3.770587122681159*^9, 3.770587165551326*^9}},
+   3.77058678862635*^9, 3.7705867947512283`*^9}, {3.770586848598895*^9, 
+   3.770586966403871*^9}, {3.770587027348384*^9, 3.7705870914636383`*^9}, {
+   3.770587122681159*^9, 3.770587165551326*^9}, {3.77074519868785*^9, 
+   3.770745203415391*^9}, {3.770747187577155*^9, 3.770747189220789*^9}, 
+   3.7707472285888844`*^9, {3.7707474362682543`*^9, 3.770747484943316*^9}, {
+   3.7707475155415373`*^9, 3.770747594338024*^9}, {3.7707476888475533`*^9, 
+   3.7707476995694447`*^9}},
+ Background->GrayLevel[0.85],
  CellLabel->
-  "In[737]:=",ExpressionUUID->"04405d0a-959f-42af-808c-aa28d888ecd2"],
+  "In[123]:=",ExpressionUUID->"04405d0a-959f-42af-808c-aa28d888ecd2"],
 
 Cell[BoxData["\<\"No\"\>"], "Output",
  CellChangeTimes->{{3.770586963753179*^9, 3.770587013740533*^9}, 
-   3.7705871317932243`*^9, {3.77058716953399*^9, 3.77058717759202*^9}},
+   3.7705871317932243`*^9, {3.77058716953399*^9, 3.77058717759202*^9}, 
+   3.77065972162016*^9, 3.770659921623713*^9, {3.7707448689815187`*^9, 
+   3.770744889428791*^9}, 3.77074493748453*^9, 3.770745226661364*^9, 
+   3.770747430083688*^9, 3.7707474892120028`*^9, {3.770747520016651*^9, 
+   3.770747575452704*^9}, 3.770747693626853*^9, 3.770747748253433*^9},
  CellLabel->
-  "Out[741]=",ExpressionUUID->"3977ca13-bed2-4887-adab-bf8ddeb58fb0"]
+  "Out[126]=",ExpressionUUID->"5d34cd5e-0b37-47a2-bb90-9e124d120307"]
 }, Open  ]],
 
 Cell["\<\
@@ -1334,57 +1415,64 @@ Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{
-   RowBox[{"howMuchLonger", "[", 
-    RowBox[{
-    "bodyweight_", ",", "drinktype_", ",", " ", "numberofdrinks_", ",", 
-     "gender_", ",", "timepassed_"}], "]"}], ":=", " ", 
-   InterpretationBox[
-    DynamicModuleBox[{Typeset`open = False}, 
-     TemplateBox[{"Expression",RowBox[{"Quantity", "[", 
-         DynamicBox[
-          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
-       GridBox[{{
-          RowBox[{
-            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
-            
-            TagBox["2320", "IconizedItem"]}]}}, 
-        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
-        "Column", 
-        GridBoxItemSize -> {
-         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
-       Typeset`open]},
-      "IconizedObject"]],
-    Quantity[
-     If[(QuantityMagnitude[
-            $CellContext`alcoholPerDrink[$CellContext`drinktype]] 
-          QuantityMagnitude[$CellContext`numberofdrinks] 5.14/(
-          QuantityMagnitude[$CellContext`bodyweight] 
-          If[$CellContext`gender === "male", 0.73, 
-            0.66]) - $CellContext`$AllowedBAC)/0.015 - 
-       QuantityMagnitude[$CellContext`timepassed] > 0, (QuantityMagnitude[
-           $CellContext`alcoholPerDrink[$CellContext`drinktype]] 
-         QuantityMagnitude[$CellContext`numberofdrinks] 5.14/(
+  RowBox[{"howMuchLonger", "[", 
+   RowBox[{
+   "bodyweight_", ",", "drinktype_", ",", " ", "numberofdrinks_", ",", 
+    "gender_", ",", "timepassed_"}], "]"}], ":=", " ", 
+  InterpretationBox[
+   DynamicModuleBox[{Typeset`open = False}, 
+    TemplateBox[{"Expression",RowBox[{"Quantity", "[", 
+        DynamicBox[
+         FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+      GridBox[{{
+         RowBox[{
+           TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+           TagBox["2496", "IconizedItem"]}]}}, 
+       GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+       "Column", 
+       GridBoxItemSize -> {
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+      Typeset`open]},
+     "IconizedObject"]],
+   Quantity[
+    If[(QuantityMagnitude[
+           EntityValue[$CellContext`drinktype, "AlcoholContentPerServing"]] 
+         0.035274 QuantityMagnitude[$CellContext`numberofdrinks] 5.14/(
          QuantityMagnitude[$CellContext`bodyweight] 
          If[$CellContext`gender === "male", 0.73, 
            0.66]) - $CellContext`$AllowedBAC)/0.015 - 
-      QuantityMagnitude[$CellContext`timepassed], 0], "hours"],
-    SelectWithContents->True,
-    Selectable->False]}], "\n"}], "\n", 
+      QuantityMagnitude[$CellContext`timepassed] > 0, (QuantityMagnitude[
+          EntityValue[$CellContext`drinktype, "AlcoholContentPerServing"]] 
+        0.035274 QuantityMagnitude[$CellContext`numberofdrinks] 5.14/(
+        QuantityMagnitude[$CellContext`bodyweight] 
+        If[$CellContext`gender === "male", 0.73, 
+          0.66]) - $CellContext`$AllowedBAC)/0.015 - 
+     QuantityMagnitude[$CellContext`timepassed], 0], "hours"],
+   SelectWithContents->True,
+   Selectable->False]}], "\n", 
  RowBox[{"howMuchLonger", "[", 
   RowBox[{
   "bodyweight", ",", "drinktype", ",", "numberofdrinks", ",", "gender", ",", 
    "timepassed"}], "]"}]}], "Code",
- CellChangeTimes->{{3.770587210381302*^9, 3.7705873818837833`*^9}},
+ InitializationCell->False,
+ CellChangeTimes->{{3.770587210381302*^9, 3.7705873818837833`*^9}, 
+   3.770745205690441*^9, {3.770747582525182*^9, 3.770747668404614*^9}, 
+   3.7707477405030212`*^9},
+ Background->GrayLevel[0.85],
  CellLabel->
-  "In[746]:=",ExpressionUUID->"36f9df9a-6089-4673-b44a-07d5b1f8ee86"],
+  "In[121]:=",ExpressionUUID->"36f9df9a-6089-4673-b44a-07d5b1f8ee86"],
 
 Cell[BoxData[
- TemplateBox[{"7.922967850228307`","\"h\"","hours","\"Hours\""},
+ TemplateBox[{"9.434999793939394`","\"h\"","hours","\"Hours\""},
   "Quantity"]], "Output",
- CellChangeTimes->{3.770587328424901*^9, 3.770587384398694*^9},
+ CellChangeTimes->{
+  3.770587328424901*^9, 3.770587384398694*^9, 3.7706597219057293`*^9, 
+   3.770659921917348*^9, {3.77074486943911*^9, 3.770744898440466*^9}, {
+   3.7707449379049807`*^9, 3.7707449609970617`*^9}, 3.7707452269435997`*^9, {
+   3.7707475787037153`*^9, 3.770747580278079*^9}, 3.770747622678773*^9, {
+   3.770747743524068*^9, 3.77074774573598*^9}},
  CellLabel->
-  "Out[747]=",ExpressionUUID->"05578c35-2faf-4236-8c16-00b34db274af"]
+  "Out[122]=",ExpressionUUID->"a19f6b24-4902-4fae-bb4c-4d66a368f1f7"]
 }, Open  ]],
 
 Cell["\<\
@@ -1445,7 +1533,7 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 61346, 1440}
+ {"Title", 65747, 1528}
  }
 *)
 (*NotebookFileOutline
@@ -1453,39 +1541,46 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 336, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
  CellTags->"Title"],
-Cell[919, 28, 399, 6, 35, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
-Cell[1321, 36, 1175, 18, 104, "Text",ExpressionUUID->"e97ade10-7232-4b6f-b4f3-3579efed2f9e"],
+Cell[919, 28, 429, 6, 38, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
+Cell[1351, 36, 1175, 18, 104, "Text",ExpressionUUID->"e97ade10-7232-4b6f-b4f3-3579efed2f9e"],
 Cell[CellGroupData[{
-Cell[2521, 58, 4091, 78, 90, "Code",ExpressionUUID->"e8e4429b-6163-491b-af83-8ab120447ef5"],
-Cell[6615, 138, 3901, 76, 75, "Output",ExpressionUUID->"ec5ac8ba-a108-4623-973b-96d75a853584"]
+Cell[2551, 58, 4175, 81, 90, "Code",ExpressionUUID->"e8e4429b-6163-491b-af83-8ab120447ef5",
+ InitializationCell->False],
+Cell[6729, 141, 4177, 80, 75, "Output",ExpressionUUID->"0aee0b16-c339-4426-9f3f-2cf8502b4ecb"]
 }, Open  ]],
-Cell[10531, 217, 1102, 17, 81, "Text",ExpressionUUID->"d10e36bd-4e53-4145-830e-082808ccb6fe"],
+Cell[10921, 224, 1102, 17, 81, "Text",ExpressionUUID->"d10e36bd-4e53-4145-830e-082808ccb6fe"],
 Cell[CellGroupData[{
-Cell[11658, 238, 709, 15, 72, "Code",ExpressionUUID->"97094917-bae8-47f1-a54f-56798c6fce18"],
-Cell[12370, 255, 5724, 127, 77, "Output",ExpressionUUID->"1b89e036-092f-4872-86f7-f91629044640"],
-Cell[18097, 384, 24508, 617, 268, "Output",ExpressionUUID->"833a34e4-d4fb-47fd-afaa-c013f596dab2"]
+Cell[12048, 245, 767, 17, 72, "Code",ExpressionUUID->"97094917-bae8-47f1-a54f-56798c6fce18",
+ InitializationCell->False],
+Cell[12818, 264, 5916, 130, 77, "Output",ExpressionUUID->"23fb601f-559d-4099-bffc-78e70e1f0a05"],
+Cell[18737, 396, 24699, 620, 268, "Output",ExpressionUUID->"4c0a3d7b-1c89-4457-8147-a05a406e6ff5"]
 }, Open  ]],
-Cell[42620, 1004, 983, 15, 81, "Text",ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-514168b99e2a"],
-Cell[43606, 1021, 809, 16, 72, "Code",ExpressionUUID->"281aa690-bc33-4ae5-a68b-60853be1652c"],
-Cell[44418, 1039, 652, 11, 58, "Text",ExpressionUUID->"037bf003-31b2-4646-9358-64fe6ade9ac4"],
+Cell[43451, 1019, 983, 15, 81, "Text",ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-514168b99e2a"],
+Cell[44437, 1036, 1272, 25, 110, "Code",ExpressionUUID->"281aa690-bc33-4ae5-a68b-60853be1652c",
+ InitializationCell->False],
+Cell[45712, 1063, 652, 11, 58, "Text",ExpressionUUID->"037bf003-31b2-4646-9358-64fe6ade9ac4"],
 Cell[CellGroupData[{
-Cell[45095, 1054, 503, 12, 52, "Code",ExpressionUUID->"2f000637-9550-4df6-b568-4db6993bc167"],
-Cell[45601, 1068, 5714, 127, 108, "Output",ExpressionUUID->"9be312f4-6bbf-41b0-b02b-128d90ecd2e4"]
+Cell[46389, 1078, 1404, 37, 72, "Code",ExpressionUUID->"2f000637-9550-4df6-b568-4db6993bc167",
+ InitializationCell->False],
+Cell[47796, 1117, 6082, 133, 108, "Output",ExpressionUUID->"82d13fa6-68e8-4826-a366-b1012a26cac5"]
 }, Open  ]],
-Cell[51330, 1198, 521, 9, 58, "Text",ExpressionUUID->"1fb88b02-fc55-4f38-8a94-b59825a860d5"],
-Cell[51854, 1209, 907, 20, 101, "Code",ExpressionUUID->"79ed4d3a-cba6-431a-88e4-741a1817ee82"],
-Cell[52764, 1231, 393, 8, 35, "Text",ExpressionUUID->"12611204-9c69-4e18-8d81-2545ecfaec5e"],
+Cell[53893, 1253, 521, 9, 58, "Text",ExpressionUUID->"1fb88b02-fc55-4f38-8a94-b59825a860d5"],
+Cell[54417, 1264, 1111, 24, 101, "Code",ExpressionUUID->"79ed4d3a-cba6-431a-88e4-741a1817ee82",
+ InitializationCell->False],
+Cell[55531, 1290, 393, 8, 35, "Text",ExpressionUUID->"12611204-9c69-4e18-8d81-2545ecfaec5e"],
 Cell[CellGroupData[{
-Cell[53182, 1243, 2868, 70, 199, "Code",ExpressionUUID->"04405d0a-959f-42af-808c-aa28d888ecd2"],
-Cell[56053, 1315, 258, 4, 34, "Output",ExpressionUUID->"3977ca13-bed2-4887-adab-bf8ddeb58fb0"]
+Cell[55949, 1302, 3786, 88, 123, "Code",ExpressionUUID->"04405d0a-959f-42af-808c-aa28d888ecd2",
+ InitializationCell->False],
+Cell[59738, 1392, 544, 8, 34, "Output",ExpressionUUID->"5d34cd5e-0b37-47a2-bb90-9e124d120307"]
 }, Open  ]],
-Cell[56326, 1322, 376, 8, 35, "Text",ExpressionUUID->"d0cb4cde-08e0-442b-a199-0234a318a855"],
+Cell[60297, 1403, 376, 8, 35, "Text",ExpressionUUID->"d0cb4cde-08e0-442b-a199-0234a318a855"],
 Cell[CellGroupData[{
-Cell[56727, 1334, 1998, 45, 98, "Code",ExpressionUUID->"36f9df9a-6089-4673-b44a-07d5b1f8ee86"],
-Cell[58728, 1381, 251, 5, 36, "Output",ExpressionUUID->"05578c35-2faf-4236-8c16-00b34db274af"]
+Cell[60698, 1415, 2129, 47, 79, "Code",ExpressionUUID->"36f9df9a-6089-4673-b44a-07d5b1f8ee86",
+ InitializationCell->False],
+Cell[62830, 1464, 550, 10, 36, "Output",ExpressionUUID->"a19f6b24-4902-4fae-bb4c-4d66a368f1f7"]
 }, Open  ]],
-Cell[58994, 1389, 1414, 21, 127, "Text",ExpressionUUID->"b4524fe3-d897-4876-8cee-27d6955345ec"],
-Cell[60411, 1412, 165, 3, 35, "Text",ExpressionUUID->"50fcf438-7984-4e2b-b20f-0298625b26d5"]
+Cell[63395, 1477, 1414, 21, 127, "Text",ExpressionUUID->"b4524fe3-d897-4876-8cee-27d6955345ec"],
+Cell[64812, 1500, 165, 3, 35, "Text",ExpressionUUID->"50fcf438-7984-4e2b-b20f-0298625b26d5"]
 }, Open  ]]
 }
 ]
