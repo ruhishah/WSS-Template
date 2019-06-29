@@ -10,39 +10,1524 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2498,         79]
-NotebookOptionsPosition[      1424,         43]
-NotebookOutlinePosition[      2402,         77]
-CellTagsIndexPosition[      2336,         72]
+NotebookDataLength[     70384,       1602]
+NotebookOptionsPosition[     66857,       1528]
+NotebookOutlinePosition[     67819,       1561]
+CellTagsIndexPosition[     67750,       1556]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell[TextData[{
- "< Essay Title ",
- StyleBox["(The first cell that is formatted as \[OpenCurlyDoubleQuote]Title\
-\[CloseCurlyDoubleQuote] will be the title we use for your essay) ",
-  FontSize->16],
- ">"
-}], "Title",
+Cell["You Drank, but can you Drive?", "Title",
  CellChangeTimes->{{3.770055572438499*^9, 3.7700555729498453`*^9}, {
   3.770055604008165*^9, 3.7700556066618843`*^9}, {3.770373672636671*^9, 
-  3.7703737875292807`*^9}},
+  3.7703737875292807`*^9}, {3.77058160046406*^9, 3.770581605608176*^9}},
  CellTags->"Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd"],
 
-Cell["< First and Last name>", "Text",
+Cell[TextData[StyleBox["Ruhi Shah", "Author"]], "Text",
  CellChangeTimes->{{3.549624168509506*^9, 3.549624171985794*^9}, {
   3.549624508772977*^9, 3.549624510775043*^9}, {3.5498187159613867`*^9, 
   3.5498187170087957`*^9}, {3.549819049020514*^9, 3.5498190533440437`*^9}, {
-  3.77005561844785*^9, 
-  3.7700556489651537`*^9}},ExpressionUUID->"94536f76-3fd2-4bf6-b228-\
-fa93ec9acae9"]
+  3.77005561844785*^9, 3.7700556489651537`*^9}, {3.770458589709198*^9, 
+  3.7704585910500603`*^9}},ExpressionUUID->"94536f76-3fd2-4bf6-b228-\
+fa93ec9acae9"],
+
+Cell["\<\
+Recently, I visited the United Kingdom, which is where the inspiration for \
+this essay comes from. Boy, do people drink there! I was at a very famous pub \
+in Oxford, called Turf Tavern (where allegedly, an Australian Prime Minster \
+broke a Guinness World Record chugging ale). Here, I witnessed an interesting \
+conversation. Two gentlemen were talking about getting home. \
+\[OpenCurlyDoubleQuote]I can drive in a little bit when I\[CloseCurlyQuote]ve \
+sobered up.\[CloseCurlyDoubleQuote] he said, and that got me thinking. \
+Exactly how long would it take that particular gentleman to \
+\[OpenCurlyDoubleQuote]sober up\[CloseCurlyDoubleQuote] enough to be able to \
+drive safely. I decided to create this for anyone to decide how long it would \
+take. People at bars generally don\[CloseCurlyQuote]t know the exact amount \
+of alcohol they have consumed, so I decided to search the Wolfram Food \
+directory for common alcoholic beverages, here are some popular drinks:\
+\>", "Text",
+ CellChangeTimes->{{3.770582255630558*^9, 3.7705822703754053`*^9}, {
+  3.770582369054654*^9, 
+  3.770582384521098*^9}},ExpressionUUID->"e97ade10-7232-4b6f-b4f3-\
+3579efed2f9e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"alcoholicDrinks", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    TemplateBox[{"\"Martini\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Martini::c6h98\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Martini::c6h98\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Vanilla extract\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"VanillaExtract::6g22f\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"VanillaExtract::6g22f\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Bloody mary\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"BloodyMary::328gx\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"BloodyMary::328gx\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Brandy\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Brandy::q5447\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Brandy::q5447\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Vermouth\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Vermouth::679s2\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Vermouth::679s2\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Cognac\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Cognac::y9462\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Cognac::y9462\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Beer, regular\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"BeerRegular::8x3f9\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"BeerRegular::8x3f9\\\"]\"","\"food\""},
+     "Entity"], ",", " ", 
+    TemplateBox[{"\"Egg nog\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"EggNog::3dwyy\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"EggNog::3dwyy\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Wine mulled\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"WineMulled::2t398\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"WineMulled::2t398\\\"]\"","\"food\""},
+     "Entity"], ",", "\n", 
+    TemplateBox[{"\"Cider (average)\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"CiderAverage::5dtvm\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"CiderAverage::5dtvm\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Gin tonic\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"GinTonic::n5779\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"GinTonic::n5779\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Sangria\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Sangria::xmm5b\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Sangria::xmm5b\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Rum\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Rum::889s3\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Rum::889s3\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Tequila\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Tequila::nb2x5\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Tequila::nb2x5\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{
+     "\"Alcoholic beverage, pina colada, canned\"",RowBox[{"Entity", "[", 
+        RowBox[{
+         "\"Food\"", ",", "\"AlcoholicBeveragePinaColadaCanned::vv7h8\""}], 
+        "]"}],"\"Entity[\\\"Food\\\", \
+\\\"AlcoholicBeveragePinaColadaCanned::vv7h8\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Irish Coffee\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"IrishCoffee::6pv9d\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"IrishCoffee::6pv9d\\\"]\"","\"food\""},
+     "Entity"], ",", 
+    TemplateBox[{"\"Wine, red\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"WineRed::qxm3p\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"WineRed::qxm3p\\\"]\"","\"food\""},
+     "Entity"]}], "}"}]}]], "Code",
+ InitializationCell->False,
+ CellChangeTimes->{{3.7705822990652018`*^9, 3.77058232124965*^9}, {
+  3.770582453531006*^9, 3.7705824592713747`*^9}, {3.770582596424089*^9, 
+  3.770582600606689*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "In[133]:=",ExpressionUUID->"e8e4429b-6163-491b-af83-8ab120447ef5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"\"Martini\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"Martini::c6h98\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"Martini::c6h98\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Vanilla extract\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"VanillaExtract::6g22f\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"VanillaExtract::6g22f\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Bloody mary\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"BloodyMary::328gx\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"BloodyMary::328gx\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Brandy\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"Brandy::q5447\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"Brandy::q5447\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Vermouth\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"Vermouth::679s2\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"Vermouth::679s2\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Cognac\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"Cognac::y9462\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"Cognac::y9462\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Beer, regular\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"BeerRegular::8x3f9\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"BeerRegular::8x3f9\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Egg nog\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"EggNog::3dwyy\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"EggNog::3dwyy\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Wine mulled\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"WineMulled::2t398\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"WineMulled::2t398\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Cider (average)\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"CiderAverage::5dtvm\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"CiderAverage::5dtvm\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Gin tonic\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"GinTonic::n5779\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"GinTonic::n5779\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Sangria\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"Sangria::xmm5b\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"Sangria::xmm5b\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Rum\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"Rum::889s3\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"Rum::889s3\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Tequila\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"Tequila::nb2x5\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"Tequila::nb2x5\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{
+    "\"Alcoholic beverage, pina colada, canned\"",RowBox[{"Entity", "[", 
+       RowBox[{
+        "\"Food\"", ",", "\"AlcoholicBeveragePinaColadaCanned::vv7h8\""}], 
+       "]"}],"\"Entity[\\\"Food\\\", \
+\\\"AlcoholicBeveragePinaColadaCanned::vv7h8\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Irish Coffee\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"IrishCoffee::6pv9d\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"IrishCoffee::6pv9d\\\"]\"","\"food\""},
+    "Entity"], ",", 
+   TemplateBox[{"\"Wine, red\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"WineRed::qxm3p\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"WineRed::qxm3p\\\"]\"","\"food\""},
+    "Entity"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.770582464637388*^9, 3.7705824647381067`*^9}, {
+   3.770659719468248*^9, 3.770659722184648*^9}, {3.7706599170191193`*^9, 
+   3.7706599220500183`*^9}, 3.7706599918258753`*^9, {3.770744866459074*^9, 
+   3.770744876543104*^9}, {3.7707449299563723`*^9, 3.7707449381467743`*^9}, 
+   3.770745221954072*^9, 3.770747758194129*^9, 3.7707479141677227`*^9, 
+   3.770756384852849*^9},
+ CellLabel->
+  "Out[133]=",ExpressionUUID->"4d0a2311-5033-4b47-a8bd-5a7dbb4b35c1"]
+}, Open  ]],
+
+Cell["\<\
+These were \[OpenCurlyDoubleQuote]Food\[CloseCurlyDoubleQuote] entities in \
+the Wolfram Language that have been recently updated (In version 11, there is \
+information on over 40,000 foods). I used the EntityProperty function to \
+extract the food items that have the most amount of alcohol. I then manually \
+selected the drinks that the internet considered to be the most popular. To \
+find the amount of alcohol in each, I used the property \
+\[OpenCurlyDoubleQuote]AlcoholContentPerServing\[CloseCurlyDoubleQuote] which \
+gave the alcohol content in grams for each typical serving size. I visualized \
+it using a bar graph as well.\
+\>", "Text",
+ CellChangeTimes->{{3.770582403551602*^9, 3.770582435740614*^9}, {
+   3.770582618855247*^9, 3.770582625595351*^9}, {3.770591640817587*^9, 
+   3.770591659631091*^9}, {3.77059170977556*^9, 3.770591752448324*^9}, 
+   3.7705917994305687`*^9, {3.770591868812035*^9, 3.770591915020488*^9}, {
+   3.770591956732791*^9, 3.770592006394753*^9}, {3.770643761554544*^9, 
+   3.770643770236349*^9}},ExpressionUUID->"d10e36bd-4e53-4145-830e-\
+082808ccb6fe"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"alcoholicContent", " ", "=", " ", 
+  RowBox[{"EntityValue", "[", 
+   RowBox[{
+   "alcoholicDrinks", ",", "\"\<AlcoholContentPerServing\>\"", ",", 
+    "\"\<EntityAssociation\>\""}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"BarChart", "[", 
+  RowBox[{
+   RowBox[{"Sort", "[", "alcoholicContent", "]"}], ",", " ", 
+   RowBox[{"ChartLabels", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", "Automatic"}], ",", " ", 
+   RowBox[{"BarOrigin", "\[Rule]", " ", "Left"}], ",", " ", 
+   RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "]"}]}], "Code",
+ InitializationCell->False,
+ CellChangeTimes->{3.770582589006155*^9},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "In[134]:=",ExpressionUUID->"97094917-bae8-47f1-a54f-56798c6fce18"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"Martini\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Martini::c6h98\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Martini::c6h98\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"28.7`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Vanilla extract\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"VanillaExtract::6g22f\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"VanillaExtract::6g22f\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"1.4447999999999999`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Bloody mary\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"BloodyMary::328gx\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"BloodyMary::328gx\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"10.5`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Brandy\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Brandy::q5447\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Brandy::q5447\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"32.`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Vermouth\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Vermouth::679s2\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Vermouth::679s2\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"12.`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Cognac\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Cognac::y9462\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Cognac::y9462\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"32.`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Beer, regular\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"BeerRegular::8x3f9\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"BeerRegular::8x3f9\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"4.`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Egg nog\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"EggNog::3dwyy\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"EggNog::3dwyy\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"3.6999999999999997`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Wine mulled\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"WineMulled::2t398\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"WineMulled::2t398\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"2.8000000000000003`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Cider (average)\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"CiderAverage::5dtvm\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"CiderAverage::5dtvm\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"2.7`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Gin tonic\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"GinTonic::n5779\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"GinTonic::n5779\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"4.`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Sangria\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Sangria::xmm5b\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Sangria::xmm5b\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"5.6000000000000005`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Rum\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Rum::889s3\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Rum::889s3\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"39.7`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Tequila\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Tequila::nb2x5\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Tequila::nb2x5\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"38.`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{
+     "\"Alcoholic beverage, pina colada, canned\"",RowBox[{"Entity", "[", 
+        RowBox[{
+         "\"Food\"", ",", "\"AlcoholicBeveragePinaColadaCanned::vv7h8\""}], 
+        "]"}],"\"Entity[\\\"Food\\\", \
+\\\"AlcoholicBeveragePinaColadaCanned::vv7h8\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"2.934`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Irish Coffee\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"IrishCoffee::6pv9d\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"IrishCoffee::6pv9d\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"5.6000000000000005`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Wine, red\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"WineRed::qxm3p\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"WineRed::qxm3p\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"9.9`","\"g\"","grams","\"Grams\""},
+     "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{
+  3.770582591983983*^9, 3.770659719998301*^9, 3.770659919355818*^9, 
+   3.7706599943237677`*^9, {3.77074486688731*^9, 3.770744879290044*^9}, 
+   3.770744934910637*^9, 3.7707452238547373`*^9, 3.770747755855867*^9, 
+   3.770747916252515*^9, 3.770756385901469*^9},
+ CellLabel->
+  "Out[134]=",ExpressionUUID->"7b2034e3-1810-4e33-b2bd-707b09f9d39d"],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {Opacity[0], 
+    PointBox[{{0., 0.21111590575645112`}, {0., 17.450850090618797`}}]}, {{}, 
+    {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+     Thickness[Small]}], 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 0.549149909381203}, {1.4447999999999999`, 
+             1.4508500906187969`}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 196.3046700251889}, {
+            89.23265813100085, 101.46759444147978`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 1.4447999999999999`]& ,
+         TagBoxNote->"1.4447999999999999"],
+        StyleBox["1.4447999999999999`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[1.4447999999999999`, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 1.5491499093812031`}, {2.7, 2.450850090618797}, 
+             "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 207.64618567830152`}, {
+            76.2184250692168, 88.45336137969576}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 2.7]& ,
+         TagBoxNote->"2.7"],
+        StyleBox["2.7`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[2.7, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 2.549149909381203}, {2.8000000000000003`, 
+             3.450850090618797}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 208.54974811083122`}, {
+            63.20419200743279, 75.43912831791172}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 2.8000000000000003`]& ,
+         TagBoxNote->"2.8000000000000003"],
+        StyleBox["2.8000000000000003`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[2.8000000000000003`, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 3.549149909381203}, {2.934, 4.450850090618797}, 
+             "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 209.76052177042098`}, {
+            50.18995894564876, 62.424895256127705`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 2.934]& ,
+         TagBoxNote->"2.934"],
+        StyleBox["2.934`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[2.934, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 4.549149909381203}, {3.6999999999999997`, 
+             5.450850090618797}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 216.6818100035984}, {
+            37.17572588386474, 49.41066219434368}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 3.6999999999999997`]& ,
+         TagBoxNote->"3.6999999999999997"],
+        StyleBox["3.6999999999999997`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[3.6999999999999997`, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 5.549149909381203}, {4., 6.450850090618797}, 
+             "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 219.39249730118746`}, {
+            24.161492822080717`, 36.396429132559646`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 4.]& ,
+         TagBoxNote->"4."],
+        StyleBox["4.`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[4., {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 6.549149909381203}, {4., 7.450850090618797}, 
+             "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 219.39249730118746`}, {
+            11.147259760296691`, 23.38219607077562}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 4.]& ,
+         TagBoxNote->"4."],
+        StyleBox["4.`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[4., {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 7.549149909381203}, {5.6000000000000005`, 
+             8.450850090618797}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 
+            233.84949622166243`}, {-1.8669733014873344`, 
+            10.367963008991595`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 5.6000000000000005`]& ,
+         TagBoxNote->"5.6000000000000005"],
+        StyleBox["5.6000000000000005`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[5.6000000000000005`, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            RectangleBox[{0., 8.549149909381203}, {5.6000000000000005`, 
+             9.450850090618797}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 
+            233.84949622166243`}, {-14.88120636327136, -2.646270052792431}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 5.6000000000000005`]& ,
+         TagBoxNote->"5.6000000000000005"],
+        StyleBox["5.6000000000000005`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[5.6000000000000005`, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 9.549149909381203}, {9.9, 10.450850090618797`}, 
+             "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 
+            272.70268082043896`}, {-27.895439425055386`, \
+-15.660503114576457`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 9.9]& ,
+         TagBoxNote->"9.9"],
+        StyleBox["9.9`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[9.9, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 10.549149909381203`}, {10.5, 
+             11.450850090618797`}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 
+            278.1240554156171}, {-40.909672486839426`, -28.67473617636047}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 10.5]& ,
+         TagBoxNote->"10.5"],
+        StyleBox["10.5`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[10.5, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 11.549149909381203`}, {12., 
+             12.450850090618797`}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 
+            291.6774919035624}, {-53.92390554862344, -41.68896923814451}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 12.]& ,
+         TagBoxNote->"12."],
+        StyleBox["12.`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[12., {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 12.549149909381203`}, {28.7, 
+             13.450850090618797`}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 
+            442.57241813602013`}, {-66.93813861040748, -54.70320229992852}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 28.7]& ,
+         TagBoxNote->"28.7"],
+        StyleBox["28.7`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[28.7, {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 13.549149909381203`}, {32., 
+             14.450850090618797`}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 
+            472.3899784094998}, {-79.95237167219149, -67.71743536171256}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 32.]& ,
+         TagBoxNote->"32."],
+        StyleBox["32.`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[32., {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 14.549149909381203`}, {32., 
+             15.450850090618797`}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 
+            472.3899784094998}, {-92.96660473397553, -80.73166842349657}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 32.]& ,
+         TagBoxNote->"32."],
+        StyleBox["32.`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[32., {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 15.549149909381203`}, {38., 
+             16.450850090618797`}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 
+            526.603724361281}, {-105.98083779575954`, -93.74590148528061}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 38.]& ,
+         TagBoxNote->"38."],
+        StyleBox["38.`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[38., {}], "Tooltip"]& ]}, 
+     {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{Opacity[0.581], 
+      Thickness[Small]}], 
+      TagBox[
+       TooltipBox[
+        TagBox[
+         TagBox[
+          DynamicBox[{
+            FEPrivate`If[
+             CurrentValue["MouseOver"], 
+             EdgeForm[{
+               GrayLevel[0.5], 
+               AbsoluteThickness[1.5], 
+               Opacity[0.66]}], {}, {}], 
+            
+            RectangleBox[{0., 16.549149909381203`}, {39.7, 
+             17.450850090618797`}, "RoundingRadius" -> 0]},
+           
+           ImageSizeCache->{{182.74999999999997`, 
+            541.9642857142857}, {-118.99507085754358`, -106.76013454706462`}}],
+          "DelayedMouseEffectStyle"],
+         StatusArea[#, 39.7]& ,
+         TagBoxNote->"39.7"],
+        StyleBox["39.7`", {}, StripOnInput -> False]],
+       Annotation[#, 
+        Style[39.7, {}], "Tooltip"]& ]}}, {}, {}}, {}, {}, {}, {}, 
+   StyleBox[
+    StyleBox[{
+      {Thickness[Tiny], 
+       LineBox[{{0., 0.21111590575645112`}, {0., 17.795644774316045`}}], 
+       StyleBox[{}, "GraphicsLabel",
+        StripOnInput->False]}, 
+      StyleBox[{
+        {Thickness[Tiny], 
+         LineBox[{{0., 0.549149909381203}, 
+           Offset[{-6., 0.}, {0., 0.549149909381203}]}], 
+         LineBox[{{0., 17.450850090618797`}, 
+           Offset[{-6., 0.}, {0., 
+            17.450850090618797`}]}], {{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}, {}, {}, {}, {}, {}, {}, {
+           LineBox[{{0., 1.4508500906187969`}, 
+             Offset[{-4., 0.}, {0., 1.4508500906187969`}]}], 
+           LineBox[{{0., 1.5491499093812031`}, 
+             Offset[{-4., 0.}, {0., 1.5491499093812031`}]}], 
+           LineBox[{{0., 2.450850090618797}, 
+             Offset[{-4., 0.}, {0., 2.450850090618797}]}], 
+           LineBox[{{0., 2.549149909381203}, 
+             Offset[{-4., 0.}, {0., 2.549149909381203}]}], 
+           LineBox[{{0., 3.450850090618797}, 
+             Offset[{-4., 0.}, {0., 3.450850090618797}]}], 
+           LineBox[{{0., 3.549149909381203}, 
+             Offset[{-4., 0.}, {0., 3.549149909381203}]}], 
+           LineBox[{{0., 4.450850090618797}, 
+             Offset[{-4., 0.}, {0., 4.450850090618797}]}], 
+           LineBox[{{0., 4.549149909381203}, 
+             Offset[{-4., 0.}, {0., 4.549149909381203}]}], 
+           LineBox[{{0., 5.450850090618797}, 
+             Offset[{-4., 0.}, {0., 5.450850090618797}]}], 
+           LineBox[{{0., 5.549149909381203}, 
+             Offset[{-4., 0.}, {0., 5.549149909381203}]}], 
+           LineBox[{{0., 6.450850090618797}, 
+             Offset[{-4., 0.}, {0., 6.450850090618797}]}], 
+           LineBox[{{0., 6.549149909381203}, 
+             Offset[{-4., 0.}, {0., 6.549149909381203}]}], 
+           LineBox[{{0., 7.450850090618797}, 
+             Offset[{-4., 0.}, {0., 7.450850090618797}]}], 
+           LineBox[{{0., 7.549149909381203}, 
+             Offset[{-4., 0.}, {0., 7.549149909381203}]}], 
+           LineBox[{{0., 8.450850090618797}, 
+             Offset[{-4., 0.}, {0., 8.450850090618797}]}], 
+           LineBox[{{0., 8.549149909381203}, 
+             Offset[{-4., 0.}, {0., 8.549149909381203}]}], 
+           LineBox[{{0., 9.450850090618797}, 
+             Offset[{-4., 0.}, {0., 9.450850090618797}]}], 
+           LineBox[{{0., 9.549149909381203}, 
+             Offset[{-4., 0.}, {0., 9.549149909381203}]}], 
+           LineBox[{{0., 10.450850090618797`}, 
+             Offset[{-4., 0.}, {0., 10.450850090618797`}]}], 
+           LineBox[{{0., 10.549149909381203`}, 
+             Offset[{-4., 0.}, {0., 10.549149909381203`}]}], 
+           LineBox[{{0., 11.450850090618797`}, 
+             Offset[{-4., 0.}, {0., 11.450850090618797`}]}], 
+           LineBox[{{0., 11.549149909381203`}, 
+             Offset[{-4., 0.}, {0., 11.549149909381203`}]}], 
+           LineBox[{{0., 12.450850090618797`}, 
+             Offset[{-4., 0.}, {0., 12.450850090618797`}]}], 
+           LineBox[{{0., 12.549149909381203`}, 
+             Offset[{-4., 0.}, {0., 12.549149909381203`}]}], 
+           LineBox[{{0., 13.450850090618797`}, 
+             Offset[{-4., 0.}, {0., 13.450850090618797`}]}], 
+           LineBox[{{0., 13.549149909381203`}, 
+             Offset[{-4., 0.}, {0., 13.549149909381203`}]}], 
+           LineBox[{{0., 14.450850090618797`}, 
+             Offset[{-4., 0.}, {0., 14.450850090618797`}]}], 
+           LineBox[{{0., 14.549149909381203`}, 
+             Offset[{-4., 0.}, {0., 14.549149909381203`}]}], 
+           LineBox[{{0., 15.450850090618797`}, 
+             Offset[{-4., 0.}, {0., 15.450850090618797`}]}], 
+           LineBox[{{0., 15.549149909381203`}, 
+             Offset[{-4., 0.}, {0., 15.549149909381203`}]}], 
+           LineBox[{{0., 16.450850090618797`}, 
+             Offset[{-4., 0.}, {0., 16.450850090618797`}]}], 
+           LineBox[{{0., 16.549149909381203`}, 
+             Offset[{-4., 0.}, {0., 16.549149909381203`}]}]}, {}}}, 
+        StyleBox[
+         {Thickness[Tiny], InsetBox[
+           InterpretationBox["\<\"Vanilla extract\"\>",
+            Entity["Food", "VanillaExtract::6g22f"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 1.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Cider (average)\"\>",
+            Entity["Food", "CiderAverage::5dtvm"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 2.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Wine mulled\"\>",
+            Entity["Food", "WineMulled::2t398"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 3.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Alcoholic beverage, pina colada, canned\"\>",
+            Entity["Food", "AlcoholicBeveragePinaColadaCanned::vv7h8"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 4.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Egg nog\"\>",
+            Entity["Food", "EggNog::3dwyy"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 5.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Beer, regular\"\>",
+            Entity["Food", "BeerRegular::8x3f9"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 6.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Gin tonic\"\>",
+            Entity["Food", "GinTonic::n5779"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 7.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Sangria\"\>",
+            Entity["Food", "Sangria::xmm5b"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 8.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Irish Coffee\"\>",
+            Entity["Food", "IrishCoffee::6pv9d"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 9.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Wine, red\"\>",
+            Entity["Food", "WineRed::qxm3p"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 10.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Bloody mary\"\>",
+            Entity["Food", "BloodyMary::328gx"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 11.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Vermouth\"\>",
+            Entity["Food", "Vermouth::679s2"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 12.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Martini\"\>",
+            Entity["Food", "Martini::c6h98"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 13.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Brandy\"\>",
+            Entity["Food", "Brandy::q5447"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 14.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Cognac\"\>",
+            Entity["Food", "Cognac::y9462"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 15.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Tequila\"\>",
+            Entity["Food", "Tequila::nb2x5"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 16.}], {1, 0}, 
+           Automatic, {1, 0}], InsetBox[
+           InterpretationBox["\<\"Rum\"\>",
+            Entity["Food", "Rum::889s3"],
+            BaseStyle->"Entity"], Offset[{-2, 0}, {0., 17.}], {1, 0}, 
+           Automatic, {1, 0}]}, "GraphicsLabel",
+         StripOnInput->False]}, "GraphicsTicks",
+       StripOnInput->False]},
+     Antialiasing->False], "GraphicsAxes",
+    StripOnInput->False]},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, False},
+  AxesLabel->{
+    FormBox[
+     TooltipBox[
+      StyleBox["\"g\"", ShowStringCharacters -> False], "Grams"], 
+     TraditionalForm], None},
+  AxesOrigin->{0., 0.21111590575645112`},
+  CoordinatesToolOptions:>{"DisplayFunction" -> ({
+      Identity[
+       Part[#, 1]], 
+      Identity[
+       Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+      Identity[
+       Part[#, 1]], 
+      Identity[
+       Part[#, 2]]}& )},
+  DisplayFunction->Identity,
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImageSize->Large,
+  PlotRange->{{All, All}, {All, All}},
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.05]}, {
+     Scaled[0.02], 
+     Scaled[0.02]}},
+  Ticks->{Automatic, None}]], "Output",
+ CellChangeTimes->{
+  3.770582591983983*^9, 3.770659719998301*^9, 3.770659919355818*^9, 
+   3.7706599943237677`*^9, {3.77074486688731*^9, 3.770744879290044*^9}, 
+   3.770744934910637*^9, 3.7707452238547373`*^9, 3.770747755855867*^9, 
+   3.770747916252515*^9, 3.7707563862953377`*^9},
+ CellLabel->
+  "Out[135]=",ExpressionUUID->"4ac56263-e0d0-4144-9d32-bbfb4423ede3"]
+}, Open  ]],
+
+Cell["\<\
+In order to drink and then drive, you need to have BAC (Blood Alcohol \
+Content) below 0.08%. This value still seems a little high to me, even at \
+0.08%, there are several prominent effects of alcohol. Even more surprising \
+was the value in Canada, which was 0.15%. About 40% causes death, just for \
+reference. To calculate BAC, you need a couple of things. I used the \
+\[OpenCurlyDoubleQuote]Quantity\[CloseCurlyDoubleQuote] feature in Wolfram \
+Language to assign units to my values throughout this essay. Here is my \
+information, with units (feel free to replace it with yours):\
+\>", "Text",
+ CellChangeTimes->{{3.770582853920555*^9, 3.7705828730223*^9}, {
+  3.7705829241370907`*^9, 3.770582950064891*^9}, {3.770586520993882*^9, 
+  3.7705865260143423`*^9}, {3.7705887398704987`*^9, 3.770588746073627*^9}, {
+  3.7705920291109056`*^9, 3.7705921305804167`*^9}, {3.770592302330172*^9, 
+  3.770592309728436*^9}},ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-\
+514168b99e2a"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"$AllowedBAC", " ", "=", " ", "0.0008"}], ";"}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"bodyweight", " ", "=", " ", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{"191", ",", " ", "\"\<Pounds\>\""}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"gender", " ", "=", " ", "\"\<male\>\""}], ";"}]}], "Code",
+ InitializationCell->False,
+ CellChangeTimes->{
+  3.770582803167408*^9, {3.770583105600564*^9, 3.770583106372737*^9}, {
+   3.770583356491271*^9, 3.7705833576480637`*^9}, {3.770583500293168*^9, 
+   3.770583519920375*^9}, {3.770583891331833*^9, 3.7705838926094933`*^9}, {
+   3.77058396912465*^9, 3.7705839780113*^9}, {3.7705865384813423`*^9, 
+   3.770586551845083*^9}, {3.7705866065960503`*^9, 3.770586611447405*^9}, {
+   3.7705866447311907`*^9, 3.770586655454475*^9}, {3.770586691225238*^9, 
+   3.770586693612587*^9}, {3.7706595208654633`*^9, 3.7706596008768997`*^9}, {
+   3.770659640031115*^9, 3.770659694226856*^9}, {3.770659739478939*^9, 
+   3.770659803091745*^9}, {3.770659871311101*^9, 3.770659872325336*^9}, {
+   3.770744829197481*^9, 3.770744872993104*^9}, {3.7707471948707952`*^9, 
+   3.7707471971154213`*^9}, {3.7707563631061783`*^9, 3.77075636807205*^9}, {
+   3.770756473714302*^9, 3.770756491916136*^9}, {3.770756524843953*^9, 
+   3.770756525357532*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "In[190]:=",ExpressionUUID->"281aa690-bc33-4ae5-a68b-60853be1652c"],
+
+Cell["\<\
+To figure out how much I can drink for each specific drink and still drive, I \
+can do the following, where howManyDrinks is a function, for which the \
+definition appears later. Oh no! I can only drink 22 servings of vanilla \
+extract! That is good to know. \
+\>", "Text",
+ CellChangeTimes->{{3.7705874745404243`*^9, 3.770587497926798*^9}, {
+  3.770587549230391*^9, 3.770587550131415*^9}, {3.770588638701255*^9, 
+  3.770588699402087*^9}, {3.770588763574131*^9, 3.770588768656766*^9}, {
+  3.770592143046364*^9, 3.770592144430695*^9}, {3.770592187360084*^9, 
+  3.7705922227250834`*^9}},ExpressionUUID->"037bf003-31b2-4646-9358-\
+64fe6ade9ac4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"howManyDrinks", "[", 
+   RowBox[{"bodyweight_", ",", "drinktype_", ",", "gender_"}], "]"}], ":=", 
+  " ", 
+  InterpretationBox[
+   DynamicModuleBox[{Typeset`open = False}, 
+    TemplateBox[{"Expression",RowBox[{"Quantity", "[", 
+        DynamicBox[
+         FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+      GridBox[{{
+         RowBox[{
+           TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+           TagBox["704", "IconizedItem"]}]}}, 
+       GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+       "Column", 
+       GridBoxItemSize -> {
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+      Typeset`open]},
+     "IconizedObject"]],
+   Quantity[($CellContext`$AllowedBAC 
+     QuantityMagnitude[$CellContext`bodyweight]) 
+    If[$CellContext`gender === "male", 0.73, 0.66]/((
+     QuantityMagnitude[$CellContext`drinktype] 5.14) 0.035274), "drinks"],
+   SelectWithContents->True,
+   Selectable->False]}], "\n", 
+ RowBox[{"numberofdrinksGeneral", "=", 
+  RowBox[{"AssociationThread", "[", 
+   RowBox[{
+    RowBox[{"Keys", "[", "alcoholicContent", "]"}], ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"howManyDrinks", "[", 
+       RowBox[{"bodyweight", ",", "#", ",", "gender"}], "]"}], "&"}], "/@", 
+     RowBox[{"Values", "[", "alcoholicContent", "]"}]}]}], "]"}]}]}], "Code",
+ InitializationCell->False,
+ CellChangeTimes->{
+  3.7705875266910973`*^9, {3.770747030260481*^9, 3.770747045059889*^9}, {
+   3.7707471447008333`*^9, 3.770747295413538*^9}, {3.7707473531004972`*^9, 
+   3.770747422326977*^9}, 3.770747935318207*^9, {3.770756459949443*^9, 
+   3.770756470261455*^9}, {3.770756657205165*^9, 3.77075666290932*^9}, {
+   3.770756710310401*^9, 3.770756728791095*^9}, 3.7707567706657143`*^9},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "In[199]:=",ExpressionUUID->"2f000637-9550-4df6-b568-4db6993bc167"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"Martini\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Martini::c6h98\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Martini::c6h98\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.02143613522646217`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Vanilla extract\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"VanillaExtract::6g22f\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"VanillaExtract::6g22f\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.4258147016884443`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Bloody mary\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"BloodyMary::328gx\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"BloodyMary::328gx\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.05859210295232992`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Brandy\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Brandy::q5447\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Brandy::q5447\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.019225533781233258`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Vermouth\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Vermouth::679s2\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Vermouth::679s2\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.05126809008328869`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Cognac\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Cognac::y9462\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Cognac::y9462\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.019225533781233258`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Beer, regular\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"BeerRegular::8x3f9\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"BeerRegular::8x3f9\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.15380427024986607`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Egg nog\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"EggNog::3dwyy\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"EggNog::3dwyy\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.16627488675661195`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Wine mulled\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"WineMulled::2t398\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"WineMulled::2t398\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.2197203860712372`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Cider (average)\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"CiderAverage::5dtvm\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"CiderAverage::5dtvm\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.22785817814794967`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Gin tonic\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"GinTonic::n5779\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"GinTonic::n5779\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.15380427024986607`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Sangria\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Sangria::xmm5b\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Sangria::xmm5b\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.1098601930356186`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Rum\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Rum::889s3\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Rum::889s3\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.015496651914344187`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Tequila\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"Tequila::nb2x5\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"Tequila::nb2x5\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.016189923184196427`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{
+     "\"Alcoholic beverage, pina colada, canned\"",RowBox[{"Entity", "[", 
+        RowBox[{
+         "\"Food\"", ",", "\"AlcoholicBeveragePinaColadaCanned::vv7h8\""}], 
+        "]"}],"\"Entity[\\\"Food\\\", \
+\\\"AlcoholicBeveragePinaColadaCanned::vv7h8\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.20968544001345066`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Irish Coffee\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"IrishCoffee::6pv9d\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"IrishCoffee::6pv9d\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.1098601930356186`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Wine, red\"",RowBox[{"Entity", "[", 
+        RowBox[{"\"Food\"", ",", "\"WineRed::qxm3p\""}], "]"}],
+      "\"Entity[\\\"Food\\\", \\\"WineRed::qxm3p\\\"]\"","\"food\""},
+     "Entity"], "\[Rule]", 
+    TemplateBox[{"0.06214313949489538`","\"drinks\"","drinks","\"Drinks\""},
+     "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{
+  3.7705875286876593`*^9, 3.770659721035448*^9, {3.77065992041276*^9, 
+   3.770659972057399*^9}, {3.770660008924922*^9, 3.7706600203073378`*^9}, {
+   3.7707448676566343`*^9, 3.770744883410185*^9}, 3.770744936041792*^9, 
+   3.770745225300702*^9, 3.770747267530911*^9, 3.77074729965696*^9, {
+   3.770747361341558*^9, 3.770747392682158*^9}, 3.770747423130237*^9, 
+   3.7707477518017073`*^9, {3.770747920004931*^9, 3.770747936918145*^9}, {
+   3.770756376981328*^9, 3.77075639350578*^9}, {3.77075648005966*^9, 
+   3.770756496198145*^9}, 3.770756537767139*^9, 3.7707565792073174`*^9, 
+   3.7707566665630627`*^9, {3.770756718272727*^9, 3.770756730856698*^9}, 
+   3.770756773979422*^9},
+ CellLabel->
+  "Out[200]=",ExpressionUUID->"c45444db-ce4e-40a7-a556-53cd0a9ea065"]
+}, Open  ]],
+
+Cell["\<\
+Surprised? Don\[CloseCurlyQuote]t be, it makes sense. Even a small amount of \
+alcohol upsets your system! I also need some information on how much I\
+\[CloseCurlyQuote]ve been drinking and what I\[CloseCurlyQuote]ve been \
+drinking. The type of drink can be entered using free-form input (just type \
+it in after ctrl+=), or the entity can easily be copy-pasted from anywhere \
+above. \
+\>", "Text",
+ CellChangeTimes->{{3.770586561783024*^9, 3.770586583781509*^9}, {
+  3.77059222748638*^9, 3.770592274491737*^9}, {3.770643822370459*^9, 
+  3.770643825455817*^9}, {3.7707567404186068`*^9, 
+  3.770756761705565*^9}},ExpressionUUID->"1fb88b02-fc55-4f38-8a94-\
+b59825a860d5"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"drinktype", " ", "=", " ", 
+   TemplateBox[{"\"Martini\"",RowBox[{"Entity", "[", 
+       RowBox[{"\"Food\"", ",", "\"Martini::c6h98\""}], "]"}],
+     "\"Entity[\\\"Food\\\", \\\"Martini::c6h98\\\"]\"","\"food\""},
+    "Entity"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"numberofdrinks", " ", "=", " ", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{"3", ",", "\"\<drinks\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"timepassed", " ", "=", " ", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{"1", ",", "\"\<hour\>\""}], "]"}]}], ";"}]}], "Code",
+ InitializationCell->False,
+ CellChangeTimes->{{3.7705865933580437`*^9, 3.770586621898327*^9}, {
+  3.770586668302327*^9, 3.770586684532022*^9}, {3.770586990009568*^9, 
+  3.7705870196426277`*^9}, {3.770587175088025*^9, 3.770587175401863*^9}, {
+  3.7706601005099077`*^9, 3.770660104747213*^9}, {3.770660185166313*^9, 
+  3.770660187695424*^9}, {3.770660220927803*^9, 3.770660229800684*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "In[185]:=",ExpressionUUID->"79ed4d3a-cba6-431a-88e4-741a1817ee82"],
+
+Cell["\<\
+Now, with that information lets find out if you can drive! calculateBAC is a \
+function that takes in the previous parameters and figures out the BAC level. \
+canIDriveQ answers our question. \
+\>", "Text",
+ CellChangeTimes->{{3.770586287427122*^9, 3.770586333428841*^9}, {
+  3.770586810513852*^9, 
+  3.7705868449839487`*^9}},ExpressionUUID->"12611204-9c69-4e18-8d81-\
+2545ecfaec5e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"calculateBAC", "[", 
+    RowBox[{
+    "bodyweight_", ",", "drinktype_", ",", " ", "numberofdrinks_", ",", 
+     "gender_", ",", "timepassed_"}], "]"}], ":=", " ", 
+   RowBox[{
+    InterpretationBox[
+     DynamicModuleBox[{Typeset`open = False}, 
+      TemplateBox[{"Expression",RowBox[{"Times", "[", 
+          DynamicBox[
+           FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+        GridBox[{{
+           RowBox[{
+             TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+             TagBox["680", "IconizedItem"]}]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+        Typeset`open]},
+       "IconizedObject"]],
+     ((QuantityMagnitude[
+         EntityValue[$CellContext`drinktype, "AlcoholContentPerServing"]] 
+       0.035274) QuantityMagnitude[$CellContext`numberofdrinks]) (5.14/(
+      QuantityMagnitude[$CellContext`bodyweight] 
+      If[$CellContext`gender === "male", 0.73, 0.66])),
+     SelectWithContents->True,
+     Selectable->False], "-", 
+    InterpretationBox[
+     DynamicModuleBox[{Typeset`open = False}, 
+      TemplateBox[{"Expression",RowBox[{"Times", "[", 
+          DynamicBox[
+           FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+        GridBox[{{
+           RowBox[{
+             TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+             TagBox["120", "IconizedItem"]}]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+        Typeset`open]},
+       "IconizedObject"]],
+     0.015 QuantityMagnitude[$CellContext`timepassed],
+     SelectWithContents->True,
+     Selectable->False]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"canIDriveQ", "[", "bac_", "]"}], ":=", " ", 
+   InterpretationBox[
+    DynamicModuleBox[{Typeset`open = False}, 
+     TemplateBox[{"Expression",RowBox[{"If", "[", 
+         DynamicBox[
+          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+       GridBox[{{
+          RowBox[{
+            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            
+            TagBox["184", "IconizedItem"]}]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+       Typeset`open]},
+      "IconizedObject"]],
+    If[$CellContext`bac <= $CellContext`$AllowedBAC, "Yes", "No"],
+    SelectWithContents->True,
+    Selectable->False]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"BAC", " ", "=", " ", 
+   RowBox[{"calculateBAC", "[", 
+    RowBox[{
+    "bodyweight", ",", "drinktype", ",", " ", "numberofdrinks", ",", " ", 
+     "gender", ",", " ", "timepassed"}], "]"}]}], ";"}], "\n", 
+ RowBox[{"canIDriveQ", "[", "BAC", "]"}]}], "Code",
+ InitializationCell->False,
+ CellChangeTimes->{{3.770586742740987*^9, 3.7705867584907217`*^9}, {
+   3.77058678862635*^9, 3.7705867947512283`*^9}, {3.770586848598895*^9, 
+   3.770586966403871*^9}, {3.770587027348384*^9, 3.7705870914636383`*^9}, {
+   3.770587122681159*^9, 3.770587165551326*^9}, {3.77074519868785*^9, 
+   3.770745203415391*^9}, {3.770747187577155*^9, 3.770747189220789*^9}, 
+   3.7707472285888844`*^9, {3.7707474362682543`*^9, 3.770747484943316*^9}, {
+   3.7707475155415373`*^9, 3.770747594338024*^9}, {3.7707476888475533`*^9, 
+   3.7707476995694447`*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "In[181]:=",ExpressionUUID->"04405d0a-959f-42af-808c-aa28d888ecd2"],
+
+Cell[BoxData["\<\"No\"\>"], "Output",
+ CellChangeTimes->{{3.770586963753179*^9, 3.770587013740533*^9}, 
+   3.7705871317932243`*^9, {3.77058716953399*^9, 3.77058717759202*^9}, 
+   3.77065972162016*^9, 3.770659921623713*^9, {3.7707448689815187`*^9, 
+   3.770744889428791*^9}, 3.77074493748453*^9, 3.770745226661364*^9, 
+   3.770747430083688*^9, 3.7707474892120028`*^9, {3.770747520016651*^9, 
+   3.770747575452704*^9}, 3.770747693626853*^9, 3.770747748253433*^9, 
+   3.770747942326331*^9, 3.7707565033105907`*^9, {3.7707565483568068`*^9, 
+   3.770756574845702*^9}},
+ CellLabel->
+  "Out[184]=",ExpressionUUID->"0a586cd9-01a2-43b2-aa60-be2534624f05"]
+}, Open  ]],
+
+Cell["\<\
+Okay, now you realize you can\[CloseCurlyQuote]t drive. How long should you \
+wait until you can? howMuchLonger is a function that lets you know. \
+\>", "Text",
+ CellChangeTimes->{
+  3.7705863847014093`*^9, 3.7705871822711077`*^9, {3.770587300566887*^9, 
+   3.7705873092281637`*^9}, 
+   3.770592325007951*^9},ExpressionUUID->"d0cb4cde-08e0-442b-a199-\
+0234a318a855"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"howMuchLonger", "[", 
+   RowBox[{
+   "bodyweight_", ",", "drinktype_", ",", " ", "numberofdrinks_", ",", 
+    "gender_", ",", "timepassed_"}], "]"}], ":=", " ", 
+  InterpretationBox[
+   DynamicModuleBox[{Typeset`open = False}, 
+    TemplateBox[{"Expression",RowBox[{"Quantity", "[", 
+        DynamicBox[
+         FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}],
+      GridBox[{{
+         RowBox[{
+           TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+           TagBox["2688", "IconizedItem"]}]}}, 
+       GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+       "Column", 
+       GridBoxItemSize -> {
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],Dynamic[
+      Typeset`open]},
+     "IconizedObject"]],
+   Quantity[
+    If[(((QuantityMagnitude[
+             EntityValue[$CellContext`drinktype, "AlcoholContentPerServing"]] 
+           0.035274) QuantityMagnitude[$CellContext`numberofdrinks]) 5.14/(
+         QuantityMagnitude[$CellContext`bodyweight] 
+         If[$CellContext`gender === "male", 0.73, 
+           0.66]) - $CellContext`$AllowedBAC)/0.015 - 
+      QuantityMagnitude[$CellContext`timepassed] > 0, (((QuantityMagnitude[
+            EntityValue[$CellContext`drinktype, "AlcoholContentPerServing"]] 
+          0.035274) QuantityMagnitude[$CellContext`numberofdrinks]) 5.14/(
+        QuantityMagnitude[$CellContext`bodyweight] 
+        If[$CellContext`gender === "male", 0.73, 
+          0.66]) - $CellContext`$AllowedBAC)/0.015 - 
+     QuantityMagnitude[$CellContext`timepassed], 0], "hours"],
+   SelectWithContents->True,
+   Selectable->False]}], "\n", 
+ RowBox[{"howMuchLonger", "[", 
+  RowBox[{
+  "bodyweight", ",", "drinktype", ",", "numberofdrinks", ",", "gender", ",", 
+   "timepassed"}], "]"}]}], "Code",
+ InitializationCell->False,
+ CellChangeTimes->{{3.770587210381302*^9, 3.7705873818837833`*^9}, 
+   3.770745205690441*^9, {3.770747582525182*^9, 3.770747668404614*^9}, 
+   3.7707477405030212`*^9, {3.77075655492299*^9, 3.77075656741004*^9}},
+ Background->GrayLevel[0.85],
+ CellLabel->
+  "In[179]:=",ExpressionUUID->"36f9df9a-6089-4673-b44a-07d5b1f8ee86"],
+
+Cell[BoxData[
+ TemplateBox[{"6.410698699945012`","\"h\"","hours","\"Hours\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{
+  3.770587328424901*^9, 3.770587384398694*^9, 3.7706597219057293`*^9, 
+   3.770659921917348*^9, {3.77074486943911*^9, 3.770744898440466*^9}, {
+   3.7707449379049807`*^9, 3.7707449609970617`*^9}, 3.7707452269435997`*^9, {
+   3.7707475787037153`*^9, 3.770747580278079*^9}, 3.770747622678773*^9, {
+   3.770747743524068*^9, 3.77074774573598*^9}, 3.770747944168036*^9, 
+   3.770756506304369*^9, {3.770756550852811*^9, 3.770756570840599*^9}},
+ CellLabel->
+  "Out[180]=",ExpressionUUID->"ca3728be-75d9-425f-8251-2973b374e359"]
+}, Open  ]],
+
+Cell["\<\
+Yes! It takes that long. So you think you might have \
+\[OpenCurlyDoubleQuote]sobered up\[CloseCurlyDoubleQuote] but guess what, the \
+breathalyzer will not. Regardless of this what this article says, drinking \
+and driving is NOT a joke. Just call an Uber! Public Transport! Walk! Wait! \
+Don\[CloseCurlyQuote]t drink! Its not that hard to save money, and some lives \
+too. Also, you may not realize it, but you could still very much be under the \
+influence. Slow reaction time, lack of coordination, reduced concentration, \
+decreased vision, and inhibition of judgement is only a little bit of what \
+alcohol will do to you. This is also a very common issue, alcohol-related \
+vehicle crashes make up $44 million every year. That is $44 million that \
+could be used for research in science! Also, if you are in high school, \
+please do not drink and drive. In 2011, over 1 million students admitted to \
+drinking and driving. That is just not acceptable at all. Use this tool, \
+wait, or drink less, and be safe! \
+\>", "Text",
+ CellChangeTimes->{{3.770586413129643*^9, 3.770586441456712*^9}, {
+  3.7705874104698668`*^9, 3.7705874414465218`*^9}, {3.7705912287165318`*^9, 
+  3.770591238172739*^9}, {3.770591272935774*^9, 3.770591348746229*^9}, {
+  3.770591396309957*^9, 3.770591457055241*^9}, {3.770591492654604*^9, 
+  3.7705915999525948`*^9}},ExpressionUUID->"b4524fe3-d897-4876-8cee-\
+27d6955345ec"],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.770586450211026*^9, 3.770586473966776*^9}, 
+   3.770591570766325*^9},ExpressionUUID->"50fcf438-7984-4e2b-b20f-\
+0298625b26d5"]
 }, Open  ]]
 },
-WindowSize->{720, 855},
-WindowMargins->{{360, Automatic}, {Automatic, 0}},
+WindowSize->{1440, 794},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 DockedCells->{
   Cell[
    TextData[{
@@ -55,8 +1540,7 @@ DockedCells->{
       RGBColor[0.97, 0.83, 0.35], FontFamily -> "Source Sans Pro", FontSize -> 
       40]}], CellFrameMargins -> 10, Background -> 
    RGBColor[0.12, 0.14, 0.15]]},
-FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
-2018)",
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 11, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -65,21 +1549,60 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "Title"->{
-  Cell[580, 22, 461, 10, 160, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
+  Cell[580, 22, 336, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
    CellTags->"Title"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Title", 2195, 66}
+ {"Title", 67611, 1550}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 461, 10, 160, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
+Cell[580, 22, 336, 4, 98, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
  CellTags->"Title"],
-Cell[1044, 34, 364, 6, 35, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"]
+Cell[919, 28, 429, 6, 38, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
+Cell[1351, 36, 1175, 18, 104, "Text",ExpressionUUID->"e97ade10-7232-4b6f-b4f3-3579efed2f9e"],
+Cell[CellGroupData[{
+Cell[2551, 58, 4175, 81, 90, "Code",ExpressionUUID->"e8e4429b-6163-491b-af83-8ab120447ef5",
+ InitializationCell->False],
+Cell[6729, 141, 4227, 81, 75, "Output",ExpressionUUID->"4d0a2311-5033-4b47-a8bd-5a7dbb4b35c1"]
+}, Open  ]],
+Cell[10971, 225, 1102, 17, 81, "Text",ExpressionUUID->"d10e36bd-4e53-4145-830e-082808ccb6fe"],
+Cell[CellGroupData[{
+Cell[12098, 246, 767, 17, 72, "Code",ExpressionUUID->"97094917-bae8-47f1-a54f-56798c6fce18",
+ InitializationCell->False],
+Cell[12868, 265, 5964, 131, 77, "Output",ExpressionUUID->"7b2034e3-1810-4e33-b2bd-707b09f9d39d"],
+Cell[18835, 398, 24750, 621, 268, "Output",ExpressionUUID->"4ac56263-e0d0-4144-9d32-bbfb4423ede3"]
+}, Open  ]],
+Cell[43600, 1022, 983, 15, 81, "Text",ExpressionUUID->"928b5eca-fe32-4fe7-b4b4-514168b99e2a"],
+Cell[44586, 1039, 1419, 27, 110, "Code",ExpressionUUID->"281aa690-bc33-4ae5-a68b-60853be1652c",
+ InitializationCell->False],
+Cell[46008, 1068, 652, 11, 58, "Text",ExpressionUUID->"037bf003-31b2-4646-9358-64fe6ade9ac4"],
+Cell[CellGroupData[{
+Cell[46685, 1083, 1932, 44, 79, "Code",ExpressionUUID->"2f000637-9550-4df6-b568-4db6993bc167",
+ InitializationCell->False],
+Cell[48620, 1129, 6694, 137, 138, "Output",ExpressionUUID->"c45444db-ce4e-40a7-a556-53cd0a9ea065"]
+}, Open  ]],
+Cell[55329, 1269, 681, 12, 58, "Text",ExpressionUUID->"1fb88b02-fc55-4f38-8a94-b59825a860d5"],
+Cell[56013, 1283, 1111, 24, 101, "Code",ExpressionUUID->"79ed4d3a-cba6-431a-88e4-741a1817ee82",
+ InitializationCell->False],
+Cell[57127, 1309, 393, 8, 35, "Text",ExpressionUUID->"12611204-9c69-4e18-8d81-2545ecfaec5e"],
+Cell[CellGroupData[{
+Cell[57545, 1321, 3798, 88, 123, "Code",ExpressionUUID->"04405d0a-959f-42af-808c-aa28d888ecd2",
+ InitializationCell->False],
+Cell[61346, 1411, 646, 10, 34, "Output",ExpressionUUID->"0a586cd9-01a2-43b2-aa60-be2534624f05"]
+}, Open  ]],
+Cell[62007, 1424, 376, 8, 35, "Text",ExpressionUUID->"d0cb4cde-08e0-442b-a199-0234a318a855"],
+Cell[CellGroupData[{
+Cell[62408, 1436, 2189, 47, 79, "Code",ExpressionUUID->"36f9df9a-6089-4673-b44a-07d5b1f8ee86",
+ InitializationCell->False],
+Cell[64600, 1485, 644, 11, 36, "Output",ExpressionUUID->"ca3728be-75d9-425f-8251-2973b374e359"]
+}, Open  ]],
+Cell[65259, 1499, 1414, 21, 127, "Text",ExpressionUUID->"b4524fe3-d897-4876-8cee-27d6955345ec"],
+Cell[66676, 1522, 165, 3, 35, "Text",ExpressionUUID->"50fcf438-7984-4e2b-b20f-0298625b26d5"]
 }, Open  ]]
 }
 ]
