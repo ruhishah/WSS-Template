@@ -1,0 +1,2225 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     89922,       2216]
+NotebookOptionsPosition[     85054,       2065]
+NotebookOutlinePosition[     86646,       2115]
+CellTagsIndexPosition[     86318,       2103]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Quantum Teleportation", "DemoTitle",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.475585775213468*^9, 3.475585778258403*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["", "InitializationSection"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"x", "=", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"0", "1"},
+      {"1", "0"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"z", "=", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"1", "0"},
+      {"0", 
+       RowBox[{"-", "1"}]}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"identity", "=", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"1", "0"},
+      {"0", "1"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"cnot", "=", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"1", "0", "0", "0"},
+      {"0", "1", "0", "0"},
+      {"0", "0", "0", "1"},
+      {"0", "0", "1", "0"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"hadamard", "=", 
+   RowBox[{
+    FractionBox["1", 
+     SqrtBox["2"]], 
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"1", "1"},
+       {"1", 
+        RowBox[{"-", "1"}]}
+      }], "\[NoBreak]", ")"}]}]}], ";", 
+  RowBox[{"bellIn", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "2", "]"}]}], ",", "0", ",", "0", ",", 
+     RowBox[{"1", "/", 
+      RowBox[{"Sqrt", "[", "2", "]"}]}]}], "}"}]}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.475842713359104*^9, 3.4758427196929474`*^9}},
+ CellID->1291586896],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"measurement", "[", 
+    RowBox[{"q_", ",", "measure_"}], "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"measure", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", "0"}], " ", "&&", " ", 
+      RowBox[{
+       RowBox[{"measure", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", "0"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"q", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "*", "2"}], ",", 
+       RowBox[{
+        RowBox[{"q", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "*", "2"}]}], "\[IndentingNewLine]", 
+      "}"}], ",", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"measure", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", "0"}], " ", "&&", " ", 
+        RowBox[{
+         RowBox[{"measure", "[", 
+          RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", "1"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"q", "[", 
+           RowBox[{"[", "3", "]"}], "]"}], "*", "2"}], ",", 
+         RowBox[{
+          RowBox[{"q", "[", 
+           RowBox[{"[", "4", "]"}], "]"}], "*", "2"}]}], "}"}], ",", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"measure", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", "1"}], " ", "&&", " ", 
+          RowBox[{
+           RowBox[{"measure", "[", 
+            RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", "0"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"q", "[", 
+             RowBox[{"[", "5", "]"}], "]"}], "*", "2"}], ",", 
+           RowBox[{
+            RowBox[{"q", "[", 
+             RowBox[{"[", "6", "]"}], "]"}], "*", "2"}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"q", "[", 
+             RowBox[{"[", "7", "]"}], "]"}], "*", "2"}], ",", 
+           RowBox[{
+            RowBox[{"q", "[", 
+             RowBox[{"[", "8", "]"}], "]"}], "*", "2"}]}], "}"}]}], "]"}]}], 
+      "]"}]}], "]"}]}], ";"}]], "Input",
+ InitializationCell->True,
+ CellID->121348847]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ManipulateSection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"qubitIn", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        RowBox[{
+         RowBox[{"qubit", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "/", "2"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"Sin", "[", 
+         RowBox[{
+          RowBox[{"qubit", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "/", "2"}], "]"}], "*", 
+        RowBox[{"\[ExponentialE]", "^", 
+         RowBox[{"(", 
+          RowBox[{"\[ImaginaryI]", "*", 
+           RowBox[{"qubit", "[", 
+            RowBox[{"[", "2", "]"}], "]"}]}], ")"}]}]}]}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"noop", "=", 
+     RowBox[{"Flatten", "[", 
+      RowBox[{"KroneckerProduct", "[", 
+       RowBox[{"qubitIn", ",", "bellIn"}], "]"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"cnotBox", "=", 
+     RowBox[{
+      RowBox[{"KroneckerProduct", "[", 
+       RowBox[{"cnot", ",", "identity"}], "]"}], ".", "noop"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"hadamardBox", "=", 
+     RowBox[{
+      RowBox[{"KroneckerProduct", "[", 
+       RowBox[{"hadamard", ",", 
+        RowBox[{"KroneckerProduct", "[", 
+         RowBox[{"identity", ",", "identity"}], "]"}]}], "]"}], ".", 
+      "cnotBox"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"postMeasure", "=", 
+     RowBox[{"measurement", "[", 
+      RowBox[{"hadamardBox", ",", "measure"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"xBox", "=", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"measure", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", "1"}], ",", 
+       RowBox[{"x", ".", 
+        RowBox[{"measurement", "[", 
+         RowBox[{"hadamardBox", ",", "measure"}], "]"}]}], ",", 
+       RowBox[{"measurement", "[", 
+        RowBox[{"hadamardBox", ",", "measure"}], "]"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"zBox", "=", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"measure", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "\[Equal]", "1"}], ",", 
+       RowBox[{"z", ".", "xBox"}], ",", "xBox"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"formatMatrix", "[", 
+      RowBox[{"m_", ",", "x_", ",", "y_"}], "]"}], ":=", 
+     RowBox[{"Text", "[", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{
+         RowBox[{"AccountingForm", "[", 
+          RowBox[{
+           RowBox[{"MatrixForm", "[", "m", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1"}], "}"}], ",", 
+           RowBox[{"NumberSigns", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"\"\<-\>\"", ",", "\"\<\>\""}], "}"}]}]}], "]"}], ",", 
+         "13"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], ";", "\[IndentingNewLine]",
+     "\[IndentingNewLine]", 
+    RowBox[{"Graphics", "[", 
+     RowBox[{
+      RowBox[{"{", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+        RowBox[{"FaceForm", "[", "]"}], ",", "Thick", ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Rectangle", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"7.5", ",", 
+            RowBox[{"-", ".5"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"8.5", ",", ".5"}], "}"}]}], "]"}], ",", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<X\>\"", ",", "Italic", ",", "24"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"8", ",", "0"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Rectangle", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"9.5", ",", 
+            RowBox[{"-", ".5"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"10.5", ",", ".5"}], "}"}]}], "]"}], ",", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<Z\>\"", ",", "Italic", ",", "24"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"10", ",", "0"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Rectangle", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"3.5", ",", "5.5"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"4.5", ",", "6.5"}], "}"}]}], "]"}], ",", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<H\>\"", ",", "Italic", ",", "24"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"4", ",", "6"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"FaceForm", "[", "Black", "]"}], ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"1.7", ",", "6"}], "}"}], ",", ".1"}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"1.7", ",", "5.9"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1.7", ",", "2.8"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Circle", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"1.7", ",", "3"}], "}"}], ",", ".2"}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"1.5", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"6", ",", "3"}], "}"}]}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{
+            RowBox[{"Row", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Subscript", "[", 
+                RowBox[{"\"\<|\[Beta]\>\"", ",", "\"\<00\>\""}], "]"}], ",", 
+               "\"\<>=\>\""}], "}"}], "]"}], ",", "10"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "1.75"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{".5", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1.6", ",", "3"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0.5", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"7.5", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"8.5", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"9.5", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"10.5", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"11", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"1", ",", "6"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1.8", ",", "6"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"1.8", ",", "6"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"3.5", ",", "6"}], "}"}]}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"2", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"8", ",", "3"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"4.5", ",", "6"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"10", ",", "6"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"10", ",", "6"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"10", ",", ".5"}], "}"}]}], "}"}], "]"}], ",", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"8", ",", "3"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"8", ",", ".5"}], "}"}]}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"formatMatrix", "[", 
+         RowBox[{"bellIn", ",", "1", ",", "1.7"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"formatMatrix", "[", 
+         RowBox[{"cnotBox", ",", "2.9", ",", "3"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"formatMatrix", "[", 
+         RowBox[{"hadamardBox", ",", "5", ",", "3"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"formatMatrix", "[", 
+         RowBox[{"postMeasure", ",", "7", ",", "1.5"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"formatMatrix", "[", 
+         RowBox[{"xBox", ",", "9", ",", "1.5"}], "]"}], ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", "Red", ",", "Dotted", 
+        ",", "\[IndentingNewLine]", 
+        RowBox[{"Line", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", 
+             RowBox[{"-", "0.5"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", ".4"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"6", ",", ".4"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"6", ",", "2.5"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"11", ",", "2.5"}], "}"}]}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<Alice\>\"", ",", "20"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "4"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<Bob\>\"", ",", "20"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"5.5", ",", 
+            RowBox[{"-", "0.5"}]}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<\[CapitalPsi]\>\"", ",", "20"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"1.2", ",", "5.5"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"formatMatrix", "[", 
+         RowBox[{"qubitIn", ",", "0", ",", "6"}], "]"}], ",", 
+        "\[IndentingNewLine]", "Black", ",", "\[IndentingNewLine]", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<[\[Alpha],\[Beta]]=\>\"", ",", "13"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1.5"}], ",", "6"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", "Red", ",", "\[IndentingNewLine]", 
+        RowBox[{"formatMatrix", "[", 
+         RowBox[{"zBox", ",", "12.3", ",", "0"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<\[CapitalPsi]\>\"", ",", "20"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"11", ",", "0.5"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", "Blue", ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<Measurement\>\"", ",", "20"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"8", ",", "4.5"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{
+            RowBox[{"measure", "[", 
+             RowBox[{"[", "2", "]"}], "]"}], ",", "20"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"8", ",", "3.5"}], "}"}]}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Text", "[", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{
+            RowBox[{"measure", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], ",", "20"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"8", ",", "5.5"}], "}"}]}], "]"}]}], "\[IndentingNewLine]",
+        "\[IndentingNewLine]", "}"}], ",", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "2.5"}], ",", "14"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", "7"}], "}"}]}], "}"}]}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", "600"}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"qubit", ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", "\"\<qubit\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"Pi", ",", 
+       RowBox[{"2", "*", "Pi"}]}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"measure", ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], ",", "\"\<measurement\>\""}], "}"}], 
+     ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"#", "\[Rule]", 
+         RowBox[{"MatrixForm", "[", "#", "]"}]}], ")"}], "&"}], "/@", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "0"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1"}], "}"}]}], "}"}]}]}], "}"}], ",", 
+   RowBox[{"ControlType", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Slider2D", ",", "RadioButtonBar"}], "}"}]}], ",", 
+   RowBox[{"TrackedSymbols", " ", "\[RuleDelayed]", " ", 
+    RowBox[{"{", 
+     RowBox[{"qubit", ",", "measure"}], "}"}]}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.35696210375764*^9, 3.475585171264615*^9, {3.4758425067905593`*^9, 
+   3.4758426079770513`*^9}, {3.4758426981329184`*^9, 
+   3.4758427056992097`*^9}, {3.4758427443886976`*^9, 3.475842805059431*^9}, {
+   3.4758429684899426`*^9, 3.475842968770754*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`measure$$ = {0, 0}, $CellContext`qubit$$ = {
+    0, 0}, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`qubit$$], {0, 0}, "qubit"}, {0, 0}, {Pi, 2 Pi}}, {{
+       Hold[$CellContext`measure$$], {0, 0}, "measurement"}, {{0, 0} -> 
+       MatrixForm[{0, 0}], {0, 1} -> MatrixForm[{0, 1}], {1, 0} -> 
+       MatrixForm[{1, 0}], {1, 1} -> MatrixForm[{1, 1}]}}}, Typeset`size$$ = {
+    600., {143., 148.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`qubit$45793$$ = {0, 
+    0}, $CellContext`measure$45794$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`measure$$ = {0, 
+         0}, $CellContext`qubit$$ = {0, 0}}, "ControllerVariables" :> {
+        Hold[$CellContext`qubit$$, $CellContext`qubit$45793$$, {0, 0}], 
+        Hold[$CellContext`measure$$, $CellContext`measure$45794$$, False]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`qubitIn = {
+          Cos[Part[$CellContext`qubit$$, 1]/2], 
+          Sin[Part[$CellContext`qubit$$, 1]/2] 
+          E^(I Part[$CellContext`qubit$$, 2])}; $CellContext`noop = Flatten[
+          
+          KroneckerProduct[$CellContext`qubitIn, $CellContext`bellIn]]; \
+$CellContext`cnotBox = Dot[
+          
+          KroneckerProduct[$CellContext`cnot, $CellContext`identity], \
+$CellContext`noop]; $CellContext`hadamardBox = Dot[
+          KroneckerProduct[$CellContext`hadamard, 
+           
+           KroneckerProduct[$CellContext`identity, $CellContext`identity]], \
+$CellContext`cnotBox]; $CellContext`postMeasure = \
+$CellContext`measurement[$CellContext`hadamardBox, $CellContext`measure$$]; \
+$CellContext`xBox = If[Part[$CellContext`measure$$, 2] == 1, 
+          Dot[$CellContext`x, 
+           $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]], 
+          $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]]; $CellContext`zBox = 
+        If[Part[$CellContext`measure$$, 1] == 1, 
+          
+          Dot[$CellContext`z, $CellContext`xBox], $CellContext`xBox]; \
+$CellContext`formatMatrix[
+          Pattern[$CellContext`m, 
+           Blank[]], 
+          Pattern[$CellContext`x, 
+           Blank[]], 
+          Pattern[$CellContext`y, 
+           Blank[]]] := Text[
+          Style[
+           AccountingForm[
+            MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+           13], {$CellContext`x, $CellContext`y}]; Graphics[{
+          EdgeForm[Black], 
+          FaceForm[], Thick, 
+          Rectangle[{7.5, -0.5}, {8.5, 0.5}], 
+          Text[
+           Style["X", Italic, 24], {8, 0}], 
+          Rectangle[{9.5, -0.5}, {10.5, 0.5}], 
+          Text[
+           Style["Z", Italic, 24], {10, 0}], 
+          Rectangle[{3.5, 5.5}, {4.5, 6.5}], 
+          Text[
+           Style["H", Italic, 24], {4, 6}], 
+          FaceForm[Black], 
+          Disk[{1.7, 6}, 0.1], 
+          Line[{{1.7, 5.9}, {1.7, 2.8}}], 
+          Circle[{1.7, 3}, 0.2], 
+          Line[{{1.5, 3}, {6, 3}}], 
+          Text[
+           Style[
+            Row[{
+              Subscript["|\[Beta]", "00"], ">="}], 10], {0, 1.75}], 
+          Line[{{0.5, 3}, {1.6, 3}}], 
+          Line[{{0.5, 0}, {7.5, 0}}], 
+          Line[{{8.5, 0}, {9.5, 0}}], 
+          Line[{{10.5, 0}, {11, 0}}], 
+          Line[{{1, 6}, {1.8, 6}}], 
+          Line[{{1.8, 6}, {3.5, 6}}], 
+          Line[{{2, 3}, {8, 3}}], 
+          Line[{{4.5, 6}, {10, 6}}], 
+          Line[{{10, 6}, {10, 0.5}}], 
+          Line[{{8, 3}, {8, 0.5}}], 
+          $CellContext`formatMatrix[$CellContext`bellIn, 1, 1.7], 
+          $CellContext`formatMatrix[$CellContext`cnotBox, 2.9, 3], 
+          $CellContext`formatMatrix[$CellContext`hadamardBox, 5, 3], 
+          $CellContext`formatMatrix[$CellContext`postMeasure, 7, 1.5], 
+          $CellContext`formatMatrix[$CellContext`xBox, 9, 1.5], Red, Dotted, 
+          Line[{{0, -0.5}, {0, 0.4}, {6, 0.4}, {6, 2.5}, {11, 2.5}}], 
+          Text[
+           Style["Alice", 20], {0, 4}], 
+          Text[
+           Style["Bob", 20], {5.5, -0.5}], 
+          Text[
+           Style["\[CapitalPsi]", 20], {1.2, 5.5}], 
+          $CellContext`formatMatrix[$CellContext`qubitIn, 0, 6], Black, 
+          Text[
+           Style["[\[Alpha],\[Beta]]=", 13], {-1.5, 6}], Red, 
+          $CellContext`formatMatrix[$CellContext`zBox, 12.3, 0], 
+          Text[
+           Style["\[CapitalPsi]", 20], {11, 0.5}], Blue, 
+          Text[
+           Style["Measurement", 20], {8, 4.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 2], 20], {8, 3.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 1], 20], {8, 5.5}]}, 
+         PlotRange -> {{-2.5, 14}, {-1, 7}}, ImageSize -> 600]), 
+      "Specifications" :> {{{$CellContext`qubit$$, {0, 0}, "qubit"}, {0, 0}, {
+         Pi, 2 Pi}}, {{$CellContext`measure$$, {0, 0}, 
+          "measurement"}, {{0, 0} -> MatrixForm[{0, 0}], {0, 1} -> 
+          MatrixForm[{0, 1}], {1, 0} -> MatrixForm[{1, 0}], {1, 1} -> 
+          MatrixForm[{1, 1}]}}}, 
+      "Options" :> {
+       ControlType -> {Slider2D, RadioButtonBar}, 
+        TrackedSymbols :> {$CellContext`qubit$$, $CellContext`measure$$}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{643., {229.34375, 234.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`qubitIn = {
+        0.6902512402344372, -0.4253036452114916 + 
+         0.5853802479795835 I}, $CellContext`noop = {
+        0.48808133269219517` + 0. I, 0. + 0. I, 0. + 0. I, 
+         0.48808133269219517` + 0. I, -0.3007350915924032 + 
+         0.41392634291902625` I, 0. + 0. I, 0. + 0. I, -0.3007350915924032 + 
+         0.41392634291902625` I}, $CellContext`bellIn = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2]}, $CellContext`cnotBox = {
+        0.48808133269219517` + 0. I, 0. + 0. I, 0. + 0. I, 
+         0.48808133269219517` + 0. I, 0. + 0. I, -0.3007350915924032 + 
+         0.41392634291902625` I, -0.3007350915924032 + 0.41392634291902625` I,
+          0. + 0. I}, $CellContext`cnot = {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 
+        0, 1}, {0, 0, 1, 0}}, $CellContext`identity = {{1, 0}, {0, 
+        1}}, $CellContext`hadamardBox = {
+        0.34512562011721853` + 0. I, -0.21265182260574575` + 
+         0.2926901239897917 I, -0.21265182260574575` + 0.2926901239897917 I, 
+         0.34512562011721853` + 0. I, 0.34512562011721853` + 0. I, 
+         0.21265182260574575` - 0.2926901239897917 I, 0.21265182260574575` - 
+         0.2926901239897917 I, 0.34512562011721853` + 
+         0. I}, $CellContext`hadamard = {{1/Sqrt[2], 1/Sqrt[2]}, {
+         1/Sqrt[2], -(1/Sqrt[2])}}, $CellContext`postMeasure = {
+        0.6902512402344371 + 0. I, -0.4253036452114915 + 
+         0.5853802479795834 I}, $CellContext`measurement[
+         Pattern[$CellContext`q, 
+          Blank[]], 
+         Pattern[$CellContext`measure, 
+          Blank[]]] := If[
+         And[
+         Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+          0], {Part[$CellContext`q, 1] 2, Part[$CellContext`q, 2] 2}, 
+         If[
+          And[
+          Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+           1], {Part[$CellContext`q, 3] 2, Part[$CellContext`q, 4] 2}, 
+          If[
+           And[
+           Part[$CellContext`measure, 1] == 1, Part[$CellContext`measure, 2] == 
+            0], {Part[$CellContext`q, 5] 2, Part[$CellContext`q, 6] 2}, {
+           Part[$CellContext`q, 7] 2, Part[$CellContext`q, 8] 
+            2}]]], $CellContext`xBox = {
+        0.6902512402344371 + 0. I, -0.4253036452114915 + 
+         0.5853802479795834 I}, $CellContext`x = {{0, 1}, {1, 
+        0}}, $CellContext`zBox = {
+        0.6902512402344371 + 0. I, -0.4253036452114915 + 
+         0.5853802479795834 I}, $CellContext`z = {{1, 0}, {
+        0, -1}}, $CellContext`formatMatrix[
+         Pattern[$CellContext`m, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`y, 
+          Blank[]]] := Text[
+         Style[
+          AccountingForm[
+           MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+          13], {$CellContext`x, $CellContext`y}], 
+       Attributes[Subscript] = {NHoldRest}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.35696210375764*^9, 3.476029846952141*^9},
+ CellID->898371382]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ManipulateCaptionSection"],
+
+Cell[TextData[{
+ "In quantum teleportation, a sender (Alice) can send the state of one \
+quantum bit (qubit) to the receiver (Bob). The input to the circuit is the \
+qubit ",
+ Cell[BoxData[
+  FormBox["\[Psi]", TraditionalForm]], "InlineMath",
+  FormatType->"TraditionalForm"],
+ " whose state is to be transported, along with one of a pair of qubits \
+entangled in the Bell basis state (the upper qubit). The other qubit from the \
+Bell pair (the lower qubit) is sent unchanged to Bob. Alice process her two \
+qubits with two quantum gates and measures the output (controlled by the \
+user) yielding two classical bits, which are sent back to Bob. Bob then uses \
+these bits to control the processing on his qubit from the entangled Bell \
+pair through two quantum gates, and this yields a qubit with the same state \
+Alice teleported."
+}], "ManipulateCaption",
+ CellChangeTimes->{
+  3.35696210375764*^9, 3.475585210301258*^9, {3.4758428731429944`*^9, 
+   3.475842915229494*^9}, {3.4760211696939793`*^9, 3.476021450350622*^9}, {
+   3.476026747213253*^9, 3.4760267617916822`*^9}, {3.4760299045348053`*^9, 
+   3.476029940094578*^9}, 3.4761239553632107`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ThumbnailSection"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`measure$$ = {0, 0}, $CellContext`qubit$$ = {
+    1.5079644737231006`, 0.3141592653589793}, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`qubit$$], {1.6179202165987434`, 2.199114857512855}, 
+       "qubit"}, {0, 0}, {Pi, 2 Pi}}, {{
+       Hold[$CellContext`measure$$], {0, 0}, "measurement"}, {{0, 0} -> 
+       MatrixForm[{0, 0}], {0, 1} -> MatrixForm[{0, 1}], {1, 0} -> 
+       MatrixForm[{1, 0}], {1, 1} -> MatrixForm[{1, 1}]}}}, Typeset`size$$ = {
+    600., {143., 148.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`qubit$1593$$ = {0, 
+    0}, $CellContext`measure$1594$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`measure$$ = {0, 
+         0}, $CellContext`qubit$$ = {1.6179202165987434`, 2.199114857512855}},
+       "ControllerVariables" :> {
+        Hold[$CellContext`qubit$$, $CellContext`qubit$1593$$, {0, 0}], 
+        Hold[$CellContext`measure$$, $CellContext`measure$1594$$, False]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`qubitIn = {
+          Cos[Part[$CellContext`qubit$$, 1]/2], 
+          Sin[Part[$CellContext`qubit$$, 1]/2] 
+          E^(I Part[$CellContext`qubit$$, 2])}; $CellContext`noop = Flatten[
+          
+          KroneckerProduct[$CellContext`qubitIn, $CellContext`bellIn]]; \
+$CellContext`cnotBox = Dot[
+          
+          KroneckerProduct[$CellContext`cnot, $CellContext`identity], \
+$CellContext`noop]; $CellContext`hadamardBox = Dot[
+          KroneckerProduct[$CellContext`hadamard, 
+           
+           KroneckerProduct[$CellContext`identity, $CellContext`identity]], \
+$CellContext`cnotBox]; $CellContext`postMeasure = \
+$CellContext`measurement[$CellContext`hadamardBox, $CellContext`measure$$]; \
+$CellContext`xBox = If[Part[$CellContext`measure$$, 2] == 1, 
+          Dot[$CellContext`x, 
+           $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]], 
+          $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]]; $CellContext`zBox = 
+        If[Part[$CellContext`measure$$, 1] == 1, 
+          
+          Dot[$CellContext`z, $CellContext`xBox], $CellContext`xBox]; \
+$CellContext`formatMatrix[
+          Pattern[$CellContext`m, 
+           Blank[]], 
+          Pattern[$CellContext`x, 
+           Blank[]], 
+          Pattern[$CellContext`y, 
+           Blank[]]] := Text[
+          Style[
+           AccountingForm[
+            MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+           13], {$CellContext`x, $CellContext`y}]; Graphics[{
+          EdgeForm[Black], 
+          FaceForm[], Thick, 
+          Rectangle[{7.5, -0.5}, {8.5, 0.5}], 
+          Text[
+           Style["X", Italic, 24], {8, 0}], 
+          Rectangle[{9.5, -0.5}, {10.5, 0.5}], 
+          Text[
+           Style["Z", Italic, 24], {10, 0}], 
+          Rectangle[{3.5, 5.5}, {4.5, 6.5}], 
+          Text[
+           Style["H", Italic, 24], {4, 6}], 
+          FaceForm[Black], 
+          Disk[{1.7, 6}, 0.1], 
+          Line[{{1.7, 5.9}, {1.7, 2.8}}], 
+          Circle[{1.7, 3}, 0.2], 
+          Line[{{1.5, 3}, {6, 3}}], 
+          Text[
+           Style[
+            Row[{
+              Subscript["|\[Beta]", "00"], ">="}], 10], {0, 1.75}], 
+          Line[{{0.5, 3}, {1.6, 3}}], 
+          Line[{{0.5, 0}, {7.5, 0}}], 
+          Line[{{8.5, 0}, {9.5, 0}}], 
+          Line[{{10.5, 0}, {11, 0}}], 
+          Line[{{1, 6}, {1.8, 6}}], 
+          Line[{{1.8, 6}, {3.5, 6}}], 
+          Line[{{2, 3}, {8, 3}}], 
+          Line[{{4.5, 6}, {10, 6}}], 
+          Line[{{10, 6}, {10, 0.5}}], 
+          Line[{{8, 3}, {8, 0.5}}], 
+          $CellContext`formatMatrix[$CellContext`bellIn, 1, 1.7], 
+          $CellContext`formatMatrix[$CellContext`cnotBox, 2.9, 3], 
+          $CellContext`formatMatrix[$CellContext`hadamardBox, 5, 3], 
+          $CellContext`formatMatrix[$CellContext`postMeasure, 7, 1.5], 
+          $CellContext`formatMatrix[$CellContext`xBox, 9, 1.5], Red, Dotted, 
+          Line[{{0, -0.5}, {0, 0.4}, {6, 0.4}, {6, 2.5}, {11, 2.5}}], 
+          Text[
+           Style["Alice", 20], {0, 4}], 
+          Text[
+           Style["Bob", 20], {5.5, -0.5}], 
+          Text[
+           Style["\[CapitalPsi]", 20], {1.2, 5.5}], 
+          $CellContext`formatMatrix[$CellContext`qubitIn, 0, 6], Black, 
+          Text[
+           Style["[\[Alpha],\[Beta]]=", 13], {-1.5, 6}], Red, 
+          $CellContext`formatMatrix[$CellContext`zBox, 12.3, 0], 
+          Text[
+           Style["\[CapitalPsi]", 20], {11, 0.5}], Blue, 
+          Text[
+           Style["Measurement", 20], {8, 4.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 2], 20], {8, 3.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 1], 20], {8, 5.5}]}, 
+         PlotRange -> {{-2.5, 14}, {-1, 7}}, ImageSize -> 600]), 
+      "Specifications" :> {{{$CellContext`qubit$$, {1.6179202165987434`, 
+          2.199114857512855}, "qubit"}, {0, 0}, {
+         Pi, 2 Pi}}, {{$CellContext`measure$$, {0, 0}, 
+          "measurement"}, {{0, 0} -> MatrixForm[{0, 0}], {0, 1} -> 
+          MatrixForm[{0, 1}], {1, 0} -> MatrixForm[{1, 0}], {1, 1} -> 
+          MatrixForm[{1, 1}]}}}, 
+      "Options" :> {
+       ControlType -> {Slider2D, RadioButtonBar}, 
+        TrackedSymbols :> {$CellContext`qubit$$, $CellContext`measure$$}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{643., {229.34375, 234.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`qubitIn = {1, 0}, $CellContext`noop = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2], 0, 0, 0, 0}, $CellContext`bellIn = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2]}, $CellContext`cnotBox = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2], 0, 0, 0, 0}, $CellContext`cnot = {{1, 0, 
+        0, 0}, {0, 1, 0, 0}, {0, 0, 0, 1}, {0, 0, 1, 
+        0}}, $CellContext`identity = {{1, 0}, {0, 
+        1}}, $CellContext`hadamardBox = {
+        1/2, 0, 0, 1/2, 1/2, 0, 0, 1/2}, $CellContext`hadamard = {{
+         1/Sqrt[2], 1/Sqrt[2]}, {
+         1/Sqrt[2], -(1/Sqrt[2])}}, $CellContext`postMeasure = {1, 
+        0}, $CellContext`measurement[
+         Pattern[$CellContext`q, 
+          Blank[]], 
+         Pattern[$CellContext`measure, 
+          Blank[]]] := If[
+         And[
+         Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+          0], {Part[$CellContext`q, 1] 2, Part[$CellContext`q, 2] 2}, 
+         If[
+          And[
+          Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+           1], {Part[$CellContext`q, 3] 2, Part[$CellContext`q, 4] 2}, 
+          If[
+           And[
+           Part[$CellContext`measure, 1] == 1, Part[$CellContext`measure, 2] == 
+            0], {Part[$CellContext`q, 5] 2, Part[$CellContext`q, 6] 2}, {
+           Part[$CellContext`q, 7] 2, Part[$CellContext`q, 8] 
+            2}]]], $CellContext`xBox = {1, 0}, $CellContext`x = {{0, 1}, {1, 
+        0}}, $CellContext`zBox = {1, 0}, $CellContext`z = {{1, 0}, {
+        0, -1}}, $CellContext`formatMatrix[
+         Pattern[$CellContext`m, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`y, 
+          Blank[]]] := Text[
+         Style[
+          AccountingForm[
+           MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+          13], {$CellContext`x, $CellContext`y}], 
+       Attributes[Subscript] = {NHoldRest}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->127689433]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SnapshotsSection"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`measure$$ = {0, 0}, $CellContext`qubit$$ = {
+    1.6179202165987434`, 2.199114857512855}, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`qubit$$], {1.6179202165987434`, 2.199114857512855}, 
+       "qubit"}, {0, 0}, {Pi, 2 Pi}}, {{
+       Hold[$CellContext`measure$$], {0, 0}, "measurement"}, {{0, 0} -> 
+       MatrixForm[{0, 0}], {0, 1} -> MatrixForm[{0, 1}], {1, 0} -> 
+       MatrixForm[{1, 0}], {1, 1} -> MatrixForm[{1, 1}]}}}, Typeset`size$$ = {
+    600., {143., 148.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`qubit$1649$$ = {0, 
+    0}, $CellContext`measure$1650$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`measure$$ = {0, 
+         0}, $CellContext`qubit$$ = {1.6179202165987434`, 2.199114857512855}},
+       "ControllerVariables" :> {
+        Hold[$CellContext`qubit$$, $CellContext`qubit$1649$$, {0, 0}], 
+        Hold[$CellContext`measure$$, $CellContext`measure$1650$$, False]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`qubitIn = {
+          Cos[Part[$CellContext`qubit$$, 1]/2], 
+          Sin[Part[$CellContext`qubit$$, 1]/2] 
+          E^(I Part[$CellContext`qubit$$, 2])}; $CellContext`noop = Flatten[
+          
+          KroneckerProduct[$CellContext`qubitIn, $CellContext`bellIn]]; \
+$CellContext`cnotBox = Dot[
+          
+          KroneckerProduct[$CellContext`cnot, $CellContext`identity], \
+$CellContext`noop]; $CellContext`hadamardBox = Dot[
+          KroneckerProduct[$CellContext`hadamard, 
+           
+           KroneckerProduct[$CellContext`identity, $CellContext`identity]], \
+$CellContext`cnotBox]; $CellContext`postMeasure = \
+$CellContext`measurement[$CellContext`hadamardBox, $CellContext`measure$$]; \
+$CellContext`xBox = If[Part[$CellContext`measure$$, 2] == 1, 
+          Dot[$CellContext`x, 
+           $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]], 
+          $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]]; $CellContext`zBox = 
+        If[Part[$CellContext`measure$$, 1] == 1, 
+          
+          Dot[$CellContext`z, $CellContext`xBox], $CellContext`xBox]; \
+$CellContext`formatMatrix[
+          Pattern[$CellContext`m, 
+           Blank[]], 
+          Pattern[$CellContext`x, 
+           Blank[]], 
+          Pattern[$CellContext`y, 
+           Blank[]]] := Text[
+          Style[
+           AccountingForm[
+            MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+           13], {$CellContext`x, $CellContext`y}]; Graphics[{
+          EdgeForm[Black], 
+          FaceForm[], Thick, 
+          Rectangle[{7.5, -0.5}, {8.5, 0.5}], 
+          Text[
+           Style["X", Italic, 24], {8, 0}], 
+          Rectangle[{9.5, -0.5}, {10.5, 0.5}], 
+          Text[
+           Style["Z", Italic, 24], {10, 0}], 
+          Rectangle[{3.5, 5.5}, {4.5, 6.5}], 
+          Text[
+           Style["H", Italic, 24], {4, 6}], 
+          FaceForm[Black], 
+          Disk[{1.7, 6}, 0.1], 
+          Line[{{1.7, 5.9}, {1.7, 2.8}}], 
+          Circle[{1.7, 3}, 0.2], 
+          Line[{{1.5, 3}, {6, 3}}], 
+          Text[
+           Style[
+            Row[{
+              Subscript["|\[Beta]", "00"], ">="}], 10], {0, 1.75}], 
+          Line[{{0.5, 3}, {1.6, 3}}], 
+          Line[{{0.5, 0}, {7.5, 0}}], 
+          Line[{{8.5, 0}, {9.5, 0}}], 
+          Line[{{10.5, 0}, {11, 0}}], 
+          Line[{{1, 6}, {1.8, 6}}], 
+          Line[{{1.8, 6}, {3.5, 6}}], 
+          Line[{{2, 3}, {8, 3}}], 
+          Line[{{4.5, 6}, {10, 6}}], 
+          Line[{{10, 6}, {10, 0.5}}], 
+          Line[{{8, 3}, {8, 0.5}}], 
+          $CellContext`formatMatrix[$CellContext`bellIn, 1, 1.7], 
+          $CellContext`formatMatrix[$CellContext`cnotBox, 2.9, 3], 
+          $CellContext`formatMatrix[$CellContext`hadamardBox, 5, 3], 
+          $CellContext`formatMatrix[$CellContext`postMeasure, 7, 1.5], 
+          $CellContext`formatMatrix[$CellContext`xBox, 9, 1.5], Red, Dotted, 
+          Line[{{0, -0.5}, {0, 0.4}, {6, 0.4}, {6, 2.5}, {11, 2.5}}], 
+          Text[
+           Style["Alice", 20], {0, 4}], 
+          Text[
+           Style["Bob", 20], {5.5, -0.5}], 
+          Text[
+           Style["\[CapitalPsi]", 20], {1.2, 5.5}], 
+          $CellContext`formatMatrix[$CellContext`qubitIn, 0, 6], Black, 
+          Text[
+           Style["[\[Alpha],\[Beta]]=", 13], {-1.5, 6}], Red, 
+          $CellContext`formatMatrix[$CellContext`zBox, 12.3, 0], 
+          Text[
+           Style["\[CapitalPsi]", 20], {11, 0.5}], Blue, 
+          Text[
+           Style["Measurement", 20], {8, 4.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 2], 20], {8, 3.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 1], 20], {8, 5.5}]}, 
+         PlotRange -> {{-2.5, 14}, {-1, 7}}, ImageSize -> 600]), 
+      "Specifications" :> {{{$CellContext`qubit$$, {1.6179202165987434`, 
+          2.199114857512855}, "qubit"}, {0, 0}, {
+         Pi, 2 Pi}}, {{$CellContext`measure$$, {0, 0}, 
+          "measurement"}, {{0, 0} -> MatrixForm[{0, 0}], {0, 1} -> 
+          MatrixForm[{0, 1}], {1, 0} -> MatrixForm[{1, 0}], {1, 1} -> 
+          MatrixForm[{1, 1}]}}}, 
+      "Options" :> {
+       ControlType -> {Slider2D, RadioButtonBar}, 
+        TrackedSymbols :> {$CellContext`qubit$$, $CellContext`measure$$}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{643., {229.34375, 234.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`qubitIn = {1, 0}, $CellContext`noop = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2], 0, 0, 0, 0}, $CellContext`bellIn = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2]}, $CellContext`cnotBox = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2], 0, 0, 0, 0}, $CellContext`cnot = {{1, 0, 
+        0, 0}, {0, 1, 0, 0}, {0, 0, 0, 1}, {0, 0, 1, 
+        0}}, $CellContext`identity = {{1, 0}, {0, 
+        1}}, $CellContext`hadamardBox = {
+        1/2, 0, 0, 1/2, 1/2, 0, 0, 1/2}, $CellContext`hadamard = {{
+         1/Sqrt[2], 1/Sqrt[2]}, {
+         1/Sqrt[2], -(1/Sqrt[2])}}, $CellContext`postMeasure = {1, 
+        0}, $CellContext`measurement[
+         Pattern[$CellContext`q, 
+          Blank[]], 
+         Pattern[$CellContext`measure, 
+          Blank[]]] := If[
+         And[
+         Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+          0], {Part[$CellContext`q, 1] 2, Part[$CellContext`q, 2] 2}, 
+         If[
+          And[
+          Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+           1], {Part[$CellContext`q, 3] 2, Part[$CellContext`q, 4] 2}, 
+          If[
+           And[
+           Part[$CellContext`measure, 1] == 1, Part[$CellContext`measure, 2] == 
+            0], {Part[$CellContext`q, 5] 2, Part[$CellContext`q, 6] 2}, {
+           Part[$CellContext`q, 7] 2, Part[$CellContext`q, 8] 
+            2}]]], $CellContext`xBox = {1, 0}, $CellContext`x = {{0, 1}, {1, 
+        0}}, $CellContext`zBox = {1, 0}, $CellContext`z = {{1, 0}, {
+        0, -1}}, $CellContext`formatMatrix[
+         Pattern[$CellContext`m, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`y, 
+          Blank[]]] := Text[
+         Style[
+          AccountingForm[
+           MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+          13], {$CellContext`x, $CellContext`y}], 
+       Attributes[Subscript] = {NHoldRest}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->16806934],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`measure$$ = {0, 1}, $CellContext`qubit$$ = {
+    1.5707963267948966`, 2.199114857512855}, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`qubit$$], {0.48694686130641796`, 5.089380098815465}, 
+       "qubit"}, {0, 0}, {Pi, 2 Pi}}, {{
+       Hold[$CellContext`measure$$], {1, 0}, "measurement"}, {{0, 0} -> 
+       MatrixForm[{0, 0}], {0, 1} -> MatrixForm[{0, 1}], {1, 0} -> 
+       MatrixForm[{1, 0}], {1, 1} -> MatrixForm[{1, 1}]}}}, Typeset`size$$ = {
+    600., {143., 148.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`qubit$1705$$ = {0, 
+    0}, $CellContext`measure$1706$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`measure$$ = {1, 
+         0}, $CellContext`qubit$$ = {0.48694686130641796`, 
+         5.089380098815465}}, "ControllerVariables" :> {
+        Hold[$CellContext`qubit$$, $CellContext`qubit$1705$$, {0, 0}], 
+        Hold[$CellContext`measure$$, $CellContext`measure$1706$$, False]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`qubitIn = {
+          Cos[Part[$CellContext`qubit$$, 1]/2], 
+          Sin[Part[$CellContext`qubit$$, 1]/2] 
+          E^(I Part[$CellContext`qubit$$, 2])}; $CellContext`noop = Flatten[
+          
+          KroneckerProduct[$CellContext`qubitIn, $CellContext`bellIn]]; \
+$CellContext`cnotBox = Dot[
+          
+          KroneckerProduct[$CellContext`cnot, $CellContext`identity], \
+$CellContext`noop]; $CellContext`hadamardBox = Dot[
+          KroneckerProduct[$CellContext`hadamard, 
+           
+           KroneckerProduct[$CellContext`identity, $CellContext`identity]], \
+$CellContext`cnotBox]; $CellContext`postMeasure = \
+$CellContext`measurement[$CellContext`hadamardBox, $CellContext`measure$$]; \
+$CellContext`xBox = If[Part[$CellContext`measure$$, 2] == 1, 
+          Dot[$CellContext`x, 
+           $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]], 
+          $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]]; $CellContext`zBox = 
+        If[Part[$CellContext`measure$$, 1] == 1, 
+          
+          Dot[$CellContext`z, $CellContext`xBox], $CellContext`xBox]; \
+$CellContext`formatMatrix[
+          Pattern[$CellContext`m, 
+           Blank[]], 
+          Pattern[$CellContext`x, 
+           Blank[]], 
+          Pattern[$CellContext`y, 
+           Blank[]]] := Text[
+          Style[
+           AccountingForm[
+            MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+           13], {$CellContext`x, $CellContext`y}]; Graphics[{
+          EdgeForm[Black], 
+          FaceForm[], Thick, 
+          Rectangle[{7.5, -0.5}, {8.5, 0.5}], 
+          Text[
+           Style["X", Italic, 24], {8, 0}], 
+          Rectangle[{9.5, -0.5}, {10.5, 0.5}], 
+          Text[
+           Style["Z", Italic, 24], {10, 0}], 
+          Rectangle[{3.5, 5.5}, {4.5, 6.5}], 
+          Text[
+           Style["H", Italic, 24], {4, 6}], 
+          FaceForm[Black], 
+          Disk[{1.7, 6}, 0.1], 
+          Line[{{1.7, 5.9}, {1.7, 2.8}}], 
+          Circle[{1.7, 3}, 0.2], 
+          Line[{{1.5, 3}, {6, 3}}], 
+          Text[
+           Style[
+            Row[{
+              Subscript["|\[Beta]", "00"], ">="}], 10], {0, 1.75}], 
+          Line[{{0.5, 3}, {1.6, 3}}], 
+          Line[{{0.5, 0}, {7.5, 0}}], 
+          Line[{{8.5, 0}, {9.5, 0}}], 
+          Line[{{10.5, 0}, {11, 0}}], 
+          Line[{{1, 6}, {1.8, 6}}], 
+          Line[{{1.8, 6}, {3.5, 6}}], 
+          Line[{{2, 3}, {8, 3}}], 
+          Line[{{4.5, 6}, {10, 6}}], 
+          Line[{{10, 6}, {10, 0.5}}], 
+          Line[{{8, 3}, {8, 0.5}}], 
+          $CellContext`formatMatrix[$CellContext`bellIn, 1, 1.7], 
+          $CellContext`formatMatrix[$CellContext`cnotBox, 2.9, 3], 
+          $CellContext`formatMatrix[$CellContext`hadamardBox, 5, 3], 
+          $CellContext`formatMatrix[$CellContext`postMeasure, 7, 1.5], 
+          $CellContext`formatMatrix[$CellContext`xBox, 9, 1.5], Red, Dotted, 
+          Line[{{0, -0.5}, {0, 0.4}, {6, 0.4}, {6, 2.5}, {11, 2.5}}], 
+          Text[
+           Style["Alice", 20], {0, 4}], 
+          Text[
+           Style["Bob", 20], {5.5, -0.5}], 
+          Text[
+           Style["\[CapitalPsi]", 20], {1.2, 5.5}], 
+          $CellContext`formatMatrix[$CellContext`qubitIn, 0, 6], Black, 
+          Text[
+           Style["[\[Alpha],\[Beta]]=", 13], {-1.5, 6}], Red, 
+          $CellContext`formatMatrix[$CellContext`zBox, 12.3, 0], 
+          Text[
+           Style["\[CapitalPsi]", 20], {11, 0.5}], Blue, 
+          Text[
+           Style["Measurement", 20], {8, 4.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 2], 20], {8, 3.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 1], 20], {8, 5.5}]}, 
+         PlotRange -> {{-2.5, 14}, {-1, 7}}, ImageSize -> 600]), 
+      "Specifications" :> {{{$CellContext`qubit$$, {0.48694686130641796`, 
+          5.089380098815465}, "qubit"}, {0, 0}, {
+         Pi, 2 Pi}}, {{$CellContext`measure$$, {1, 0}, 
+          "measurement"}, {{0, 0} -> MatrixForm[{0, 0}], {0, 1} -> 
+          MatrixForm[{0, 1}], {1, 0} -> MatrixForm[{1, 0}], {1, 1} -> 
+          MatrixForm[{1, 1}]}}}, 
+      "Options" :> {
+       ControlType -> {Slider2D, RadioButtonBar}, 
+        TrackedSymbols :> {$CellContext`qubit$$, $CellContext`measure$$}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{643., {229.34375, 234.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`qubitIn = {1, 0}, $CellContext`noop = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2], 0, 0, 0, 0}, $CellContext`bellIn = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2]}, $CellContext`cnotBox = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2], 0, 0, 0, 0}, $CellContext`cnot = {{1, 0, 
+        0, 0}, {0, 1, 0, 0}, {0, 0, 0, 1}, {0, 0, 1, 
+        0}}, $CellContext`identity = {{1, 0}, {0, 
+        1}}, $CellContext`hadamardBox = {
+        1/2, 0, 0, 1/2, 1/2, 0, 0, 1/2}, $CellContext`hadamard = {{
+         1/Sqrt[2], 1/Sqrt[2]}, {
+         1/Sqrt[2], -(1/Sqrt[2])}}, $CellContext`postMeasure = {1, 
+        0}, $CellContext`measurement[
+         Pattern[$CellContext`q, 
+          Blank[]], 
+         Pattern[$CellContext`measure, 
+          Blank[]]] := If[
+         And[
+         Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+          0], {Part[$CellContext`q, 1] 2, Part[$CellContext`q, 2] 2}, 
+         If[
+          And[
+          Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+           1], {Part[$CellContext`q, 3] 2, Part[$CellContext`q, 4] 2}, 
+          If[
+           And[
+           Part[$CellContext`measure, 1] == 1, Part[$CellContext`measure, 2] == 
+            0], {Part[$CellContext`q, 5] 2, Part[$CellContext`q, 6] 2}, {
+           Part[$CellContext`q, 7] 2, Part[$CellContext`q, 8] 
+            2}]]], $CellContext`xBox = {1, 0}, $CellContext`x = {{0, 1}, {1, 
+        0}}, $CellContext`zBox = {1, 0}, $CellContext`z = {{1, 0}, {
+        0, -1}}, $CellContext`formatMatrix[
+         Pattern[$CellContext`m, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`y, 
+          Blank[]]] := Text[
+         Style[
+          AccountingForm[
+           MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+          13], {$CellContext`x, $CellContext`y}], 
+       Attributes[Subscript] = {NHoldRest}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->322354877],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`measure$$ = {1, 0}, $CellContext`qubit$$ = {
+    2.7803094984269667`, 5.403539364174444}, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`qubit$$], {2.356194490192345, 2.701769682087222}, 
+       "qubit"}, {0, 0}, {Pi, 2 Pi}}, {{
+       Hold[$CellContext`measure$$], {1, 1}, "measurement"}, {{0, 0} -> 
+       MatrixForm[{0, 0}], {0, 1} -> MatrixForm[{0, 1}], {1, 0} -> 
+       MatrixForm[{1, 0}], {1, 1} -> MatrixForm[{1, 1}]}}}, Typeset`size$$ = {
+    600., {143., 148.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`qubit$1761$$ = {0, 
+    0}, $CellContext`measure$1762$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`measure$$ = {1, 
+         1}, $CellContext`qubit$$ = {2.356194490192345, 2.701769682087222}}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`qubit$$, $CellContext`qubit$1761$$, {0, 0}], 
+        Hold[$CellContext`measure$$, $CellContext`measure$1762$$, False]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`qubitIn = {
+          Cos[Part[$CellContext`qubit$$, 1]/2], 
+          Sin[Part[$CellContext`qubit$$, 1]/2] 
+          E^(I Part[$CellContext`qubit$$, 2])}; $CellContext`noop = Flatten[
+          
+          KroneckerProduct[$CellContext`qubitIn, $CellContext`bellIn]]; \
+$CellContext`cnotBox = Dot[
+          
+          KroneckerProduct[$CellContext`cnot, $CellContext`identity], \
+$CellContext`noop]; $CellContext`hadamardBox = Dot[
+          KroneckerProduct[$CellContext`hadamard, 
+           
+           KroneckerProduct[$CellContext`identity, $CellContext`identity]], \
+$CellContext`cnotBox]; $CellContext`postMeasure = \
+$CellContext`measurement[$CellContext`hadamardBox, $CellContext`measure$$]; \
+$CellContext`xBox = If[Part[$CellContext`measure$$, 2] == 1, 
+          Dot[$CellContext`x, 
+           $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]], 
+          $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]]; $CellContext`zBox = 
+        If[Part[$CellContext`measure$$, 1] == 1, 
+          
+          Dot[$CellContext`z, $CellContext`xBox], $CellContext`xBox]; \
+$CellContext`formatMatrix[
+          Pattern[$CellContext`m, 
+           Blank[]], 
+          Pattern[$CellContext`x, 
+           Blank[]], 
+          Pattern[$CellContext`y, 
+           Blank[]]] := Text[
+          Style[
+           AccountingForm[
+            MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+           13], {$CellContext`x, $CellContext`y}]; Graphics[{
+          EdgeForm[Black], 
+          FaceForm[], Thick, 
+          Rectangle[{7.5, -0.5}, {8.5, 0.5}], 
+          Text[
+           Style["X", Italic, 24], {8, 0}], 
+          Rectangle[{9.5, -0.5}, {10.5, 0.5}], 
+          Text[
+           Style["Z", Italic, 24], {10, 0}], 
+          Rectangle[{3.5, 5.5}, {4.5, 6.5}], 
+          Text[
+           Style["H", Italic, 24], {4, 6}], 
+          FaceForm[Black], 
+          Disk[{1.7, 6}, 0.1], 
+          Line[{{1.7, 5.9}, {1.7, 2.8}}], 
+          Circle[{1.7, 3}, 0.2], 
+          Line[{{1.5, 3}, {6, 3}}], 
+          Text[
+           Style[
+            Row[{
+              Subscript["|\[Beta]", "00"], ">="}], 10], {0, 1.75}], 
+          Line[{{0.5, 3}, {1.6, 3}}], 
+          Line[{{0.5, 0}, {7.5, 0}}], 
+          Line[{{8.5, 0}, {9.5, 0}}], 
+          Line[{{10.5, 0}, {11, 0}}], 
+          Line[{{1, 6}, {1.8, 6}}], 
+          Line[{{1.8, 6}, {3.5, 6}}], 
+          Line[{{2, 3}, {8, 3}}], 
+          Line[{{4.5, 6}, {10, 6}}], 
+          Line[{{10, 6}, {10, 0.5}}], 
+          Line[{{8, 3}, {8, 0.5}}], 
+          $CellContext`formatMatrix[$CellContext`bellIn, 1, 1.7], 
+          $CellContext`formatMatrix[$CellContext`cnotBox, 2.9, 3], 
+          $CellContext`formatMatrix[$CellContext`hadamardBox, 5, 3], 
+          $CellContext`formatMatrix[$CellContext`postMeasure, 7, 1.5], 
+          $CellContext`formatMatrix[$CellContext`xBox, 9, 1.5], Red, Dotted, 
+          Line[{{0, -0.5}, {0, 0.4}, {6, 0.4}, {6, 2.5}, {11, 2.5}}], 
+          Text[
+           Style["Alice", 20], {0, 4}], 
+          Text[
+           Style["Bob", 20], {5.5, -0.5}], 
+          Text[
+           Style["\[CapitalPsi]", 20], {1.2, 5.5}], 
+          $CellContext`formatMatrix[$CellContext`qubitIn, 0, 6], Black, 
+          Text[
+           Style["[\[Alpha],\[Beta]]=", 13], {-1.5, 6}], Red, 
+          $CellContext`formatMatrix[$CellContext`zBox, 12.3, 0], 
+          Text[
+           Style["\[CapitalPsi]", 20], {11, 0.5}], Blue, 
+          Text[
+           Style["Measurement", 20], {8, 4.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 2], 20], {8, 3.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 1], 20], {8, 5.5}]}, 
+         PlotRange -> {{-2.5, 14}, {-1, 7}}, ImageSize -> 600]), 
+      "Specifications" :> {{{$CellContext`qubit$$, {2.356194490192345, 
+          2.701769682087222}, "qubit"}, {0, 0}, {
+         Pi, 2 Pi}}, {{$CellContext`measure$$, {1, 1}, 
+          "measurement"}, {{0, 0} -> MatrixForm[{0, 0}], {0, 1} -> 
+          MatrixForm[{0, 1}], {1, 0} -> MatrixForm[{1, 0}], {1, 1} -> 
+          MatrixForm[{1, 1}]}}}, 
+      "Options" :> {
+       ControlType -> {Slider2D, RadioButtonBar}, 
+        TrackedSymbols :> {$CellContext`qubit$$, $CellContext`measure$$}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{643., {229.34375, 234.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`qubitIn = {1, 0}, $CellContext`noop = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2], 0, 0, 0, 0}, $CellContext`bellIn = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2]}, $CellContext`cnotBox = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2], 0, 0, 0, 0}, $CellContext`cnot = {{1, 0, 
+        0, 0}, {0, 1, 0, 0}, {0, 0, 0, 1}, {0, 0, 1, 
+        0}}, $CellContext`identity = {{1, 0}, {0, 
+        1}}, $CellContext`hadamardBox = {
+        1/2, 0, 0, 1/2, 1/2, 0, 0, 1/2}, $CellContext`hadamard = {{
+         1/Sqrt[2], 1/Sqrt[2]}, {
+         1/Sqrt[2], -(1/Sqrt[2])}}, $CellContext`postMeasure = {1, 
+        0}, $CellContext`measurement[
+         Pattern[$CellContext`q, 
+          Blank[]], 
+         Pattern[$CellContext`measure, 
+          Blank[]]] := If[
+         And[
+         Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+          0], {Part[$CellContext`q, 1] 2, Part[$CellContext`q, 2] 2}, 
+         If[
+          And[
+          Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+           1], {Part[$CellContext`q, 3] 2, Part[$CellContext`q, 4] 2}, 
+          If[
+           And[
+           Part[$CellContext`measure, 1] == 1, Part[$CellContext`measure, 2] == 
+            0], {Part[$CellContext`q, 5] 2, Part[$CellContext`q, 6] 2}, {
+           Part[$CellContext`q, 7] 2, Part[$CellContext`q, 8] 
+            2}]]], $CellContext`xBox = {1, 0}, $CellContext`x = {{0, 1}, {1, 
+        0}}, $CellContext`zBox = {1, 0}, $CellContext`z = {{1, 0}, {
+        0, -1}}, $CellContext`formatMatrix[
+         Pattern[$CellContext`m, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`y, 
+          Blank[]]] := Text[
+         Style[
+          AccountingForm[
+           MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+          13], {$CellContext`x, $CellContext`y}], 
+       Attributes[Subscript] = {NHoldRest}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->628766401],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`measure$$ = {1, 1}, $CellContext`qubit$$ = {
+    2.7803094984269667`, 5.403539364174444}, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`qubit$$], {2.356194490192345, 2.701769682087222}, 
+       "qubit"}, {0, 0}, {Pi, 2 Pi}}, {{
+       Hold[$CellContext`measure$$], {1, 1}, "measurement"}, {{0, 0} -> 
+       MatrixForm[{0, 0}], {0, 1} -> MatrixForm[{0, 1}], {1, 0} -> 
+       MatrixForm[{1, 0}], {1, 1} -> MatrixForm[{1, 1}]}}}, Typeset`size$$ = {
+    600., {143., 148.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`qubit$1761$$ = {0, 
+    0}, $CellContext`measure$1762$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`measure$$ = {1, 
+         1}, $CellContext`qubit$$ = {2.356194490192345, 2.701769682087222}}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`qubit$$, $CellContext`qubit$1761$$, {0, 0}], 
+        Hold[$CellContext`measure$$, $CellContext`measure$1762$$, False]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ($CellContext`qubitIn = {
+          Cos[Part[$CellContext`qubit$$, 1]/2], 
+          Sin[Part[$CellContext`qubit$$, 1]/2] 
+          E^(I Part[$CellContext`qubit$$, 2])}; $CellContext`noop = Flatten[
+          
+          KroneckerProduct[$CellContext`qubitIn, $CellContext`bellIn]]; \
+$CellContext`cnotBox = Dot[
+          
+          KroneckerProduct[$CellContext`cnot, $CellContext`identity], \
+$CellContext`noop]; $CellContext`hadamardBox = Dot[
+          KroneckerProduct[$CellContext`hadamard, 
+           
+           KroneckerProduct[$CellContext`identity, $CellContext`identity]], \
+$CellContext`cnotBox]; $CellContext`postMeasure = \
+$CellContext`measurement[$CellContext`hadamardBox, $CellContext`measure$$]; \
+$CellContext`xBox = If[Part[$CellContext`measure$$, 2] == 1, 
+          Dot[$CellContext`x, 
+           $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]], 
+          $CellContext`measurement[$CellContext`hadamardBox, \
+$CellContext`measure$$]]; $CellContext`zBox = 
+        If[Part[$CellContext`measure$$, 1] == 1, 
+          
+          Dot[$CellContext`z, $CellContext`xBox], $CellContext`xBox]; \
+$CellContext`formatMatrix[
+          Pattern[$CellContext`m, 
+           Blank[]], 
+          Pattern[$CellContext`x, 
+           Blank[]], 
+          Pattern[$CellContext`y, 
+           Blank[]]] := Text[
+          Style[
+           AccountingForm[
+            MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+           13], {$CellContext`x, $CellContext`y}]; Graphics[{
+          EdgeForm[Black], 
+          FaceForm[], Thick, 
+          Rectangle[{7.5, -0.5}, {8.5, 0.5}], 
+          Text[
+           Style["X", Italic, 24], {8, 0}], 
+          Rectangle[{9.5, -0.5}, {10.5, 0.5}], 
+          Text[
+           Style["Z", Italic, 24], {10, 0}], 
+          Rectangle[{3.5, 5.5}, {4.5, 6.5}], 
+          Text[
+           Style["H", Italic, 24], {4, 6}], 
+          FaceForm[Black], 
+          Disk[{1.7, 6}, 0.1], 
+          Line[{{1.7, 5.9}, {1.7, 2.8}}], 
+          Circle[{1.7, 3}, 0.2], 
+          Line[{{1.5, 3}, {6, 3}}], 
+          Text[
+           Style[
+            Row[{
+              Subscript["|\[Beta]", "00"], ">="}], 10], {0, 1.75}], 
+          Line[{{0.5, 3}, {1.6, 3}}], 
+          Line[{{0.5, 0}, {7.5, 0}}], 
+          Line[{{8.5, 0}, {9.5, 0}}], 
+          Line[{{10.5, 0}, {11, 0}}], 
+          Line[{{1, 6}, {1.8, 6}}], 
+          Line[{{1.8, 6}, {3.5, 6}}], 
+          Line[{{2, 3}, {8, 3}}], 
+          Line[{{4.5, 6}, {10, 6}}], 
+          Line[{{10, 6}, {10, 0.5}}], 
+          Line[{{8, 3}, {8, 0.5}}], 
+          $CellContext`formatMatrix[$CellContext`bellIn, 1, 1.7], 
+          $CellContext`formatMatrix[$CellContext`cnotBox, 2.9, 3], 
+          $CellContext`formatMatrix[$CellContext`hadamardBox, 5, 3], 
+          $CellContext`formatMatrix[$CellContext`postMeasure, 7, 1.5], 
+          $CellContext`formatMatrix[$CellContext`xBox, 9, 1.5], Red, Dotted, 
+          Line[{{0, -0.5}, {0, 0.4}, {6, 0.4}, {6, 2.5}, {11, 2.5}}], 
+          Text[
+           Style["Alice", 20], {0, 4}], 
+          Text[
+           Style["Bob", 20], {5.5, -0.5}], 
+          Text[
+           Style["\[CapitalPsi]", 20], {1.2, 5.5}], 
+          $CellContext`formatMatrix[$CellContext`qubitIn, 0, 6], Black, 
+          Text[
+           Style["[\[Alpha],\[Beta]]=", 13], {-1.5, 6}], Red, 
+          $CellContext`formatMatrix[$CellContext`zBox, 12.3, 0], 
+          Text[
+           Style["\[CapitalPsi]", 20], {11, 0.5}], Blue, 
+          Text[
+           Style["Measurement", 20], {8, 4.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 2], 20], {8, 3.5}], 
+          Text[
+           Style[
+            Part[$CellContext`measure$$, 1], 20], {8, 5.5}]}, 
+         PlotRange -> {{-2.5, 14}, {-1, 7}}, ImageSize -> 600]), 
+      "Specifications" :> {{{$CellContext`qubit$$, {2.356194490192345, 
+          2.701769682087222}, "qubit"}, {0, 0}, {
+         Pi, 2 Pi}}, {{$CellContext`measure$$, {1, 1}, 
+          "measurement"}, {{0, 0} -> MatrixForm[{0, 0}], {0, 1} -> 
+          MatrixForm[{0, 1}], {1, 0} -> MatrixForm[{1, 0}], {1, 1} -> 
+          MatrixForm[{1, 1}]}}}, 
+      "Options" :> {
+       ControlType -> {Slider2D, RadioButtonBar}, 
+        TrackedSymbols :> {$CellContext`qubit$$, $CellContext`measure$$}}, 
+      "DefaultOptions" :> {ControllerLinking -> True}],
+     ImageSizeCache->{643., {229.34375, 234.65625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`qubitIn = {1, 0}, $CellContext`noop = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2], 0, 0, 0, 0}, $CellContext`bellIn = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2]}, $CellContext`cnotBox = {
+        1/Sqrt[2], 0, 0, 1/Sqrt[2], 0, 0, 0, 0}, $CellContext`cnot = {{1, 0, 
+        0, 0}, {0, 1, 0, 0}, {0, 0, 0, 1}, {0, 0, 1, 
+        0}}, $CellContext`identity = {{1, 0}, {0, 
+        1}}, $CellContext`hadamardBox = {
+        1/2, 0, 0, 1/2, 1/2, 0, 0, 1/2}, $CellContext`hadamard = {{
+         1/Sqrt[2], 1/Sqrt[2]}, {
+         1/Sqrt[2], -(1/Sqrt[2])}}, $CellContext`postMeasure = {1, 
+        0}, $CellContext`measurement[
+         Pattern[$CellContext`q, 
+          Blank[]], 
+         Pattern[$CellContext`measure, 
+          Blank[]]] := If[
+         And[
+         Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+          0], {Part[$CellContext`q, 1] 2, Part[$CellContext`q, 2] 2}, 
+         If[
+          And[
+          Part[$CellContext`measure, 1] == 0, Part[$CellContext`measure, 2] == 
+           1], {Part[$CellContext`q, 3] 2, Part[$CellContext`q, 4] 2}, 
+          If[
+           And[
+           Part[$CellContext`measure, 1] == 1, Part[$CellContext`measure, 2] == 
+            0], {Part[$CellContext`q, 5] 2, Part[$CellContext`q, 6] 2}, {
+           Part[$CellContext`q, 7] 2, Part[$CellContext`q, 8] 
+            2}]]], $CellContext`xBox = {1, 0}, $CellContext`x = {{0, 1}, {1, 
+        0}}, $CellContext`zBox = {1, 0}, $CellContext`z = {{1, 0}, {
+        0, -1}}, $CellContext`formatMatrix[
+         Pattern[$CellContext`m, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`y, 
+          Blank[]]] := Text[
+         Style[
+          AccountingForm[
+           MatrixForm[$CellContext`m], {1, 1}, NumberSigns -> {"-", ""}], 
+          13], {$CellContext`x, $CellContext`y}], 
+       Attributes[Subscript] = {NHoldRest}}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellID->620325400]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "DetailsSection"],
+
+Cell[TextData[{
+ "A quantum bit (qubit) cannot be cloned or copied, but its state can be \
+teleported. In quantum teleportation, a sender (Alice) can send the state of \
+one quantum bit (qubit) to the receiver (Bob). The input to the circuit is \
+the qubit whose state is transported (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    RowBox[{"\[Alpha]", ",", "\[Beta]"}], "]"}], TraditionalForm]], 
+  "InlineMath"],
+ " in the diagram), represented by two complex numbers specified by the user \
+via the 2D slider), along with one of a pair of qubits entangled in the Bell \
+basis state (the upper qubit). (See the Demonstration ",
+ ButtonBox["Measuring Entangled Qubits",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/MeasuringEntangledQubits"], None},
+  ButtonNote->"http://demonstrations.wolfram.com/MeasuringEntangledQubits"],
+ " for more detail on the Bell basis state and quantum gates.) The other \
+qubit from the pair (the lower qubit) is sent unchanged to Bob. Processing \
+Alice's two qubits, first with a CNOT gate and then with a Hadamard gate, \
+yields two qubits that are then measured. The act of measuring causes the \
+quantum state to collapse, yielding two classical (0 or 1) bits. There are \
+four randomly possible outcomes of this measurement of the two qubits (00, \
+01, 10, 11), which can be chosen by the user via the radio buttons, \
+simulating the random outcome. An interesting thing about this circuit is \
+that it does not matter what the specific measurement outcome is, because the \
+teleported qubit output will turn out to be the same, independent of the \
+measurement. The measurement output classical bits are sent to Bob, who uses \
+these bits to control the processing on his entangled qubit pair with a Pauli \
+X (or NOT) operation and a Pauli Z (or Phase Flip) operation, yielding the \
+teleported qubit state ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", 
+    RowBox[{"\[Alpha]", ",", "\[Beta]"}], "]"}], TraditionalForm]], 
+  "InlineMath"],
+ ". The matrices show the intermediate qubit states as the circuit processing \
+progresses."
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4749774796274557`*^9, 3.4749776261407127`*^9}, {
+   3.474977661823629*^9, 3.474977833381847*^9}, {3.47497791265871*^9, 
+   3.474978199301237*^9}, {3.474978416843732*^9, 3.474978488844573*^9}, {
+   3.474978545550234*^9, 3.4749785465740013`*^9}, 3.475584599755423*^9, 
+   3.475584704970543*^9, {3.4755848112102337`*^9, 3.475584847182341*^9}, {
+   3.475584893944765*^9, 3.4755849211996613`*^9}, {3.4758428731741953`*^9, 
+   3.4758428732834*^9}, {3.4758429360874968`*^9, 3.4758429476007395`*^9}, {
+   3.4760267956043987`*^9, 3.476026890839383*^9}, {3.4760269952150507`*^9, 
+   3.476027052027914*^9}, 3.4760299915741777`*^9, {3.4760300304301777`*^9, 
+   3.476030058660836*^9}, {3.476124189423511*^9, 3.4761242073543577`*^9}},
+ CellID->866629864],
+
+Cell["References:", "DetailNotes",
+ CellChangeTimes->{3.35696210375764*^9, 3.4761242412381687`*^9},
+ CellID->965021111],
+
+Cell[TextData[{
+ "P. Kaye, R. Laflamme, and M. Mosca, ",
+ StyleBox["An Introduction to Quantum Computing",
+  FontSlant->"Italic"],
+ ", New York: Oxford University Press, 2007."
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.474975948493874*^9, 3.474975948498034*^9}, {
+   3.474976292001974*^9, 3.474976418311392*^9}, {3.4758428558575296`*^9, 
+   3.4758428624253826`*^9}, {3.4760270616841817`*^9, 3.4760270626060505`*^9}},
+ CellID->1214030294],
+
+Cell[TextData[{
+ "C. H. Bennett, G. Brassard, C. Cr\[EAcute]peau, R. Jozsa, A. Peres, and W. \
+K. Wooters, \"Teleporting an Unknown Quantum State via Dual Classical and \
+Einstein\[Dash]Podolsky\[Dash]Rosen Channels,\" ",
+ StyleBox["Physical Review Letters",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["70",
+  FontWeight->"Bold"],
+ ", 1993 pp. 1895\[Dash]1899.\t"
+}], "DetailNotes",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.474975948493874*^9, 3.474975948498034*^9}, {
+   3.474976292001974*^9, 3.474976418311392*^9}, {3.4758428558575296`*^9, 
+   3.4758428600384903`*^9}, {3.4760270704497504`*^9, 3.47602709707458*^9}},
+ CellID->15037117]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "ControlSuggestionsSection"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Resize Images"]}],
+  "\"Click inside an image to reveal its orange resize frame.\\nDrag any of \
+the orange resize handles to resize the image.\"",
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.35696210375764*^9, 3.475842865327094*^9},
+ FontFamily->"Verdana",
+ CellTags->"ResizeImages"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Rotate and Zoom in 3D"]}],
+  RowBox[{
+   "\"Drag a 3D graphic to rotate it. Starting the drag near the center \
+tumbles\\nthe graphic; starting near a corner turns it parallel to the plane \
+of the screen.\\nHold down \"", 
+    FrameBox[
+    "Ctrl", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" (or \"", 
+    FrameBox[
+    "Cmd", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" on Mac) and drag up and down to zoom.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"RotateAndZoomIn3D"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Drag Locators"]}],
+  RowBox[{"\"Drag any locator (\"", 
+    GraphicsBox[
+     LocatorBox[
+      Scaled[{0.5, 0.5}]], ImageSize -> 20], 
+    "\", etc.) to move it around.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"DragLocators"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Create and Delete Locators"]}],
+  RowBox[{"\"Insert a new locator in the graphic by holding down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], 
+    "\" key\\nand clicking where you want it to be. Delete a locator by \
+clicking it\\nwhile holding down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" key.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"CreateAndDeleteLocators"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Slider Zoom"]}],
+  RowBox[{"\"Hold down the \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], 
+    "\" key while moving a slider to make fine adjustments in the slider \
+value.\\nHold \"", 
+    FrameBox[
+    "Ctrl", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" and/or \"", 
+    FrameBox[
+    "Shift", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" at the same time as \"", 
+    FrameBox[
+    "Alt", Background -> GrayLevel[0.9], FrameMargins -> 2, FrameStyle -> 
+     GrayLevel[0.9]], "\" to make ever finer adjustments.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"SliderZoom"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Gamepad Controls"]}],
+  "\"Control this Demonstration with a gamepad or other\\nhuman interface \
+device connected to your computer.\"",
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.35696210375764*^9, 3.3895522232313623`*^9},
+ FontFamily->"Verdana",
+ CellTags->"GamepadControls"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[True], Cell[" Automatic Animation"]}],
+  RowBox[{"\"Animate a slider in this Demonstration by clicking the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJzzTSzJSM1NLMlMTlRwL0osyMhMLlZwyy8CCjEzMjAwcIKwAgOI/R/IhBKc\n\
+/4EAyGAG0f+nTZsGwgysIJIRKsWKLAXGIHFmEpUgLADxWUAkI24jZs+eTaEt\n\
+IG+wQKRmzJgBlYf5lhEA30OqWA=="], "Graphics", ImageSize -> {9, 9}, ImageMargins -> 
+      0, CellBaseline -> Baseline], BoxBaselineShift -> 0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"button\\nnext to the slider, and then clicking the play button that \
+appears.\\nAnimate all controls by selecting \"", 
+    StyleBox["Autorun", FontWeight -> "Bold"], "\" from the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJyNULENwyAQfEySIlMwTVJlCGRFsosokeNtqBmDBagoaZjAI1C8/8GUUUC6\n\
+57h7cQ8PvU7Pl17nUav7oj/TPH7V7b2QJAUAXBkKmCPRowxICy64bRvGGNF7\n\
+X8CctGoDSN4xhIDGGDhzFXwUh3/ClBKrDQPmnGXtI6u0OOd+tZBVUqy1xSaH\n\
+UqiK6pPe4XdEdAz6563tx/gejuORGMxJaz8mdpJn7hc="], "Graphics", 
+      ImageSize -> {10, 10}, ImageMargins -> 0, CellBaseline -> Baseline], 
+     BoxBaselineShift -> 0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"menu.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ CellChangeTimes->{3.35696210375764*^9, 3.475585427876781*^9},
+ FontFamily->"Verdana",
+ CellTags->"AutomaticAnimation"],
+
+Cell[BoxData[
+ TooltipBox[
+  RowBox[{
+   CheckboxBox[False], Cell[" Bookmark Animation"]}],
+  RowBox[{
+   "\"See a prepared animation of this Demonstration by selecting\\n\"", 
+    StyleBox["Animate Bookmarks", FontWeight -> "Bold"], "\" from the\"", 
+    AdjustmentBox[
+     Cell[
+      GraphicsData[
+      "CompressedBitmap", 
+       "eJyNULENwyAQfEySIlMwTVJlCGRFsosokeNtqBmDBagoaZjAI1C8/8GUUUC6\n\
+57h7cQ8PvU7Pl17nUav7oj/TPH7V7b2QJAUAXBkKmCPRowxICy64bRvGGNF7\n\
+X8CctGoDSN4xhIDGGDhzFXwUh3/ClBKrDQPmnGXtI6u0OOd+tZBVUqy1xSaH\n\
+UqiK6pPe4XdEdAz6563tx/gejuORGMxJaz8mdpJn7hc="], "Graphics", 
+      ImageSize -> {10, 10}, ImageMargins -> 0, CellBaseline -> Baseline], 
+     BoxBaselineShift -> 0.1839080459770115, 
+     BoxMargins -> {{0., 0.}, {-0.1839080459770115, 0.1839080459770115}}], 
+    "\"menu.\""}],
+  TooltipDelay->0.35]], "ControlSuggestions",
+ FontFamily->"Verdana",
+ CellTags->"BookmarkAnimation"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SearchTermsSection"],
+
+Cell["quantum teleportation", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4409293761907463`*^9, 3.440929377135646*^9}, {
+   3.440929527466033*^9, 3.440929542232789*^9}, {3.459590022482306*^9, 
+   3.459590027475473*^9}, {3.474975981661689*^9, 3.474975984499449*^9}},
+ CellID->228279262],
+
+Cell["quantum computing", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4409293761907463`*^9, 3.440929377135646*^9}, {
+   3.440929527466033*^9, 3.440929542232789*^9}},
+ CellID->1581445446],
+
+Cell["quantum computation", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4409296333178263`*^9, 3.440929635853635*^9}},
+ CellID->1662643643],
+
+Cell["quantum circuit", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.44092960088386*^9, 3.4409296032841997`*^9}},
+ CellID->1356538885],
+
+Cell["entanglement", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.440929551841072*^9, 3.440929553865337*^9}},
+ CellID->1283762892],
+
+Cell["Bell state", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.440929567738347*^9, 3.4409295727224293`*^9}},
+ CellID->434724435],
+
+Cell["Bell basis", "SearchTerms",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.440929580010931*^9, 3.4409295816987247`*^9}},
+ CellID->674211951]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "RelatedLinksSection"],
+
+Cell[TextData[ButtonBox["Qubit",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://mathworld.wolfram.com/Qubit.html"], None},
+ ButtonNote->"http://mathworld.wolfram.com/Qubit.html"]], "RelatedLinks",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4755859953609047`*^9, 3.475585997861203*^9}, {
+   3.475586105428235*^9, 3.4755861054311953`*^9}},
+ CellID->517540068],
+
+Cell[TextData[ButtonBox["Generating Entangled Qubits",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://demonstrations.wolfram.com/GeneratingEntangledQubits"], None},
+ ButtonNote->
+  "http://demonstrations.wolfram.com/GeneratingEntangledQubits"]], \
+"RelatedLinks",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.475586001011539*^9, 3.475586046410489*^9}, {
+   3.475586137187746*^9, 3.4755861371932697`*^9}},
+ CellID->987152526],
+
+Cell[TextData[ButtonBox["Measuring Entangled Qubits",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://demonstrations.wolfram.com/MeasuringEntangledQubits"], None},
+ ButtonNote->
+  "http://demonstrations.wolfram.com/MeasuringEntangledQubits"]], \
+"RelatedLinks",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.475586060783551*^9, 3.475586068970304*^9}, {
+   3.475586154847362*^9, 3.475586154850676*^9}},
+ CellID->996155204],
+
+Cell[TextData[ButtonBox["Swapping Qubit States",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://demonstrations.wolfram.com/SwappingQubitStates"], None},
+ ButtonNote->
+  "http://demonstrations.wolfram.com/SwappingQubitStates"]], "RelatedLinks",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.47558607372217*^9, 3.475586079074123*^9}, {
+   3.475586183779234*^9, 3.475586183779861*^9}},
+ CellID->598001616],
+
+Cell[TextData[ButtonBox["Superdense Coding",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://demonstrations.wolfram.com/SuperdenseCoding"], None},
+ ButtonNote->
+  "http://demonstrations.wolfram.com/SuperdenseCoding"]], "RelatedLinks",
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.475586085106086*^9, 3.475586090112914*^9}, {
+   3.475586210588811*^9, 3.4755862105922403`*^9}},
+ CellID->389692152]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "AuthorSection"],
+
+Cell[TextData[{
+ "Contributed by: ",
+ ButtonBox["Brad Rubin",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://demonstrations.wolfram.com/author.html?author=Brad+Rubin"], 
+    None},
+  ButtonNote->
+   "http://demonstrations.wolfram.com/author.html?author=Brad+Rubin"]
+}], "Author",
+ CellChangeTimes->{3.35696210375764*^9, 3.475585467145005*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1026, 755},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (September 30, 2009)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Demonstration.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ResizeImages"->{
+  Cell[75452, 1792, 374, 9, 29, "ControlSuggestions",
+   CellTags->"ResizeImages"]},
+ "RotateAndZoomIn3D"->{
+  Cell[75829, 1803, 678, 16, 29, "ControlSuggestions",
+   CellTags->"RotateAndZoomIn3D"]},
+ "DragLocators"->{
+  Cell[76510, 1821, 340, 11, 29, "ControlSuggestions",
+   CellTags->"DragLocators"]},
+ "CreateAndDeleteLocators"->{
+  Cell[76853, 1834, 637, 15, 29, "ControlSuggestions",
+   CellTags->"CreateAndDeleteLocators"]},
+ "SliderZoom"->{
+  Cell[77493, 1851, 844, 21, 29, "ControlSuggestions",
+   CellTags->"SliderZoom"]},
+ "GamepadControls"->{
+  Cell[78340, 1874, 369, 9, 29, "ControlSuggestions",
+   CellTags->"GamepadControls"]},
+ "AutomaticAnimation"->{
+  Cell[78712, 1885, 1526, 32, 29, "ControlSuggestions",
+   CellTags->"AutomaticAnimation"]},
+ "BookmarkAnimation"->{
+  Cell[80241, 1919, 908, 21, 29, "ControlSuggestions",
+   CellTags->"BookmarkAnimation"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ResizeImages", 85419, 2076},
+ {"RotateAndZoomIn3D", 85528, 2079},
+ {"DragLocators", 85638, 2082},
+ {"CreateAndDeleteLocators", 85754, 2085},
+ {"SliderZoom", 85868, 2088},
+ {"GamepadControls", 85974, 2091},
+ {"AutomaticAnimation", 86087, 2094},
+ {"BookmarkAnimation", 86204, 2097}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 132, 2, 74, "DemoTitle"],
+Cell[CellGroupData[{
+Cell[724, 28, 33, 0, 266, "InitializationSection"],
+Cell[760, 30, 1421, 48, 243, "Input",
+ InitializationCell->True,
+ CellID->1291586896],
+Cell[2184, 80, 2224, 67, 54, "Input",
+ InitializationCell->True,
+ CellID->121348847]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4445, 152, 29, 0, 230, "ManipulateSection"],
+Cell[CellGroupData[{
+Cell[4499, 156, 14739, 395, 834, "Input"],
+Cell[19241, 553, 9161, 193, 476, "Output",
+ CellID->898371382]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28451, 752, 36, 0, 166, "ManipulateCaptionSection"],
+Cell[28490, 754, 1154, 20, 80, "ManipulateCaption"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29681, 779, 28, 0, 168, "ThumbnailSection"],
+Cell[29712, 781, 8277, 180, 476, "Output",
+ CellID->127689433]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38026, 966, 28, 0, 138, "SnapshotsSection"],
+Cell[38057, 968, 8275, 180, 476, "Output",
+ CellID->16806934],
+Cell[46335, 1150, 8282, 180, 476, "Output",
+ CellID->322354877],
+Cell[54620, 1332, 8270, 180, 476, "Output",
+ CellID->628766401],
+Cell[62893, 1514, 8270, 180, 476, "Output",
+ CellID->620325400]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[71200, 1699, 26, 0, 332, "DetailsSection"],
+Cell[71229, 1701, 2918, 51, 163, "DetailNotes",
+ CellID->866629864],
+Cell[74150, 1754, 119, 2, 21, "DetailNotes",
+ CellID->965021111],
+Cell[74272, 1758, 460, 10, 21, "DetailNotes",
+ CellID->1214030294],
+Cell[74735, 1770, 640, 15, 36, "DetailNotes",
+ CellID->15037117]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75412, 1790, 37, 0, 120, "ControlSuggestionsSection"],
+Cell[75452, 1792, 374, 9, 29, "ControlSuggestions",
+ CellTags->"ResizeImages"],
+Cell[75829, 1803, 678, 16, 29, "ControlSuggestions",
+ CellTags->"RotateAndZoomIn3D"],
+Cell[76510, 1821, 340, 11, 29, "ControlSuggestions",
+ CellTags->"DragLocators"],
+Cell[76853, 1834, 637, 15, 29, "ControlSuggestions",
+ CellTags->"CreateAndDeleteLocators"],
+Cell[77493, 1851, 844, 21, 29, "ControlSuggestions",
+ CellTags->"SliderZoom"],
+Cell[78340, 1874, 369, 9, 29, "ControlSuggestions",
+ CellTags->"GamepadControls"],
+Cell[78712, 1885, 1526, 32, 29, "ControlSuggestions",
+ CellTags->"AutomaticAnimation"],
+Cell[80241, 1919, 908, 21, 29, "ControlSuggestions",
+ CellTags->"BookmarkAnimation"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[81186, 1945, 30, 0, 152, "SearchTermsSection"],
+Cell[81219, 1947, 302, 5, 21, "SearchTerms",
+ CellID->228279262],
+Cell[81524, 1954, 203, 4, 21, "SearchTerms",
+ CellID->1581445446],
+Cell[81730, 1960, 155, 3, 21, "SearchTerms",
+ CellID->1662643643],
+Cell[81888, 1965, 150, 3, 21, "SearchTerms",
+ CellID->1356538885],
+Cell[82041, 1970, 146, 3, 21, "SearchTerms",
+ CellID->1283762892],
+Cell[82190, 1975, 145, 3, 21, "SearchTerms",
+ CellID->434724435],
+Cell[82338, 1980, 145, 3, 21, "SearchTerms",
+ CellID->674211951]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82520, 1988, 31, 0, 138, "RelatedLinksSection"],
+Cell[82554, 1990, 368, 8, 21, "RelatedLinks",
+ CellID->517540068],
+Cell[82925, 2000, 433, 10, 21, "RelatedLinks",
+ CellID->987152526],
+Cell[83361, 2012, 428, 10, 21, "RelatedLinks",
+ CellID->996155204],
+Cell[83792, 2024, 410, 9, 21, "RelatedLinks",
+ CellID->598001616],
+Cell[84205, 2035, 403, 9, 21, "RelatedLinks",
+ CellID->389692152]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84645, 2049, 25, 0, 136, "AuthorSection"],
+Cell[84673, 2051, 353, 10, 21, "Author"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
