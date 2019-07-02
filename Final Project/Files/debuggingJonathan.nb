@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[    165157,       3587]
-NotebookOptionsPosition[    161810,       3523]
-NotebookOutlinePosition[    162147,       3538]
-CellTagsIndexPosition[    162104,       3535]
+NotebookDataLength[    182478,       3953]
+NotebookOptionsPosition[    178857,       3883]
+NotebookOutlinePosition[    179194,       3898]
+CellTagsIndexPosition[    179151,       3895]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1240,6 +1240,8 @@ Cell[BoxData[
   "Out[141]=",ExpressionUUID->"104e4760-59c1-45af-b13b-bf541e25fc9b"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"QuantumEvaluate", "[", 
   RowBox[{
@@ -1256,18 +1258,359 @@ Cell[BoxData[
       RowBox[{
        RowBox[{"Normal", "[", 
         RowBox[{
-         RowBox[{"intermediateStepLeft2", "[", 
-          RowBox[{"2", ",", "state", ",", 
-           RowBox[{"QuantumMatrixOperation", "[", "\"\<CNOT\>\"", "]"}]}], 
-          "]"}], "[", "\"\<StateVector\>\"", "]"}], "]"}], ",", 
+         RowBox[{"QuantumPartialTr", "[", 
+          RowBox[{
+           RowBox[{"QuantumEvaluate", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"1", ",", "2"}], "}"}], "\[Rule]", " ", 
+              InterpretationBox[
+               RowBox[{
+                TagBox["QuantumMatrixOperation",
+                 "SummaryHead"], "[", 
+                
+                DynamicModuleBox[{Typeset`open$$ = False, 
+                 Typeset`embedState$$ = "Ready"}, 
+                 TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquarePlusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], "\"CNOT\"", 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Qudit Dimension: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Arity: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                    GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquareMinusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], "\"CNOT\"", 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Qudit Dimension: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Arity: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Hermitian: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"True\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Unitary: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"True\"", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                    GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+                  "SummaryPanel"],
+                 DynamicModuleValues:>{}], "]"}],
+               QuantumComputing`QuantumMatrixOperation[
+                Association[
+                "QuditDimension" -> 2, "Matrix" -> 
+                 SparseArray[
+                  Automatic, {4, 4}, 0, {
+                   1, {{0, 1, 2, 3, 4}, {{1}, {2}, {4}, {3}}}, {1, 1, 1, 1}}],
+                  "Arity" -> 2, "InGateSetQ" -> True, "OperationName" -> 
+                 "CNOT"]],
+               Editable->False,
+               SelectWithContents->True,
+               Selectable->False]}], ",", "\[IndentingNewLine]", 
+             RowBox[{"QuantumFiniteDimensionalState", "[", 
+              RowBox[{"fixStupidity", "[", "\[IndentingNewLine]", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Normal", "[", 
+                  RowBox[{
+                   RowBox[{"getState", "[", 
+                    RowBox[{
+                    RowBox[{"2", "-", "1"}], ",", "state"}], "]"}], "[", 
+                   "\"\<StateVector\>\"", "]"}], "]"}], ",", 
+                 RowBox[{"Normal", "[", 
+                  RowBox[{
+                   RowBox[{"QuantumPartialTr", "[", 
+                    RowBox[{
+                    RowBox[{"QuantumEvaluate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "2"}], "}"}], "\[Rule]", " ", 
+                    InterpretationBox[
+                    RowBox[{
+                    TagBox["QuantumMatrixOperation",
+                    "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{Typeset`open$$ = False, 
+                    Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquarePlusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], "\"CNOT\"", 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Qudit Dimension: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Arity: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquareMinusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], "\"CNOT\"", 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Qudit Dimension: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Arity: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Hermitian: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"True\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Unitary: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"True\"", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+                    "SummaryPanel"],
+                    DynamicModuleValues:>{}], "]"}],
+                    QuantumComputing`QuantumMatrixOperation[
+                    Association[
+                    "QuditDimension" -> 2, "Matrix" -> 
+                    SparseArray[
+                    Automatic, {4, 4}, 0, {
+                    1, {{0, 1, 2, 3, 4}, {{1}, {2}, {4}, {3}}}, {1, 1, 1, 
+                    1}}], "Arity" -> 2, "InGateSetQ" -> True, "OperationName" -> 
+                    "CNOT"]],
+                    Editable->False,
+                    SelectWithContents->True,
+                    Selectable->False]}], ",", "\[IndentingNewLine]", 
+                    RowBox[{"QuantumFiniteDimensionalState", "[", 
+                    RowBox[{"fixStupidity", "[", "\[IndentingNewLine]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Normal", "[", 
+                    RowBox[{
+                    RowBox[{"getState", "[", 
+                    RowBox[{
+                    RowBox[{"2", "+", "1"}], ",", "state"}], "]"}], "[", 
+                    "\"\<StateVector\>\"", "]"}], "]"}], ",", 
+                    RowBox[{"Normal", "[", 
+                    RowBox[{
+                    RowBox[{"getControlled", "[", 
+                    RowBox[{"2", ",", "state"}], "]"}], "[", 
+                    "\"\<StateVector\>\"", "]"}], "]"}]}], "}"}], "]"}], 
+                    "]"}]}], "]"}], ",", 
+                    RowBox[{"{", "1", "}"}]}], "]"}], "[", 
+                   "\"\<StateVector\>\"", "]"}], "]"}]}], "}"}], "]"}], 
+              "]"}]}], "]"}], ",", 
+           RowBox[{"{", "1", "}"}]}], "]"}], "[", "\"\<StateVector\>\"", 
+         "]"}], "]"}], ",", 
        RowBox[{"Normal", "[", 
         RowBox[{
          RowBox[{"getState", "[", 
           RowBox[{"2", ",", "state"}], "]"}], "[", "\"\<StateVector\>\"", 
          "]"}], "]"}]}], "}"}], "]"}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.770923520910709*^9, 3.770923548243387*^9}},
+ CellChangeTimes->{{3.770923520910709*^9, 3.770923548243387*^9}, 
+   3.770925643623619*^9},
  CellLabel->
-  "In[143]:=",ExpressionUUID->"46a0b0a0-190f-47f5-afe9-4a85106091eb"],
+  "In[188]:=",ExpressionUUID->"46a0b0a0-190f-47f5-afe9-4a85106091eb"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["QuantumFiniteDimensionalState",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            TagBox[
+             RowBox[{"(", "\[NoBreak]", 
+               TagBox[
+                
+                GridBox[{{"1"}, {"0"}, {"0"}, {"0"}}, ColumnAlignments -> 
+                 Center, RowSpacings -> 1, ColumnAlignments -> Left], Column],
+                "\[NoBreak]", ")"}], 
+             Function[BoxForm`e$, 
+              MatrixForm[BoxForm`e$]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Number Of Qudits: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["2", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            TagBox[
+             RowBox[{"(", "\[NoBreak]", 
+               TagBox[
+                
+                GridBox[{{"1"}, {"0"}, {"0"}, {"0"}}, ColumnAlignments -> 
+                 Center, RowSpacings -> 1, ColumnAlignments -> Left], Column],
+                "\[NoBreak]", ")"}], 
+             Function[BoxForm`e$, 
+              MatrixForm[BoxForm`e$]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Number Of Qudits: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["2", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Quantum Purity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Von Neumann Entropy: \"", "SummaryItemAnnotation"],
+                  "\[InvisibleSpace]", 
+                 TagBox["0", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  QuantumComputing`QuantumFiniteDimensionalState[
+   Association[
+   "StateVector" -> SparseArray[Automatic, {4}, 0, {1, {{0, 1}, {{1}}}, {1}}],
+     "QuditDimension" -> 2, "NumberOfQudits" -> 2]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.7709256488185883`*^9},
+ CellLabel->
+  "Out[188]=",ExpressionUUID->"69b3d332-973f-4e0e-b1b7-91d1ebd7c77c"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -1575,6 +1918,8 @@ Cell[BoxData[
   "Out[156]=",ExpressionUUID->"511e0ae3-4d26-4a91-886a-fc5e8d15af39"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"QuantumPartialTr", "[", 
   RowBox[{
@@ -1691,16 +2036,21 @@ Cell[BoxData[
            "\"\<StateVector\>\"", "]"}], "]"}], ",", 
          RowBox[{"Normal", "[", 
           RowBox[{
-           RowBox[{"intermediateStepRight1", "[", 
-            RowBox[{"2", ",", "state", ",", 
-             InterpretationBox[
+           RowBox[{"QuantumPartialTr", "[", 
+            RowBox[{
+             RowBox[{"QuantumEvaluate", "[", 
               RowBox[{
-               TagBox["QuantumMatrixOperation",
-                "SummaryHead"], "[", 
-               
-               DynamicModuleBox[{Typeset`open$$ = False, 
-                Typeset`embedState$$ = "Ready"}, 
-                TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{"1", ",", "2"}], "}"}], "\[Rule]", " ", 
+                InterpretationBox[
+                 RowBox[{
+                  TagBox["QuantumMatrixOperation",
+                   "SummaryHead"], "[", 
+                  
+                  DynamicModuleBox[{Typeset`open$$ = False, 
+                   Typeset`embedState$$ = "Ready"}, 
+                   TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
                     PaneBox[
                     ButtonBox[
                     DynamicBox[
@@ -1709,8 +2059,7 @@ Cell[BoxData[
                     ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                     Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    Dynamic[{Automatic, 3.5 CurrentValue["FontCapHeight"]/
                     AbsoluteCurrentValue[Magnification]}]], "\"CNOT\"", 
                     GridBox[{{
                     RowBox[{
@@ -1743,8 +2092,7 @@ Cell[BoxData[
                     ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                     Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    Dynamic[{Automatic, 3.5 CurrentValue["FontCapHeight"]/
                     AbsoluteCurrentValue[Magnification]}]], "\"CNOT\"", 
                     GridBox[{{
                     RowBox[{
@@ -1777,26 +2125,169 @@ Cell[BoxData[
                     False, GridBoxItemSize -> {
                     "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
                     BaselinePosition -> {1, 1}]}, 
-                   Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-                 "SummaryPanel"],
-                DynamicModuleValues:>{}], "]"}],
-              QuantumComputing`QuantumMatrixOperation[
-               Association[
-               "QuditDimension" -> 2, "Matrix" -> 
-                SparseArray[
-                 Automatic, {4, 4}, 0, {
-                  1, {{0, 1, 2, 3, 4}, {{1}, {2}, {4}, {3}}}, {1, 1, 1, 1}}], 
-                "Arity" -> 2, "InGateSetQ" -> True, "OperationName" -> 
-                "CNOT"]],
-              Editable->False,
-              SelectWithContents->True,
-              Selectable->False]}], "]"}], "[", "\"\<StateVector\>\"", "]"}], 
-          "]"}]}], "}"}], "]"}], "]"}]}], "]"}], ",", 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+                    "SummaryPanel"],
+                   DynamicModuleValues:>{}], "]"}],
+                 QuantumComputing`QuantumMatrixOperation[
+                  Association[
+                  "QuditDimension" -> 2, "Matrix" -> 
+                   SparseArray[
+                    Automatic, {4, 4}, 0, {
+                    1, {{0, 1, 2, 3, 4}, {{1}, {2}, {4}, {3}}}, {1, 1, 1, 
+                    1}}], "Arity" -> 2, "InGateSetQ" -> True, "OperationName" -> 
+                   "CNOT"]],
+                 Editable->False,
+                 SelectWithContents->True,
+                 Selectable->False]}], ",", "\[IndentingNewLine]", 
+               RowBox[{"QuantumFiniteDimensionalState", "[", 
+                RowBox[{"fixStupidity", "[", "\[IndentingNewLine]", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"Normal", "[", 
+                    RowBox[{
+                    RowBox[{"getState", "[", 
+                    RowBox[{
+                    RowBox[{"2", "+", "1"}], ",", "state"}], "]"}], "[", 
+                    "\"\<StateVector\>\"", "]"}], "]"}], ",", 
+                   RowBox[{"Normal", "[", 
+                    RowBox[{
+                    RowBox[{"getControlled", "[", 
+                    RowBox[{"2", ",", "state"}], "]"}], "[", 
+                    "\"\<StateVector\>\"", "]"}], "]"}]}], "}"}], "]"}], 
+                "]"}]}], "]"}], ",", 
+             RowBox[{"{", "1", "}"}]}], "]"}], "[", "\"\<StateVector\>\"", 
+           "]"}], "]"}]}], "}"}], "]"}], "]"}]}], "]"}], ",", 
    RowBox[{"{", "1", "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.770924005361957*^9, 3.770924020812677*^9}, {
-  3.770924067400619*^9, 3.770924095726348*^9}},
+  3.770924067400619*^9, 3.770924095726348*^9}, {3.770925595449038*^9, 
+  3.770925599298245*^9}},
  CellLabel->
-  "In[158]:=",ExpressionUUID->"80c59e06-2759-428e-a049-a007ab728036"],
+  "In[187]:=",ExpressionUUID->"80c59e06-2759-428e-a049-a007ab728036"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["QuantumFiniteDimensionalState",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            TagBox[
+             RowBox[{"(", "\[NoBreak]", 
+               TagBox[
+                GridBox[{{
+                   FractionBox["1", 
+                    SqrtBox["2"]]}, {
+                   FractionBox["1", 
+                    SqrtBox["2"]]}}, RowSpacings -> 1, ColumnAlignments -> 
+                 Center, ColumnAlignments -> Left], Column], "\[NoBreak]", 
+               ")"}], 
+             Function[BoxForm`e$, 
+              MatrixForm[BoxForm`e$]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Number Of Qudits: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            TagBox[
+             RowBox[{"(", "\[NoBreak]", 
+               TagBox[
+                GridBox[{{
+                   FractionBox["1", 
+                    SqrtBox["2"]]}, {
+                   FractionBox["1", 
+                    SqrtBox["2"]]}}, RowSpacings -> 1, ColumnAlignments -> 
+                 Center, ColumnAlignments -> Left], Column], "\[NoBreak]", 
+               ")"}], 
+             Function[BoxForm`e$, 
+              MatrixForm[BoxForm`e$]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Number Of Qudits: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Quantum Purity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Von Neumann Entropy: \"", "SummaryItemAnnotation"],
+                  "\[InvisibleSpace]", 
+                 TagBox["0", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Bloch Coordinates: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"\"r\"", "\[Rule]", "1"}], ",", 
+                    RowBox[{"\"\[Theta]\"", "\[Rule]", 
+                    FractionBox["\[Pi]", "2"]}], ",", 
+                    RowBox[{"\"\[Phi]\"", "\[Rule]", "0"}]}], "}"}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  QuantumComputing`QuantumFiniteDimensionalState[
+   Association[
+   "NumberOfQudits" -> 1, "QuditDimension" -> 2, "StateVector" -> 
+    SparseArray[
+     Automatic, {2}, 0, {
+      1, {{0, 2}, {{1}, {2}}}, {2^Rational[-1, 2], 2^Rational[-1, 2]}}]]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.7709256007652073`*^9},
+ CellLabel->
+  "Out[187]=",ExpressionUUID->"e85445fa-47b5-4984-a4d9-a8376b92d5df"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -2104,258 +2595,21 @@ Cell[BoxData[
         SqrtBox["2"]]}], "}"}], ",", 
      RowBox[{"Normal", "[", 
       RowBox[{
-       RowBox[{"intermediateStepRight1", "[", 
-        RowBox[{"2", ",", "state", ",", 
-         InterpretationBox[
-          RowBox[{
-           TagBox["QuantumMatrixOperation",
-            "SummaryHead"], "[", 
-           
-           DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
-            "Ready"}, 
-            TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SquarePlusIconMedium"]], 
-                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
-                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
-                    Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], "\"CNOT\"", 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox["\"Qudit Dimension: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["2", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"Arity: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["2", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {
-                    ShowStringCharacters -> False, NumberMarks -> False, 
-                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-                  GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
-                  False, GridBoxItemSize -> {
-                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                  BaselinePosition -> {1, 1}], True -> GridBox[{{
-                    PaneBox[
-                    ButtonBox[
-                    DynamicBox[
-                    FEPrivate`FrontEndResource[
-                    "FEBitmaps", "SquareMinusIconMedium"]], 
-                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
-                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
-                    Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], "\"CNOT\"", 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox["\"Qudit Dimension: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["2", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"Arity: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["2", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"Hermitian: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"True\"", "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"Unitary: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"True\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {
-                    ShowStringCharacters -> False, NumberMarks -> False, 
-                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-                  GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> 
-                  False, GridBoxItemSize -> {
-                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                  BaselinePosition -> {1, 1}]}, 
-               Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-             "SummaryPanel"],
-            DynamicModuleValues:>{}], "]"}],
-          QuantumComputing`QuantumMatrixOperation[
-           Association[
-           "QuditDimension" -> 2, "Matrix" -> 
-            SparseArray[
-             Automatic, {4, 4}, 0, {
-              1, {{0, 1, 2, 3, 4}, {{1}, {2}, {4}, {3}}}, {1, 1, 1, 1}}], 
-            "Arity" -> 2, "InGateSetQ" -> True, "OperationName" -> "CNOT"]],
-          Editable->False,
-          SelectWithContents->True,
-          Selectable->False]}], "]"}], "[", "\"\<StateVector\>\"", "]"}], 
-      "]"}]}], "}"}], "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.770924287973887*^9, 3.770924288894958*^9}, {
-  3.7709243285767317`*^9, 
-  3.7709243568290873`*^9}},ExpressionUUID->"b776e584-99de-43b9-b315-\
-e1999452ac7d"],
-
-Cell[BoxData[
- RowBox[{"QuantumProduct", "[", 
-  RowBox[{"{", 
-   RowBox[{
-    InterpretationBox[
-     RowBox[{
-      TagBox["QuantumFiniteDimensionalState",
-       "SummaryHead"], "[", 
-      DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
-       "Ready"}, 
-       TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
-               PaneBox[
-                ButtonBox[
-                 DynamicBox[
-                  FEPrivate`FrontEndResource[
-                  "FEBitmaps", "SquarePlusIconMedium"]], 
-                 ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
-                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
-                Alignment -> {Center, Center}, ImageSize -> 
-                Dynamic[{
-                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                   AbsoluteCurrentValue[Magnification]}]], 
-               TagBox[
-                RowBox[{"(", "\[NoBreak]", 
-                  TagBox[
-                   GridBox[{{
-                    FractionBox["1", 
-                    SqrtBox["2"]]}, {
-                    FractionBox["1", 
-                    SqrtBox["2"]]}}, RowSpacings -> 1, ColumnAlignments -> 
-                    Center, ColumnAlignments -> Left], Column], "\[NoBreak]", 
-                  ")"}], 
-                Function[BoxForm`e$, 
-                 MatrixForm[BoxForm`e$]]], 
-               GridBox[{{
-                  RowBox[{
-                    TagBox["\"Number Of Qudits: \"", "SummaryItemAnnotation"],
-                     "\[InvisibleSpace]", 
-                    TagBox["1", "SummaryItem"]}]}}, 
-                GridBoxAlignment -> {
-                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-                False, GridBoxItemSize -> {
-                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                GridBoxSpacings -> {
-                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                BaseStyle -> {
-                 ShowStringCharacters -> False, NumberMarks -> False, 
-                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-             GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-             GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             BaselinePosition -> {1, 1}], True -> GridBox[{{
-               PaneBox[
-                ButtonBox[
-                 DynamicBox[
-                  FEPrivate`FrontEndResource[
-                  "FEBitmaps", "SquareMinusIconMedium"]], 
-                 ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
-                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
-                Alignment -> {Center, Center}, ImageSize -> 
-                Dynamic[{
-                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                   AbsoluteCurrentValue[Magnification]}]], 
-               TagBox[
-                RowBox[{"(", "\[NoBreak]", 
-                  TagBox[
-                   GridBox[{{
-                    FractionBox["1", 
-                    SqrtBox["2"]]}, {
-                    FractionBox["1", 
-                    SqrtBox["2"]]}}, RowSpacings -> 1, ColumnAlignments -> 
-                    Center, ColumnAlignments -> Left], Column], "\[NoBreak]", 
-                  ")"}], 
-                Function[BoxForm`e$, 
-                 MatrixForm[BoxForm`e$]]], 
-               GridBox[{{
-                  RowBox[{
-                    TagBox["\"Number Of Qudits: \"", "SummaryItemAnnotation"],
-                     "\[InvisibleSpace]", 
-                    TagBox["1", "SummaryItem"]}]}, {
-                  RowBox[{
-                    TagBox["\"Quantum Purity: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["1", "SummaryItem"]}]}, {
-                  RowBox[{
-                    TagBox[
-                    "\"Von Neumann Entropy: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["0", "SummaryItem"]}]}, {
-                  RowBox[{
-                    TagBox[
-                    "\"Bloch Coordinates: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    RowBox[{"{", 
-                    RowBox[{
-                    RowBox[{"\"r\"", "\[Rule]", "1"}], ",", 
-                    RowBox[{"\"\[Theta]\"", "\[Rule]", 
-                    FractionBox["\[Pi]", "2"]}], ",", 
-                    RowBox[{"\"\[Phi]\"", "\[Rule]", "0"}]}], "}"}], 
-                    "SummaryItem"]}]}}, 
-                GridBoxAlignment -> {
-                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-                False, GridBoxItemSize -> {
-                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                GridBoxSpacings -> {
-                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                BaseStyle -> {
-                 ShowStringCharacters -> False, NumberMarks -> False, 
-                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-             GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-             GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             BaselinePosition -> {1, 1}]}, 
-          Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-        "SummaryPanel"],
-       DynamicModuleValues:>{}], "]"}],
-     QuantumComputing`QuantumFiniteDimensionalState[
-      Association[
-      "QuditDimension" -> 2, "NumberOfQudits" -> 1, "StateVector" -> 
-       SparseArray[
-        Automatic, {2}, 0, {
-         1, {{0, 2}, {{1}, {2}}}, {2^Rational[-1, 2], 2^Rational[-1, 2]}}]]],
-     Editable->False,
-     SelectWithContents->True,
-     Selectable->False], ",", 
-    TagBox[
-     RowBox[{"QuantumFiniteDimensionalState", "[", 
-      RowBox[{
-       RowBox[{"{", 
+       RowBox[{"QuantumPartialTr", "[", 
         RowBox[{
-         TagBox[
-          RowBox[{"QuantumPartialTr", "[", 
+         RowBox[{"QuantumEvaluate", "[", 
+          RowBox[{
            RowBox[{
-            RowBox[{"QuantumEvaluate", "[", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "2"}], "}"}], "\[Rule]", " ", 
+            InterpretationBox[
              RowBox[{
-              RowBox[{
-               RowBox[{"{", 
-                RowBox[{"1", ",", "2"}], "}"}], "\[Rule]", 
-               InterpretationBox[
-                RowBox[{
-                 TagBox["QuantumMatrixOperation",
-                  "SummaryHead"], "[", 
-                 
-                 DynamicModuleBox[{Typeset`open$$ = False, 
-                  Typeset`embedState$$ = "Ready"}, 
-                  TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+              TagBox["QuantumMatrixOperation",
+               "SummaryHead"], "[", 
+              
+              DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ =
+                "Ready"}, 
+               TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
                     PaneBox[
                     ButtonBox[
                     DynamicBox[
@@ -2364,7 +2618,8 @@ Cell[BoxData[
                     ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                     Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    Dynamic[{
+                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
                     AbsoluteCurrentValue[Magnification]}]], "\"CNOT\"", 
                     GridBox[{{
                     RowBox[{
@@ -2397,7 +2652,8 @@ Cell[BoxData[
                     ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
                     None, Evaluator -> Automatic, Method -> "Preemptive"], 
                     Alignment -> {Center, Center}, ImageSize -> 
-                    Dynamic[{Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    Dynamic[{
+                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
                     AbsoluteCurrentValue[Magnification]}]], "\"CNOT\"", 
                     GridBox[{{
                     RowBox[{
@@ -2430,52 +2686,156 @@ Cell[BoxData[
                     False, GridBoxItemSize -> {
                     "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
                     BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-                   "SummaryPanel"],
-                  DynamicModuleValues:>{}], "]"}],
-                QuantumComputing`QuantumMatrixOperation[
-                 Association[
-                 "QuditDimension" -> 2, "Matrix" -> 
-                  SparseArray[
-                   Automatic, {4, 4}, 0, {
-                    1, {{0, 1, 2, 3, 4}, {{1}, {2}, {4}, {3}}}, {1, 1, 1, 
-                    1}}], "Arity" -> 2, "InGateSetQ" -> True, "OperationName" -> 
-                  "CNOT"]],
-                Editable->False,
-                SelectWithContents->True,
-                Selectable->False]}], ",", 
-              RowBox[{"QuantumProduct", "[", 
-               RowBox[{"{", 
+                  Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+                "SummaryPanel"],
+               DynamicModuleValues:>{}], "]"}],
+             QuantumComputing`QuantumMatrixOperation[
+              Association[
+              "QuditDimension" -> 2, "Matrix" -> 
+               SparseArray[
+                Automatic, {4, 4}, 0, {
+                 1, {{0, 1, 2, 3, 4}, {{1}, {2}, {4}, {3}}}, {1, 1, 1, 1}}], 
+               "Arity" -> 2, "InGateSetQ" -> True, "OperationName" -> "CNOT"]],
+             Editable->False,
+             SelectWithContents->True,
+             Selectable->False]}], ",", "\[IndentingNewLine]", 
+           RowBox[{"QuantumFiniteDimensionalState", "[", 
+            RowBox[{"fixStupidity", "[", "\[IndentingNewLine]", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"Normal", "[", 
                 RowBox[{
-                 TagBox[
-                  RowBox[{"QuantumFiniteDimensionalState", "[", 
-                   RowBox[{
-                    RowBox[{"{", 
-                    RowBox[{"{", 
-                    RowBox[{
-                    FractionBox["1", "2"], ",", 
-                    FractionBox["1", "2"]}], "}"}], "}"}], ",", 
-                    RowBox[{"\<\"QuditDimension\"\>", "\[Rule]", "2"}]}], 
-                   "]"}],
-                  HoldForm], ",", 
-                 TagBox[
-                  RowBox[{"QuantumFiniteDimensionalState", "[", 
-                   RowBox[{
-                    RowBox[{"{", 
-                    RowBox[{"{", 
-                    RowBox[{
-                    FractionBox["1", "2"], ",", 
-                    FractionBox["1", "2"]}], "}"}], "}"}], ",", 
-                    RowBox[{"\<\"QuditDimension\"\>", "\[Rule]", "2"}]}], 
-                   "]"}],
-                  HoldForm]}], "}"}], "]"}]}], "]"}], ",", 
-            RowBox[{"{", "1", "}"}]}], "]"}],
-          HoldForm], "[", "\<\"StateVector\"\>", "]"}], "}"}], ",", 
-       RowBox[{"\<\"QuditDimension\"\>", "\[Rule]", "2"}]}], "]"}],
-     HoldForm]}], "}"}], "]"}]], "Output",
- CellChangeTimes->{3.770924332315381*^9},
+                 RowBox[{"getState", "[", 
+                  RowBox[{
+                   RowBox[{"2", "+", "1"}], ",", "state"}], "]"}], "[", 
+                 "\"\<StateVector\>\"", "]"}], "]"}], ",", 
+               RowBox[{"Normal", "[", 
+                RowBox[{
+                 RowBox[{"getControlled", "[", 
+                  RowBox[{"2", ",", "state"}], "]"}], "[", 
+                 "\"\<StateVector\>\"", "]"}], "]"}]}], "}"}], "]"}], "]"}]}],
+           "]"}], ",", 
+         RowBox[{"{", "1", "}"}]}], "]"}], "[", "\"\<StateVector\>\"", "]"}], 
+      "]"}]}], "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.770924287973887*^9, 3.770924288894958*^9}, {
+  3.7709243285767317`*^9, 3.7709243568290873`*^9}, {3.770925425206215*^9, 
+  3.770925441158881*^9}},
  CellLabel->
-  "Out[163]=",ExpressionUUID->"8bd4dd3d-8a9e-4637-9784-a75dde0f2a90"]
+  "In[186]:=",ExpressionUUID->"b776e584-99de-43b9-b315-e1999452ac7d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["QuantumFiniteDimensionalState",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            TagBox[
+             RowBox[{"(", "\[NoBreak]", 
+               TagBox[
+                GridBox[{{
+                   FractionBox["1", "2"]}, {
+                   FractionBox["1", "2"]}, {
+                   FractionBox["1", "2"]}, {
+                   FractionBox["1", "2"]}}, ColumnAlignments -> Center, 
+                 RowSpacings -> 1, ColumnAlignments -> Left], Column], 
+               "\[NoBreak]", ")"}], 
+             Function[BoxForm`e$, 
+              MatrixForm[BoxForm`e$]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Number Of Qudits: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["2", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            TagBox[
+             RowBox[{"(", "\[NoBreak]", 
+               TagBox[
+                GridBox[{{
+                   FractionBox["1", "2"]}, {
+                   FractionBox["1", "2"]}, {
+                   FractionBox["1", "2"]}, {
+                   FractionBox["1", "2"]}}, ColumnAlignments -> Center, 
+                 RowSpacings -> 1, ColumnAlignments -> Left], Column], 
+               "\[NoBreak]", ")"}], 
+             Function[BoxForm`e$, 
+              MatrixForm[BoxForm`e$]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Number Of Qudits: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["2", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Quantum Purity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Von Neumann Entropy: \"", "SummaryItemAnnotation"],
+                  "\[InvisibleSpace]", 
+                 TagBox["0", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  QuantumComputing`QuantumFiniteDimensionalState[
+   Association[
+   "StateVector" -> 
+    SparseArray[Automatic, {4}, 0, {1, {{0, 4}, {{1}, {2}, {3}, {4}}}, {
+        Rational[1, 2], 
+        Rational[1, 2], 
+        Rational[1, 2], 
+        Rational[1, 2]}}], "QuditDimension" -> 2, "NumberOfQudits" -> 2]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.770924332315381*^9, 3.7709254455281553`*^9},
+ CellLabel->
+  "Out[186]=",ExpressionUUID->"1a3eae55-0b03-45f5-946c-0fa82af3271f"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2532,7 +2892,7 @@ Cell[BoxData[
             "]"}], "]"}]}], "}"}], "]"}], "]"}]}], "]"}], ",", 
     RowBox[{"{", "1", "}"}]}], "]"}]}]], "Input",
  CellLabel->
-  "In[178]:=",ExpressionUUID->"0251fa2b-1494-4094-a549-65ea3fe3c0e5"],
+  "In[183]:=",ExpressionUUID->"0251fa2b-1494-4094-a549-65ea3fe3c0e5"],
 
 Cell[CellGroupData[{
 
@@ -2635,7 +2995,7 @@ Cell[BoxData[
     Selectable->False]}], "]"}]], "Input",
  CellChangeTimes->{{3.7709251173956347`*^9, 3.770925129350462*^9}},
  CellLabel->
-  "In[182]:=",ExpressionUUID->"0ef3143c-7d98-46da-9f9f-6ed902ff7177"],
+  "In[184]:=",ExpressionUUID->"0ef3143c-7d98-46da-9f9f-6ed902ff7177"],
 
 Cell[BoxData[
  TagBox[
@@ -2771,9 +3131,9 @@ Cell[BoxData[
           HoldForm]}], "}"}], "]"}]}], "]"}], ",", 
     RowBox[{"{", "1", "}"}]}], "]"}],
   HoldForm]], "Output",
- CellChangeTimes->{3.7709251296826*^9},
+ CellChangeTimes->{3.7709251296826*^9, 3.77092520766608*^9},
  CellLabel->
-  "Out[182]=",ExpressionUUID->"58ddd466-2b73-4d87-bbc4-c50399c09823"]
+  "Out[184]=",ExpressionUUID->"ec65ef74-f83f-441b-93b1-c066f8a055d9"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3380,7 +3740,7 @@ Cell[BoxData[
     Selectable->False]}], "]"}]], "Input",
  CellChangeTimes->{{3.770924723838097*^9, 3.770924733860982*^9}},
  CellLabel->
-  "In[177]:=",ExpressionUUID->"b244ec59-93c9-4625-a623-62b2673c51d7"],
+  "In[185]:=",ExpressionUUID->"b244ec59-93c9-4625-a623-62b2673c51d7"],
 
 Cell[BoxData[
  TagBox[
@@ -3516,13 +3876,13 @@ Cell[BoxData[
           HoldForm]}], "}"}], "]"}]}], "]"}], ",", 
     RowBox[{"{", "1", "}"}]}], "]"}],
   HoldForm]], "Output",
- CellChangeTimes->{3.770924783440564*^9},
+ CellChangeTimes->{3.770924783440564*^9, 3.7709254009823503`*^9},
  CellLabel->
-  "Out[177]=",ExpressionUUID->"920b5913-a401-4a70-aa54-97bcce7f0e52"]
+  "Out[185]=",ExpressionUUID->"ebe19659-33d7-4e78-a347-426937d2c150"]
 }, Open  ]]
 },
-WindowSize->{1428, 630},
-WindowMargins->{{0, Automatic}, {0, Automatic}},
+WindowSize->{1428, 790},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 11, 2019)",
 StyleDefinitions->"Default.nb"
 ]
@@ -3545,53 +3905,57 @@ Cell[CellGroupData[{
 Cell[33231, 730, 362, 8, 30, "Input",ExpressionUUID->"bf5724ff-a191-455b-9bc6-bc71fc7df121"],
 Cell[33596, 740, 24630, 499, 340, "Output",ExpressionUUID->"104e4760-59c1-45af-b13b-bf541e25fc9b"]
 }, Open  ]],
-Cell[58241, 1242, 1092, 27, 73, "Input",ExpressionUUID->"46a0b0a0-190f-47f5-afe9-4a85106091eb"],
 Cell[CellGroupData[{
-Cell[59358, 1273, 256, 7, 30, "Input",ExpressionUUID->"ad00bc4e-1511-4cbc-a514-133816d60ff2"],
-Cell[59617, 1282, 319, 10, 54, "Output",ExpressionUUID->"01dac130-be2f-465c-b63b-3f4e35eea095"]
+Cell[58263, 1244, 13201, 263, 285, "Input",ExpressionUUID->"46a0b0a0-190f-47f5-afe9-4a85106091eb"],
+Cell[71467, 1509, 4713, 102, 92, "Output",ExpressionUUID->"69b3d332-973f-4e0e-b1b7-91d1ebd7c77c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[59973, 1297, 343, 8, 30, "Input",ExpressionUUID->"eaba1941-b02b-4cb8-a2ed-036c0d970d82"],
-Cell[60319, 1307, 12928, 267, 209, "Output",ExpressionUUID->"511e0ae3-4d26-4a91-886a-fc5e8d15af39"]
-}, Open  ]],
-Cell[73262, 1577, 10923, 221, 177, "Input",ExpressionUUID->"80c59e06-2759-428e-a049-a007ab728036"],
-Cell[CellGroupData[{
-Cell[84210, 1802, 283, 8, 30, "Input",ExpressionUUID->"fd608c35-25b9-4354-aa41-aea3eaff3f59"],
-Cell[84496, 1812, 293, 9, 54, "Output",ExpressionUUID->"048df988-0a02-48a6-9ba3-2dd743d5af5b"]
-}, Open  ]],
-Cell[84804, 1824, 5815, 122, 113, "Input",ExpressionUUID->"cf5cbb8f-9bf6-4106-8862-db913456e651"],
-Cell[CellGroupData[{
-Cell[90644, 1950, 5851, 127, 86, InheritFromParent,ExpressionUUID->"ca92587c-5f88-4c6a-9cd9-a2749ee9be32"],
-Cell[96498, 2079, 270, 9, 54, "Output",ExpressionUUID->"a9f9fdb2-ba9b-4cd0-978e-6ee8a810b323"]
+Cell[76217, 1616, 256, 7, 30, "Input",ExpressionUUID->"ad00bc4e-1511-4cbc-a514-133816d60ff2"],
+Cell[76476, 1625, 319, 10, 54, "Output",ExpressionUUID->"01dac130-be2f-465c-b63b-3f4e35eea095"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[96805, 2093, 5629, 116, 92, "Input",ExpressionUUID->"b776e584-99de-43b9-b315-e1999452ac7d"],
-Cell[102437, 2211, 12647, 266, 190, "Output",ExpressionUUID->"8bd4dd3d-8a9e-4637-9784-a75dde0f2a90"]
+Cell[76832, 1640, 343, 8, 30, "Input",ExpressionUUID->"eaba1941-b02b-4cb8-a2ed-036c0d970d82"],
+Cell[77178, 1650, 12928, 267, 209, "Output",ExpressionUUID->"511e0ae3-4d26-4a91-886a-fc5e8d15af39"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[115121, 2482, 283, 8, 30, "Input",ExpressionUUID->"a106317d-2afc-4dea-b7de-4942f37b6b65"],
-Cell[115407, 2492, 270, 9, 54, "Output",ExpressionUUID->"a1be666f-1f37-480e-b697-4c8b7e36a8ea"]
-}, Open  ]],
-Cell[115692, 2504, 1175, 30, 94, "Input",ExpressionUUID->"0251fa2b-1494-4094-a549-65ea3fe3c0e5"],
-Cell[CellGroupData[{
-Cell[116892, 2538, 4753, 99, 60, "Input",ExpressionUUID->"0ef3143c-7d98-46da-9f9f-6ed902ff7177"],
-Cell[121648, 2639, 6193, 136, 109, "Output",ExpressionUUID->"58ddd466-2b73-4d87-bbc4-c50399c09823"]
+Cell[90143, 1922, 11993, 242, 198, "Input",ExpressionUUID->"80c59e06-2759-428e-a049-a007ab728036"],
+Cell[102139, 2166, 5498, 122, 90, "Output",ExpressionUUID->"e85445fa-47b5-4984-a4d9-a8376b92d5df"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[127878, 2780, 4940, 101, 60, "Input",ExpressionUUID->"0c713d24-ca6a-4c55-b903-192fca81db51"],
-Cell[132821, 2883, 6432, 140, 109, "Output",ExpressionUUID->"333d2678-193b-46c2-afd4-04f1b72ce11a"]
+Cell[107674, 2293, 283, 8, 30, "Input",ExpressionUUID->"fd608c35-25b9-4354-aa41-aea3eaff3f59"],
+Cell[107960, 2303, 293, 9, 54, "Output",ExpressionUUID->"048df988-0a02-48a6-9ba3-2dd743d5af5b"]
+}, Open  ]],
+Cell[108268, 2315, 5815, 122, 113, "Input",ExpressionUUID->"cf5cbb8f-9bf6-4106-8862-db913456e651"],
+Cell[CellGroupData[{
+Cell[114108, 2441, 5851, 127, 86, InheritFromParent,ExpressionUUID->"ca92587c-5f88-4c6a-9cd9-a2749ee9be32"],
+Cell[119962, 2570, 270, 9, 54, "Output",ExpressionUUID->"a9f9fdb2-ba9b-4cd0-978e-6ee8a810b323"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[139290, 3028, 5919, 124, 113, "Input",ExpressionUUID->"1c4c53e7-5adb-43c6-a2bf-54ce23af1edf"],
-Cell[145212, 3154, 5596, 124, 90, "Output",ExpressionUUID->"8871317c-4d2a-47a3-9a4a-4296ceafe267"]
+Cell[120269, 2584, 6697, 139, 144, "Input",ExpressionUUID->"b776e584-99de-43b9-b315-e1999452ac7d"],
+Cell[126969, 2725, 5117, 112, 140, "Output",ExpressionUUID->"1a3eae55-0b03-45f5-946c-0fa82af3271f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[150845, 3283, 4751, 99, 60, "Input",ExpressionUUID->"b244ec59-93c9-4625-a623-62b2673c51d7"],
-Cell[155599, 3384, 6195, 136, 109, "Output",ExpressionUUID->"920b5913-a401-4a70-aa54-97bcce7f0e52"]
+Cell[132123, 2842, 283, 8, 30, "Input",ExpressionUUID->"a106317d-2afc-4dea-b7de-4942f37b6b65"],
+Cell[132409, 2852, 270, 9, 54, "Output",ExpressionUUID->"a1be666f-1f37-480e-b697-4c8b7e36a8ea"]
+}, Open  ]],
+Cell[132694, 2864, 1175, 30, 94, "Input",ExpressionUUID->"0251fa2b-1494-4094-a549-65ea3fe3c0e5"],
+Cell[CellGroupData[{
+Cell[133894, 2898, 4753, 99, 60, "Input",ExpressionUUID->"0ef3143c-7d98-46da-9f9f-6ed902ff7177"],
+Cell[138650, 2999, 6214, 136, 109, "Output",ExpressionUUID->"ec65ef74-f83f-441b-93b1-c066f8a055d9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[144901, 3140, 4940, 101, 60, "Input",ExpressionUUID->"0c713d24-ca6a-4c55-b903-192fca81db51"],
+Cell[149844, 3243, 6432, 140, 109, "Output",ExpressionUUID->"333d2678-193b-46c2-afd4-04f1b72ce11a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[156313, 3388, 5919, 124, 113, "Input",ExpressionUUID->"1c4c53e7-5adb-43c6-a2bf-54ce23af1edf"],
+Cell[162235, 3514, 5596, 124, 90, "Output",ExpressionUUID->"8871317c-4d2a-47a3-9a4a-4296ceafe267"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[167868, 3643, 4751, 99, 60, "Input",ExpressionUUID->"b244ec59-93c9-4625-a623-62b2673c51d7"],
+Cell[172622, 3744, 6219, 136, 109, "Output",ExpressionUUID->"ebe19659-33d7-4e78-a347-426937d2c150"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
