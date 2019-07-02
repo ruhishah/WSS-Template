@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[    251484,       5660]
-NotebookOptionsPosition[    244714,       5571]
-NotebookOutlinePosition[    245051,       5586]
-CellTagsIndexPosition[    245008,       5583]
+NotebookDataLength[    256286,       5761]
+NotebookOptionsPosition[    249383,       5669]
+NotebookOutlinePosition[    249720,       5684]
+CellTagsIndexPosition[    249677,       5681]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,7 +26,7 @@ Cell[BoxData[
      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
      "\"\<QuantumComputing.m\>\""}], "}"}], "]"}], "]"}]], "Input",
  CellLabel->
-  "In[788]:=",ExpressionUUID->"24eaec99-c928-45b5-a505-797c7ffd3dca"],
+  "In[149]:=",ExpressionUUID->"24eaec99-c928-45b5-a505-797c7ffd3dca"],
 
 Cell[BoxData[
  RowBox[{"(*", " ", 
@@ -35,7 +35,7 @@ Cell[BoxData[
   "*)"}]], "Input",
  CellChangeTimes->{{3.7710746119922237`*^9, 3.7710746205083303`*^9}},
  CellLabel->
-  "In[789]:=",ExpressionUUID->"75be9c25-90be-4ab6-9ed8-82e712f0efa5"],
+  "In[150]:=",ExpressionUUID->"75be9c25-90be-4ab6-9ed8-82e712f0efa5"],
 
 Cell[BoxData[
  RowBox[{
@@ -47,7 +47,7 @@ Cell[BoxData[
    3.771070605404904*^9, 3.771070618664029*^9}, {3.771070674581102*^9, 
    3.771070696904295*^9}},
  CellLabel->
-  "In[790]:=",ExpressionUUID->"c3c3c58a-4217-4b3c-8117-9b1113cff995"],
+  "In[151]:=",ExpressionUUID->"c3c3c58a-4217-4b3c-8117-9b1113cff995"],
 
 Cell[BoxData[
  RowBox[{
@@ -59,7 +59,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.770928002775247*^9, 3.770928039840279*^9}, 
    3.770995606903975*^9},
  CellLabel->
-  "In[791]:=",ExpressionUUID->"0ae3ed61-9eb5-49b5-9bbe-51806709a7f2"],
+  "In[152]:=",ExpressionUUID->"0ae3ed61-9eb5-49b5-9bbe-51806709a7f2"],
 
 Cell[BoxData[
  RowBox[{
@@ -69,7 +69,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.770909345057536*^9, 3.770909374826009*^9}, {
    3.770910561107986*^9, 3.770910571255918*^9}, 3.770995608292297*^9},
  CellLabel->
-  "In[792]:=",ExpressionUUID->"b32115a8-6527-470b-a7dc-77cbb8d40744"],
+  "In[153]:=",ExpressionUUID->"b32115a8-6527-470b-a7dc-77cbb8d40744"],
 
 Cell[BoxData[
  RowBox[{
@@ -78,7 +78,7 @@ Cell[BoxData[
   ";"}]], "Input",
  CellChangeTimes->{{3.7710731017067547`*^9, 3.771073124170629*^9}},
  CellLabel->
-  "In[793]:=",ExpressionUUID->"0c024597-3250-49d3-bb55-b40f7d63c55b"],
+  "In[154]:=",ExpressionUUID->"0c024597-3250-49d3-bb55-b40f7d63c55b"],
 
 Cell[BoxData[
  RowBox[{
@@ -87,7 +87,7 @@ Cell[BoxData[
   ";"}]], "Input",
  CellChangeTimes->{{3.771074064054146*^9, 3.771074076808795*^9}},
  CellLabel->
-  "In[794]:=",ExpressionUUID->"a9d28da8-a62e-483d-840e-8a3291afc099"],
+  "In[155]:=",ExpressionUUID->"a9d28da8-a62e-483d-840e-8a3291afc099"],
 
 Cell[BoxData[
  RowBox[{
@@ -109,7 +109,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.771073837804797*^9, 3.771073878686013*^9}, 
    3.771073944267435*^9},
  CellLabel->
-  "In[795]:=",ExpressionUUID->"95e7fa8d-170d-422e-9d42-03f2d2d1f5e6"],
+  "In[156]:=",ExpressionUUID->"95e7fa8d-170d-422e-9d42-03f2d2d1f5e6"],
 
 Cell[BoxData[
  RowBox[{
@@ -123,14 +123,14 @@ Cell[BoxData[
    3.770995609827469*^9, {3.771018957417427*^9, 3.7710189600872993`*^9}, {
    3.771019035797819*^9, 3.7710190415720797`*^9}},
  CellLabel->
-  "In[796]:=",ExpressionUUID->"685ad16c-d2d9-40f9-81ef-12c329d89aad"],
+  "In[157]:=",ExpressionUUID->"685ad16c-d2d9-40f9-81ef-12c329d89aad"],
 
 Cell[BoxData[
  RowBox[{"(*", " ", 
   RowBox[{"states", " ", "for", " ", "test"}], " ", "*)"}]], "Input",
  CellChangeTimes->{{3.771074624428109*^9, 3.7710746319600487`*^9}},
  CellLabel->
-  "In[797]:=",ExpressionUUID->"d732d96b-bd67-4bc6-bd1d-9e79536c8512"],
+  "In[158]:=",ExpressionUUID->"d732d96b-bd67-4bc6-bd1d-9e79536c8512"],
 
 Cell[BoxData[
  RowBox[{
@@ -163,14 +163,14 @@ Cell[BoxData[
    3.7709352972908363`*^9, {3.7709961330107727`*^9, 3.770996166679112*^9}, 
    3.7710672023363543`*^9, {3.77106994227223*^9, 3.77106994439074*^9}},
  CellLabel->
-  "In[798]:=",ExpressionUUID->"d3a2190d-68d5-4a2c-8b08-fab09341a9ff"],
+  "In[159]:=",ExpressionUUID->"d3a2190d-68d5-4a2c-8b08-fab09341a9ff"],
 
 Cell[BoxData[
  RowBox[{"(*", " ", 
   RowBox[{"fixing", " ", "normalization"}], " ", "*)"}]], "Input",
  CellChangeTimes->{{3.771074641543989*^9, 3.771074646881551*^9}},
  CellLabel->
-  "In[799]:=",ExpressionUUID->"c5f10c51-66c6-46b8-a8e6-02f47c3d6e73"],
+  "In[160]:=",ExpressionUUID->"c5f10c51-66c6-46b8-a8e6-02f47c3d6e73"],
 
 Cell[BoxData[
  RowBox[{
@@ -200,7 +200,7 @@ Cell[BoxData[
   3.770998296536414*^9, 3.770998321320837*^9}, {3.770998459008067*^9, 
   3.770998461086412*^9}},
  CellLabel->
-  "In[800]:=",ExpressionUUID->"3aa14d01-1bfc-48fb-bb61-9bc09854e08f"],
+  "In[161]:=",ExpressionUUID->"3aa14d01-1bfc-48fb-bb61-9bc09854e08f"],
 
 Cell[BoxData[
  RowBox[{"(*", " ", 
@@ -208,7 +208,7 @@ Cell[BoxData[
    "*)"}]], "Input",
  CellChangeTimes->{{3.77107465221376*^9, 3.7710746690936003`*^9}},
  CellLabel->
-  "In[801]:=",ExpressionUUID->"e94394c7-af17-42f0-b9d5-3c8a8b779a18"],
+  "In[162]:=",ExpressionUUID->"e94394c7-af17-42f0-b9d5-3c8a8b779a18"],
 
 Cell[BoxData[
  RowBox[{
@@ -221,7 +221,7 @@ Cell[BoxData[
    3.770907123903902*^9}, 3.770937289920869*^9, {3.770978908464822*^9, 
    3.7709789432059298`*^9}, {3.770996173993094*^9, 3.77099622277985*^9}},
  CellLabel->
-  "In[802]:=",ExpressionUUID->"f9800246-6f37-405c-9473-d94614e56d3b"],
+  "In[163]:=",ExpressionUUID->"f9800246-6f37-405c-9473-d94614e56d3b"],
 
 Cell[BoxData[
  RowBox[{
@@ -235,7 +235,7 @@ Cell[BoxData[
    3.770978947306245*^9}, 3.77097909005299*^9, {3.770996216972878*^9, 
    3.770996225712652*^9}},
  CellLabel->
-  "In[803]:=",ExpressionUUID->"b77b77ba-684e-49b2-93eb-6373e8c93212"],
+  "In[164]:=",ExpressionUUID->"b77b77ba-684e-49b2-93eb-6373e8c93212"],
 
 Cell[BoxData[
  RowBox[{"(*", " ", 
@@ -244,7 +244,7 @@ Cell[BoxData[
   " ", "*)"}]], "Input",
  CellChangeTimes->{{3.771074678919649*^9, 3.771074688254324*^9}},
  CellLabel->
-  "In[804]:=",ExpressionUUID->"73a8ad66-c4d7-4f7b-8d2c-4b5f65c0eca6"],
+  "In[165]:=",ExpressionUUID->"73a8ad66-c4d7-4f7b-8d2c-4b5f65c0eca6"],
 
 Cell[BoxData[
  RowBox[{
@@ -257,7 +257,7 @@ Cell[BoxData[
   3.7709065332598953`*^9, 3.770906533395926*^9}, {3.770906626139195*^9, 
   3.770906626836177*^9}},
  CellLabel->
-  "In[805]:=",ExpressionUUID->"6dbee2f3-3ec0-4a07-a511-e9cab22cee4a"],
+  "In[166]:=",ExpressionUUID->"6dbee2f3-3ec0-4a07-a511-e9cab22cee4a"],
 
 Cell[BoxData[
  RowBox[{
@@ -266,7 +266,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.7709062404478083`*^9, 3.770906256049611*^9}, {
   3.7710672264668694`*^9, 3.771067227221458*^9}},
  CellLabel->
-  "In[806]:=",ExpressionUUID->"65469c2a-bb28-4694-91e9-96fdb0a0d222"],
+  "In[167]:=",ExpressionUUID->"65469c2a-bb28-4694-91e9-96fdb0a0d222"],
 
 Cell[BoxData[
  RowBox[{
@@ -280,7 +280,7 @@ Cell[BoxData[
    3.770907573025833*^9}, 3.770934912208386*^9, {3.770983196466176*^9, 
    3.7709831987368803`*^9}, 3.771067230098884*^9},
  CellLabel->
-  "In[807]:=",ExpressionUUID->"988b7472-9b63-4c25-bca3-aebbcb4cd4cf"],
+  "In[168]:=",ExpressionUUID->"988b7472-9b63-4c25-bca3-aebbcb4cd4cf"],
 
 Cell[BoxData[
  RowBox[{
@@ -307,7 +307,7 @@ Cell[BoxData[
    3.770978708306821*^9, 3.770978802031406*^9}, 3.770979046943638*^9, {
    3.770984311219092*^9, 3.770984314482141*^9}},
  CellLabel->
-  "In[808]:=",ExpressionUUID->"2e1dc694-bb46-44a0-b800-90e4f07d74bf"],
+  "In[169]:=",ExpressionUUID->"2e1dc694-bb46-44a0-b800-90e4f07d74bf"],
 
 Cell[BoxData[{
  RowBox[{
@@ -355,7 +355,7 @@ Cell[BoxData[{
     RowBox[{"Length", "[", "states", "]"}]}]}]}]}], "Input",
  CellChangeTimes->{{3.770995727550097*^9, 3.770995769530436*^9}},
  CellLabel->
-  "In[809]:=",ExpressionUUID->"5ac6a424-5182-42d1-9b5e-b0c481ea8026"],
+  "In[170]:=",ExpressionUUID->"5ac6a424-5182-42d1-9b5e-b0c481ea8026"],
 
 Cell[BoxData[
  RowBox[{
@@ -408,7 +408,7 @@ Cell[BoxData[
    3.770995655073587*^9, 3.7709956782060823`*^9}, {3.7709957135340633`*^9, 
    3.770995721487197*^9}, 3.7710672726920033`*^9},
  CellLabel->
-  "In[811]:=",ExpressionUUID->"7939ba2d-1e3b-428a-8b1f-6f10a0d228bc"],
+  "In[172]:=",ExpressionUUID->"7939ba2d-1e3b-428a-8b1f-6f10a0d228bc"],
 
 Cell[BoxData[
  RowBox[{
@@ -419,7 +419,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.771069896689543*^9, 3.7710699217226954`*^9}, {
    3.771069956156108*^9, 3.771069967774201*^9}, 3.771074302311952*^9},
  CellLabel->
-  "In[812]:=",ExpressionUUID->"31a8ed6a-6a99-4fe5-a3d0-326713f495e6"],
+  "In[173]:=",ExpressionUUID->"31a8ed6a-6a99-4fe5-a3d0-326713f495e6"],
 
 Cell[BoxData[
  RowBox[{"(*", 
@@ -435,7 +435,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.771073992951991*^9, 3.771074006846087*^9}, {
   3.7710747034009438`*^9, 3.771074718724687*^9}},
  CellLabel->
-  "In[813]:=",ExpressionUUID->"8819f517-95cf-4669-839e-5891f58d15af"],
+  "In[174]:=",ExpressionUUID->"8819f517-95cf-4669-839e-5891f58d15af"],
 
 Cell[BoxData[
  RowBox[{
@@ -520,7 +520,7 @@ Cell[BoxData[
    3.771074500726364*^9}, {3.771078820800303*^9, 3.771078841353447*^9}, {
    3.771078871868819*^9, 3.7710789324814167`*^9}},
  CellLabel->
-  "In[910]:=",ExpressionUUID->"b695a637-7490-4753-823d-8deb253e0d44"],
+  "In[175]:=",ExpressionUUID->"b695a637-7490-4753-823d-8deb253e0d44"],
 
 Cell[CellGroupData[{
 
@@ -533,7 +533,7 @@ Cell[BoxData[
    3.771070485047208*^9, 3.77107051075963*^9}, {3.771073147311636*^9, 
    3.771073147451891*^9}, 3.771074294403281*^9, 3.771078856653344*^9},
  CellLabel->
-  "In[914]:=",ExpressionUUID->"04c8625f-4c4c-449b-af96-632ef8a50a0f"],
+  "In[176]:=",ExpressionUUID->"04c8625f-4c4c-449b-af96-632ef8a50a0f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -656,9 +656,10 @@ Cell[BoxData[
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{{3.771078857424993*^9, 3.771078951236565*^9}},
+ CellChangeTimes->{{3.771078857424993*^9, 3.771078951236565*^9}, 
+   3.771097420874816*^9},
  CellLabel->
-  "Out[914]=",ExpressionUUID->"82030449-1241-4b57-8952-af8c770e92d3"]
+  "Out[176]=",ExpressionUUID->"ffa15eb5-6a0e-4319-b444-6a27fe90aab0"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -673,7 +674,7 @@ Cell[BoxData[
     " ", "an", " ", "operator"}]}], " ", "*)"}]], "Input",
  CellChangeTimes->{{3.771074741664661*^9, 3.771074762983285*^9}},
  CellLabel->
-  "In[816]:=",ExpressionUUID->"0bc187f8-d3ec-406f-b0d8-e5589ea0f41b"],
+  "In[177]:=",ExpressionUUID->"0bc187f8-d3ec-406f-b0d8-e5589ea0f41b"],
 
 Cell[BoxData[
  RowBox[{
@@ -713,7 +714,9 @@ Cell[BoxData[
    3.771076967870072*^9, 3.771076997820273*^9}, {3.771078492526766*^9, 
    3.771078501844736*^9}},
  CellLabel->
-  "In[858]:=",ExpressionUUID->"aeb325f0-7672-4962-bef9-7e7f23c42f4d"],
+  "In[178]:=",ExpressionUUID->"aeb325f0-7672-4962-bef9-7e7f23c42f4d"],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"createNewCell", "[", 
@@ -723,9 +726,123 @@ Cell[BoxData[
  CellChangeTimes->{{3.7710693949245567`*^9, 3.771069469442227*^9}, 
    3.771069550000925*^9, {3.7710705185912733`*^9, 3.7710705186732388`*^9}, 
    3.7710742920966*^9, {3.771077009110869*^9, 3.771077050196228*^9}, {
-   3.771078515335022*^9, 
-   3.771078515547201*^9}},ExpressionUUID->"dc14a61f-bc37-4682-8e9f-\
-1c6c7b65889a"],
+   3.771078515335022*^9, 3.771078515547201*^9}},
+ CellLabel->
+  "In[179]:=",ExpressionUUID->"dc14a61f-bc37-4682-8e9f-1c6c7b65889a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["QuantumFiniteDimensionalState",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            TagBox[
+             RowBox[{"(", "\[NoBreak]", 
+               TagBox[
+                GridBox[{{
+                   FractionBox["1", 
+                    SqrtBox["2"]]}, {"0"}, {
+                   FractionBox["1", 
+                    SqrtBox["2"]]}, {"0"}}, RowSpacings -> 1, 
+                 ColumnAlignments -> Center, ColumnAlignments -> Left], 
+                Column], "\[NoBreak]", ")"}], 
+             Function[BoxForm`e$, 
+              MatrixForm[BoxForm`e$]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Number Of Qudits: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["2", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            TagBox[
+             RowBox[{"(", "\[NoBreak]", 
+               TagBox[
+                GridBox[{{
+                   FractionBox["1", 
+                    SqrtBox["2"]]}, {"0"}, {
+                   FractionBox["1", 
+                    SqrtBox["2"]]}, {"0"}}, RowSpacings -> 1, 
+                 ColumnAlignments -> Center, ColumnAlignments -> Left], 
+                Column], "\[NoBreak]", ")"}], 
+             Function[BoxForm`e$, 
+              MatrixForm[BoxForm`e$]]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Number Of Qudits: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["2", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Quantum Purity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["1", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Von Neumann Entropy: \"", "SummaryItemAnnotation"],
+                  "\[InvisibleSpace]", 
+                 TagBox["0", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  QuantumComputing`QuantumFiniteDimensionalState[
+   Association[
+   "StateVector" -> 
+    SparseArray[
+     Automatic, {4}, 0, {
+      1, {{0, 2}, {{1}, {3}}}, {2^Rational[-1, 2], 2^Rational[-1, 2]}}], 
+    "QuditDimension" -> 2, "NumberOfQudits" -> 2]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.771097421150097*^9},
+ CellLabel->
+  "Out[179]=",ExpressionUUID->"cd512e06-e0e7-42c9-a37c-56a750e7a725"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{"(*", " ", 
@@ -741,9 +858,9 @@ Cell[BoxData[
     "of", " ", "operatorCNOT", " ", "followed", " ", "by", " ", 
     "operatorFourier"}]}], " ", "*)"}]], "Input",
  CellChangeTimes->{{3.77107803013562*^9, 3.771078054730671*^9}, {
-  3.77107834510763*^9, 
-  3.7710783620906773`*^9}},ExpressionUUID->"066391a2-65e6-4b52-b20e-\
-6d66351def9c"],
+  3.77107834510763*^9, 3.7710783620906773`*^9}},
+ CellLabel->
+  "In[180]:=",ExpressionUUID->"066391a2-65e6-4b52-b20e-6d66351def9c"],
 
 Cell[CellGroupData[{
 
@@ -765,8 +882,9 @@ Cell[BoxData[
                  Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               TagBox[
                RowBox[{"(", "\[NoBreak]", 
                  TagBox[
@@ -818,8 +936,9 @@ Cell[BoxData[
                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               TagBox[
                RowBox[{"(", "\[NoBreak]", 
                  TagBox[
@@ -887,7 +1006,7 @@ Cell[BoxData[
     Selectable->False], "[", "\"\<StateVector\>\"", "]"}], "]"}]], "Input",
  CellChangeTimes->{{3.771077390501111*^9, 3.771077403480486*^9}},
  CellLabel->
-  "In[853]:=",ExpressionUUID->"49553fcd-591c-4daa-8e08-55ec87ffef52"],
+  "In[181]:=",ExpressionUUID->"49553fcd-591c-4daa-8e08-55ec87ffef52"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -907,9 +1026,10 @@ Cell[BoxData[
      RowBox[{"(", 
       RowBox[{"-", "1"}], ")"}], 
      RowBox[{"1", "/", "4"}]]}]}], "}"}]], "Output",
- CellChangeTimes->{{3.771077395731761*^9, 3.7710774037711277`*^9}},
+ CellChangeTimes->{{3.771077395731761*^9, 3.7710774037711277`*^9}, 
+   3.7710974212382812`*^9},
  CellLabel->
-  "Out[853]=",ExpressionUUID->"2ae2ed92-e94a-4db9-953e-9cc7e20123fc"]
+  "Out[181]=",ExpressionUUID->"08f66770-fdb6-4bbe-b2c1-79a34a317e78"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -932,8 +1052,9 @@ Cell[BoxData[
                  Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               TagBox[
                RowBox[{"(", "\[NoBreak]", 
                  TagBox[
@@ -985,8 +1106,9 @@ Cell[BoxData[
                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               TagBox[
                RowBox[{"(", "\[NoBreak]", 
                  TagBox[
@@ -1055,7 +1177,7 @@ Cell[BoxData[
    RowBox[{"{", "1", "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.771077541363881*^9, 3.77107757058473*^9}},
  CellLabel->
-  "In[855]:=",ExpressionUUID->"2010fe58-0ff2-4291-9053-58df9f6662d0"],
+  "In[182]:=",ExpressionUUID->"2010fe58-0ff2-4291-9053-58df9f6662d0"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1069,13 +1191,14 @@ RowBox[{RowBox[{\\\"(\\\", RowBox[{\\\"1\\\", \\\"-\\\", \
 \\\"}], RowBox[{\\\"3\\\", \\\"/\\\", \\\"4\\\"}]]}], \\\"-\\\", \
 RowBox[{SuperscriptBox[RowBox[{\\\"(\\\", RowBox[{\\\"-\\\", \\\"1\\\"}], \
 \\\")\\\"}], RowBox[{\\\"3\\\", \\\"/\\\", \\\"4\\\"}]], \\\" \\\", \
-SqrtBox[\\\"2\\\"]}]}], \\\")\\\"}]}]\\) attempted.\"",2,855,201,
-   25243841685832327714,"Local"},
+SqrtBox[\\\"2\\\"]}]}], \\\")\\\"}]}]\\) attempted.\"",2,182,31,
+   25243954302957651570,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{{3.771077551030171*^9, 3.771077571006825*^9}},
+ CellChangeTimes->{{3.771077551030171*^9, 3.771077571006825*^9}, 
+   3.771097421330503*^9},
  CellLabel->
   "During evaluation of \
-In[855]:=",ExpressionUUID->"93ff7529-f593-441b-936a-9424c9c901c5"],
+In[182]:=",ExpressionUUID->"95872185-6057-4cc3-8257-ed277ed970f9"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1089,13 +1212,14 @@ RowBox[{RowBox[{\\\"(\\\", RowBox[{\\\"1\\\", \\\"-\\\", \
 \\\"}], RowBox[{\\\"3\\\", \\\"/\\\", \\\"4\\\"}]]}], \\\"-\\\", \
 RowBox[{SuperscriptBox[RowBox[{\\\"(\\\", RowBox[{\\\"-\\\", \\\"1\\\"}], \
 \\\")\\\"}], RowBox[{\\\"3\\\", \\\"/\\\", \\\"4\\\"}]], \\\" \\\", \
-SqrtBox[\\\"2\\\"]}]}], \\\")\\\"}]}]\\) attempted.\"",2,855,202,
-   25243841685832327714,"Local"},
+SqrtBox[\\\"2\\\"]}]}], \\\")\\\"}]}]\\) attempted.\"",2,182,32,
+   25243954302957651570,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{{3.771077551030171*^9, 3.771077571019918*^9}},
+ CellChangeTimes->{{3.771077551030171*^9, 3.771077571006825*^9}, 
+   3.7710974213427687`*^9},
  CellLabel->
   "During evaluation of \
-In[855]:=",ExpressionUUID->"80af2799-6524-4d56-ab6f-9e727ae7990a"],
+In[182]:=",ExpressionUUID->"7b873e27-37c0-45d1-86f9-f6cf970a311f"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1104,12 +1228,13 @@ Cell[BoxData[
 \"\\\\\\\"Spherical\\\\\\\"\\\"}]\\) is not a known entity, class, or tag for \
 \\!\\(\\*RowBox[{\\\"CoordinateTransformData\\\"}]\\). Use \
 \\!\\(\\*RowBox[{\\\"CoordinateTransformData\\\"}]\\)[] for a list of \
-entities.\"",2,855,203,25243841685832327714,"Local"},
+entities.\"",2,182,33,25243954302957651570,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{{3.771077551030171*^9, 3.7710775710287457`*^9}},
+ CellChangeTimes->{{3.771077551030171*^9, 3.771077571006825*^9}, 
+   3.771097421354643*^9},
  CellLabel->
   "During evaluation of \
-In[855]:=",ExpressionUUID->"bc6fd705-9e5d-41c6-8158-f40728daf092"],
+In[182]:=",ExpressionUUID->"44b11373-3ad8-463e-bbf8-1b44ea8d0ca8"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1119,20 +1244,21 @@ RowBox[{\\\"\\\\\\\"Cartesian\\\\\\\"\\\", \\\"\[Rule]\\\", \
 \\\"\\\\\\\"Spherical\\\\\\\"\\\"}], \\\"]\\\"}]\\) is not a known entity, \
 class, or tag for \\!\\(\\*RowBox[{\\\"CoordinateTransformData\\\"}]\\). Use \
 \\!\\(\\*RowBox[{\\\"CoordinateTransformData\\\"}]\\)[] for a list of \
-entities.\"",2,855,204,25243841685832327714,"Local"},
+entities.\"",2,182,34,25243954302957651570,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{{3.771077551030171*^9, 3.771077571037265*^9}},
+ CellChangeTimes->{{3.771077551030171*^9, 3.771077571006825*^9}, 
+   3.77109742136263*^9},
  CellLabel->
   "During evaluation of \
-In[855]:=",ExpressionUUID->"de9afe3b-31d9-4b3a-8712-233cd9dbc91b"],
+In[182]:=",ExpressionUUID->"3a009430-7476-4f4c-9773-5678e8be1fb7"],
 
 Cell[BoxData[
  TemplateBox[{
   "Set","shape",
    "\"Lists \\!\\(\\*RowBox[{\\\"{\\\", \
-RowBox[{\\\"QuantumComputing`Private`r$366264\\\", \\\",\\\", \
-\\\"QuantumComputing`Private`\[Theta]$366264\\\", \\\",\\\", \
-\\\"QuantumComputing`Private`\[Phi]$366264\\\"}], \\\"}\\\"}]\\) and \
+RowBox[{\\\"QuantumComputing`Private`r$224811\\\", \\\",\\\", \
+\\\"QuantumComputing`Private`\[Theta]$224811\\\", \\\",\\\", \
+\\\"QuantumComputing`Private`\[Phi]$224811\\\"}], \\\"}\\\"}]\\) and \
 \\!\\(\\*RowBox[{\\\"CoordinateTransformData\\\", \\\"[\\\", RowBox[{RowBox[{\
 \\\"Abs\\\", \\\"[\\\", RowBox[{\\\"\\\\\\\"Cartesian\\\\\\\"\\\", \
 \\\"\[Rule]\\\", \\\"\\\\\\\"Spherical\\\\\\\"\\\"}], \\\"]\\\"}], \\\",\\\", \
@@ -1150,12 +1276,13 @@ RowBox[{FractionBox[\\\"1\\\", \\\"4\\\"], \\\"+\\\", FractionBox[\\\"\
 SuperscriptBox[RowBox[{\\\"(\\\", RowBox[{\\\"-\\\", \\\"1\\\"}], \
 \\\")\\\"}], RowBox[{\\\"3\\\", \\\"/\\\", \\\"4\\\"}]]}], \
 SqrtBox[\\\"2\\\"]]}], \\\"]\\\"}]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) are not \
-the same shape.\"",2,855,205,25243841685832327714,"Local"},
+the same shape.\"",2,182,35,25243954302957651570,"Local"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{{3.771077551030171*^9, 3.771077571045375*^9}},
+ CellChangeTimes->{{3.771077551030171*^9, 3.771077571006825*^9}, 
+   3.771097421372725*^9},
  CellLabel->
   "During evaluation of \
-In[855]:=",ExpressionUUID->"f9f944e5-f585-4a42-9e28-f6b9a0ebcb32"],
+In[182]:=",ExpressionUUID->"dea6c155-91c4-4c82-853e-f3134a27ca47"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1704,16 +1831,16 @@ Cell[BoxData[
                     RowBox[{
                     
                     RowBox[{
-                    "\"r\"", "\[Rule]", "QuantumComputing`Private`r$366264"}],
+                    "\"r\"", "\[Rule]", "QuantumComputing`Private`r$224811"}],
                      ",", 
                     
                     RowBox[{
                     "\"\[Theta]\"", "\[Rule]", 
-                    "QuantumComputing`Private`\[Theta]$366264"}], ",", 
+                    "QuantumComputing`Private`\[Theta]$224811"}], ",", 
                     
                     RowBox[{
                     "\"\[Phi]\"", "\[Rule]", 
-                    "QuantumComputing`Private`\[Phi]$366264"}]}], "}"}], 
+                    "QuantumComputing`Private`\[Phi]$224811"}]}], "}"}], 
                   "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
@@ -1745,9 +1872,10 @@ Cell[BoxData[
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{{3.77107755108283*^9, 3.7710775711172743`*^9}},
+ CellChangeTimes->{{3.77107755108283*^9, 3.7710775711172743`*^9}, 
+   3.771097421394915*^9},
  CellLabel->
-  "Out[855]=",ExpressionUUID->"5419ae64-747e-49aa-95bf-dbf28288946d"]
+  "Out[182]=",ExpressionUUID->"855ebcfc-3733-4910-b39e-d4c06ec8735b"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1755,7 +1883,7 @@ Cell[BoxData[
   RowBox[{"repeat", " ", "for", " ", "all"}], " ", "*)"}]], "Input",
  CellChangeTimes->{{3.77107479137397*^9, 3.771074798617886*^9}},
  CellLabel->
-  "In[819]:=",ExpressionUUID->"fc229178-a8c7-46b8-8325-af2103703afe"],
+  "In[183]:=",ExpressionUUID->"fc229178-a8c7-46b8-8325-af2103703afe"],
 
 Cell[BoxData[
  RowBox[{
@@ -1774,7 +1902,7 @@ Cell[BoxData[
   3.771070068161271*^9, 3.7710700720525503`*^9}, {3.7710771040815487`*^9, 
   3.7710771255986843`*^9}, {3.771078521398107*^9, 3.771078528253137*^9}},
  CellLabel->
-  "In[859]:=",ExpressionUUID->"1d38a911-9c0d-4ae4-b626-8ab79b153d0c"],
+  "In[184]:=",ExpressionUUID->"1d38a911-9c0d-4ae4-b626-8ab79b153d0c"],
 
 Cell[BoxData[
  RowBox[{
@@ -1791,7 +1919,7 @@ Cell[BoxData[
   3.770996913726211*^9, 3.7709969569482107`*^9}, {3.7710771122234583`*^9, 
   3.7710771318587437`*^9}, {3.771078524412702*^9, 3.771078529959681*^9}},
  CellLabel->
-  "In[860]:=",ExpressionUUID->"aa18ae5c-e697-4a76-8aaa-8017f74fa892"],
+  "In[185]:=",ExpressionUUID->"aa18ae5c-e697-4a76-8aaa-8017f74fa892"],
 
 Cell[BoxData[
  RowBox[{"(*", " ", 
@@ -1807,13 +1935,13 @@ Cell[BoxData[
  CellChangeTimes->{{3.771007741600374*^9, 3.771007796851571*^9}, {
   3.771007914289503*^9, 3.771007927963583*^9}},
  CellLabel->
-  "In[822]:=",ExpressionUUID->"40574d42-0c1b-46dd-ba18-786a6e4bee33"],
+  "In[186]:=",ExpressionUUID->"40574d42-0c1b-46dd-ba18-786a6e4bee33"],
 
 Cell[BoxData[
  RowBox[{"(*", "Visualization", "*)"}]], "Input",
  CellChangeTimes->{{3.771069611420231*^9, 3.771069617890503*^9}},
  CellLabel->
-  "In[823]:=",ExpressionUUID->"6fb9b97a-ed12-40b9-8393-8db93df5a29b"],
+  "In[187]:=",ExpressionUUID->"6fb9b97a-ed12-40b9-8393-8db93df5a29b"],
 
 Cell[BoxData[{
  RowBox[{
@@ -1842,7 +1970,7 @@ Cell[BoxData[{
   3.771015675152563*^9, 3.771015688953466*^9}, {3.77101577497012*^9, 
   3.771015781502417*^9}},
  CellLabel->
-  "In[824]:=",ExpressionUUID->"51748e1d-ad74-458d-ab67-19a69dde671c"],
+  "In[188]:=",ExpressionUUID->"51748e1d-ad74-458d-ab67-19a69dde671c"],
 
 Cell[CellGroupData[{
 
@@ -1855,7 +1983,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.7710793769202623`*^9, 3.771079409852429*^9}, {
   3.771079492432228*^9, 3.77107951835362*^9}},
  CellLabel->
-  "In[920]:=",ExpressionUUID->"206f6afb-7c29-4aee-beb8-859706b52670"],
+  "In[190]:=",ExpressionUUID->"206f6afb-7c29-4aee-beb8-859706b52670"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1891,7 +2019,7 @@ Cell[BoxData[
          FractionBox["1", 
           SqrtBox["2"]]}], "}"}], ",", 
        RowBox[{"{", 
-        RowBox[{"0", ",", "1"}], "}"}]}], "}"}], ",", 
+        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
@@ -1911,94 +2039,6 @@ Cell[BoxData[
           SqrtBox["2"]], ",", 
          FractionBox["1", 
           SqrtBox["2"]]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         RowBox[{"-", 
-          FractionBox["\[ImaginaryI]", 
-           SqrtBox["2"]]}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"0", ",", "1"}], "}"}]}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"0", ",", "1"}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         RowBox[{"-", 
-          FractionBox["\[ImaginaryI]", 
-           SqrtBox["2"]]}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"1", ",", "0"}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"0", ",", "1"}], "}"}]}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         RowBox[{"-", 
-          FractionBox["1", 
-           SqrtBox["2"]]}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         FractionBox["\[ImaginaryI]", 
-          SqrtBox["2"]]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         FractionBox["1", 
-          SqrtBox["2"]]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{"0", ",", "1"}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         RowBox[{"-", 
-          FractionBox["\[ImaginaryI]", 
-           SqrtBox["2"]]}]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], ",", 
    RowBox[{"{", 
@@ -2012,22 +2052,13 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         RowBox[{"-", 
-          FractionBox["1", 
-           SqrtBox["2"]]}]}], "}"}], ",", 
+        RowBox[{"0", ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         FractionBox["\[ImaginaryI]", 
-          SqrtBox["2"]]}], "}"}], ",", 
+        RowBox[{"1", ",", "0"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], ",", 
    RowBox[{"{", 
@@ -2045,7 +2076,12 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{"0", ",", "1"}], "}"}], ",", 
+        RowBox[{
+         FractionBox["1", 
+          SqrtBox["2"]], ",", 
+         RowBox[{"-", 
+          FractionBox["1", 
+           SqrtBox["2"]]}]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -2054,9 +2090,8 @@ Cell[BoxData[
         RowBox[{
          FractionBox["1", 
           SqrtBox["2"]], ",", 
-         RowBox[{"-", 
-          FractionBox["\[ImaginaryI]", 
-           SqrtBox["2"]]}]}], "}"}], ",", 
+         FractionBox["1", 
+          SqrtBox["2"]]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], ",", 
    RowBox[{"{", 
@@ -2070,22 +2105,13 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         RowBox[{"-", 
-          FractionBox["1", 
-           SqrtBox["2"]]}]}], "}"}], ",", 
+        RowBox[{"0", ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         FractionBox["\[ImaginaryI]", 
-          SqrtBox["2"]]}], "}"}], ",", 
+        RowBox[{"1", ",", "0"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], ",", 
    RowBox[{"{", 
@@ -2103,7 +2129,12 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{"0", ",", "1"}], "}"}], ",", 
+        RowBox[{
+         FractionBox["1", 
+          SqrtBox["2"]], ",", 
+         RowBox[{"-", 
+          FractionBox["1", 
+           SqrtBox["2"]]}]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -2112,9 +2143,8 @@ Cell[BoxData[
         RowBox[{
          FractionBox["1", 
           SqrtBox["2"]], ",", 
-         RowBox[{"-", 
-          FractionBox["\[ImaginaryI]", 
-           SqrtBox["2"]]}]}], "}"}], ",", 
+         FractionBox["1", 
+          SqrtBox["2"]]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], ",", 
    RowBox[{"{", 
@@ -2128,22 +2158,13 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         RowBox[{"-", 
-          FractionBox["1", 
-           SqrtBox["2"]]}]}], "}"}], ",", 
+        RowBox[{"0", ",", "1"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
-        RowBox[{
-         FractionBox["1", 
-          SqrtBox["2"]], ",", 
-         FractionBox["\[ImaginaryI]", 
-          SqrtBox["2"]]}], "}"}], ",", 
+        RowBox[{"1", ",", "0"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], ",", 
    RowBox[{"{", 
@@ -2161,7 +2182,54 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{
        RowBox[{"{", 
+        RowBox[{
+         FractionBox["1", 
+          SqrtBox["2"]], ",", 
+         RowBox[{"-", 
+          FractionBox["1", 
+           SqrtBox["2"]]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         FractionBox["1", 
+          SqrtBox["2"]], ",", 
+         FractionBox["1", 
+          SqrtBox["2"]]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
         RowBox[{"0", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         FractionBox["1", 
+          SqrtBox["2"]], ",", 
+         FractionBox["1", 
+          SqrtBox["2"]]}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
      RowBox[{"{", 
@@ -2171,14 +2239,44 @@ Cell[BoxData[
          FractionBox["1", 
           SqrtBox["2"]], ",", 
          RowBox[{"-", 
-          FractionBox["\[ImaginaryI]", 
+          FractionBox["1", 
            SqrtBox["2"]]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         FractionBox["1", 
+          SqrtBox["2"]], ",", 
+         FractionBox["1", 
+          SqrtBox["2"]]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "0"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "0"}], "}"}]}], "}"}]}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{{3.7710794113307257`*^9, 3.771079444658922*^9}, {
-  3.771079493425456*^9, 3.771079532581151*^9}},
+   3.771079493425456*^9, 3.771079532581151*^9}, 3.77109742193624*^9},
  CellLabel->
-  "Out[920]=",ExpressionUUID->"c7d5f68b-2925-4603-9934-9c99a3c6b544"]
+  "Out[190]=",ExpressionUUID->"2c855eb0-5dd4-478c-b05f-8d748dbe0d4b"]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -2286,7 +2384,7 @@ Cell[BoxData[{
   3.771063276120859*^9}, {3.771063456673346*^9, 3.771063483949771*^9}, {
   3.771063545637177*^9, 3.771063556806306*^9}},
  CellLabel->
-  "In[826]:=",ExpressionUUID->"f9208db7-c90e-4362-bf58-54b1ae97bbb3"],
+  "In[191]:=",ExpressionUUID->"f9208db7-c90e-4362-bf58-54b1ae97bbb3"],
 
 Cell[BoxData[
  RowBox[{
@@ -2303,7 +2401,7 @@ Cell[BoxData[
   3.771060733636734*^9, 3.771060739875598*^9}, {3.7710640154738617`*^9, 
   3.7710640172610407`*^9}, {3.7710641032811947`*^9, 3.771064108316813*^9}},
  CellLabel->
-  "In[830]:=",ExpressionUUID->"17a43603-21c5-46d0-bab1-9583e7a8c758"],
+  "In[195]:=",ExpressionUUID->"17a43603-21c5-46d0-bab1-9583e7a8c758"],
 
 Cell[BoxData[
  RowBox[{
@@ -2317,7 +2415,7 @@ Cell[BoxData[
    3.771063598434148*^9}, {3.771064356571122*^9, 3.771064358202888*^9}, 
    3.771067362508559*^9},
  CellLabel->
-  "In[831]:=",ExpressionUUID->"87392fff-68ec-4e2a-aaa8-547e833cac0b"],
+  "In[196]:=",ExpressionUUID->"87392fff-68ec-4e2a-aaa8-547e833cac0b"],
 
 Cell[BoxData[
  RowBox[{
@@ -2328,7 +2426,7 @@ Cell[BoxData[
    3.771023487698675*^9, 3.771023491771533*^9}, {3.771064350869411*^9, 
    3.771064363684514*^9}, 3.7710673655005217`*^9},
  CellLabel->
-  "In[832]:=",ExpressionUUID->"6e2db2ba-7bd5-4af1-881c-f151cbca63d9"],
+  "In[197]:=",ExpressionUUID->"6e2db2ba-7bd5-4af1-881c-f151cbca63d9"],
 
 Cell[BoxData[
  RowBox[{
@@ -2339,7 +2437,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.7710643670708427`*^9, 3.771064382242146*^9}, 
    3.771067366671924*^9},
  CellLabel->
-  "In[833]:=",ExpressionUUID->"c1447067-5bb6-4982-89e2-70b3ab989ae0"],
+  "In[198]:=",ExpressionUUID->"c1447067-5bb6-4982-89e2-70b3ab989ae0"],
 
 Cell[BoxData[
  RowBox[{
@@ -2350,7 +2448,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.771064383909946*^9, 3.771064390871582*^9}, 
    3.771067367544037*^9},
  CellLabel->
-  "In[834]:=",ExpressionUUID->"3c48d876-5deb-4f26-acff-07572eaf3bc3"],
+  "In[199]:=",ExpressionUUID->"3c48d876-5deb-4f26-acff-07572eaf3bc3"],
 
 Cell[BoxData[
  RowBox[{
@@ -2365,7 +2463,7 @@ Cell[BoxData[
      "]"}]}], "}"}]}]], "Input",
  CellChangeTimes->{{3.771063940600108*^9, 3.771064029190311*^9}},
  CellLabel->
-  "In[835]:=",ExpressionUUID->"0bf520ba-9247-43e6-8432-7851095bae37"],
+  "In[200]:=",ExpressionUUID->"0bf520ba-9247-43e6-8432-7851095bae37"],
 
 Cell[BoxData[
  RowBox[{
@@ -2375,7 +2473,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.771064093504181*^9, 3.7710641176014643`*^9}, {
   3.771064205186336*^9, 3.771064214737187*^9}},
  CellLabel->
-  "In[836]:=",ExpressionUUID->"6835368a-7ddd-41a7-aa05-7922c3b3ab26"],
+  "In[201]:=",ExpressionUUID->"6835368a-7ddd-41a7-aa05-7922c3b3ab26"],
 
 Cell[BoxData[
  RowBox[{
@@ -2387,7 +2485,7 @@ Cell[BoxData[
   3.771064061175359*^9}, {3.7710642237919607`*^9, 3.7710642317876177`*^9}, {
   3.7710642939793167`*^9, 3.771064312122972*^9}},
  CellLabel->
-  "In[837]:=",ExpressionUUID->"b5b1dee5-5f9e-4d19-9bd7-fd51f531f6c7"],
+  "In[202]:=",ExpressionUUID->"b5b1dee5-5f9e-4d19-9bd7-fd51f531f6c7"],
 
 Cell[BoxData[
  RowBox[{
@@ -2408,7 +2506,7 @@ Cell[BoxData[
   3.771076393483419*^9, 3.77107639723869*^9}, {3.771076464810299*^9, 
   3.771076467604826*^9}},
  CellLabel->
-  "In[838]:=",ExpressionUUID->"f3d4f13e-312a-4756-a3a3-c753542d383e"],
+  "In[203]:=",ExpressionUUID->"f3d4f13e-312a-4756-a3a3-c753542d383e"],
 
 Cell[BoxData[
  RowBox[{
@@ -2418,7 +2516,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.77106516732078*^9, 3.771065174876906*^9}, 
    3.7710674201040792`*^9, 3.7710760007036057`*^9, 3.771078596432156*^9},
  CellLabel->
-  "In[865]:=",ExpressionUUID->"a800fc15-7e27-40a1-afb3-384b72291dbc"],
+  "In[204]:=",ExpressionUUID->"a800fc15-7e27-40a1-afb3-384b72291dbc"],
 
 Cell[BoxData[
  RowBox[{
@@ -2439,7 +2537,7 @@ Cell[BoxData[
    3.7710660109558973`*^9}, 3.771066583043766*^9, {3.771066655568984*^9, 
    3.771066666213276*^9}},
  CellLabel->
-  "In[840]:=",ExpressionUUID->"16280340-7eb9-4162-8d68-76b35dce9233"],
+  "In[205]:=",ExpressionUUID->"16280340-7eb9-4162-8d68-76b35dce9233"],
 
 Cell[BoxData[
  RowBox[{
@@ -2455,7 +2553,7 @@ Cell[BoxData[
    3.771066579666149*^9}, 3.7710674241929626`*^9, 3.771075952983589*^9, 
    3.771078598512761*^9},
  CellLabel->
-  "In[866]:=",ExpressionUUID->"b70de0f1-aa53-4dfd-8351-5df1fe64309d"],
+  "In[206]:=",ExpressionUUID->"b70de0f1-aa53-4dfd-8351-5df1fe64309d"],
 
 Cell[BoxData[
  RowBox[{
@@ -2466,7 +2564,7 @@ Cell[BoxData[
   3.771066259467938*^9, 3.7710662928471947`*^9}, {3.771066330988411*^9, 
   3.771066334200679*^9}},
  CellLabel->
-  "In[842]:=",ExpressionUUID->"63cc24fe-b974-4f9f-a0a2-ec4826f3403a"],
+  "In[207]:=",ExpressionUUID->"63cc24fe-b974-4f9f-a0a2-ec4826f3403a"],
 
 Cell[BoxData[
  RowBox[{
@@ -2476,7 +2574,7 @@ Cell[BoxData[
     RowBox[{"showState", ",", "allState"}], "]"}], "]"}]}]], "Input",
  CellChangeTimes->{{3.771066338910942*^9, 3.7710663953246727`*^9}},
  CellLabel->
-  "In[843]:=",ExpressionUUID->"df04c144-c725-4af0-9b0c-88d2efbd6ad3"],
+  "In[208]:=",ExpressionUUID->"df04c144-c725-4af0-9b0c-88d2efbd6ad3"],
 
 Cell[BoxData[
  RowBox[{
@@ -2495,7 +2593,7 @@ Cell[BoxData[
   3.771077228436371*^9, 3.771077274461973*^9}, {3.77107843994641*^9, 
   3.771078441897246*^9}, {3.7710785458716717`*^9, 3.7710785492098722`*^9}},
  CellLabel->
-  "In[861]:=",ExpressionUUID->"4517be07-57ac-40d7-9b6c-8b0fbdddb82d"],
+  "In[209]:=",ExpressionUUID->"4517be07-57ac-40d7-9b6c-8b0fbdddb82d"],
 
 Cell[CellGroupData[{
 
@@ -2567,7 +2665,7 @@ Cell[BoxData[
   3.771077302769277*^9}, {3.77107844782791*^9, 3.77107844988325*^9}, {
   3.7710785428547*^9, 3.771078543819131*^9}},
  CellLabel->
-  "In[923]:=",ExpressionUUID->"092f4cfa-d368-47f1-b935-d06667f09160"],
+  "In[210]:=",ExpressionUUID->"092f4cfa-d368-47f1-b935-d06667f09160"],
 
 Cell[BoxData[
  TagBox[GridBox[{
@@ -2860,7 +2958,7 @@ Cell[BoxData[
            "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
         BoxRotation -> 4.71238898038469],RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
          Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
@@ -2899,7 +2997,7 @@ Cell[BoxData[
            "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
         BoxRotation -> 4.71238898038469],RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
          Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
@@ -3094,7 +3192,7 @@ Cell[BoxData[
            "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
         BoxRotation -> 4.71238898038469],RotationBox[
         GraphicsBox[
-         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
          Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
@@ -3115,8 +3213,8 @@ Cell[BoxData[
     {
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.5, 0.5, 0.5}}}, {{0, 
+          0}, {2, 1}}, {0, 1}], Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3133,7 +3231,7 @@ Cell[BoxData[
            "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
         BoxRotation -> 4.71238898038469],RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
          Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
@@ -3153,8 +3251,8 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.5, 0.5, 0.5}}}, {{0, 
+          0}, {2, 1}}, {0, 1}], Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3171,7 +3269,7 @@ Cell[BoxData[
            "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
         BoxRotation -> 4.71238898038469],RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
          Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
@@ -3191,8 +3289,8 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.5, 0.5, 0.5}}}, {{0, 
+          0}, {2, 1}}, {0, 1}], Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3209,7 +3307,7 @@ Cell[BoxData[
            "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
         BoxRotation -> 4.71238898038469],RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
          Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
@@ -3343,8 +3441,47 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.5, 0.5, 0.5}}}, {{0, 
-          0}, {2, 1}}, {0, 1}], Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"]},
+    {
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3362,6 +3499,238 @@ Cell[BoxData[
         BoxRotation -> 4.71238898038469],RotationBox[
         GraphicsBox[
          RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0., 0., 
+          0.7071067811865475}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
          Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
@@ -3401,7 +3770,7 @@ Cell[BoxData[
            "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
         BoxRotation -> 4.71238898038469],RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
          Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
@@ -3440,7 +3809,7 @@ Cell[BoxData[
            "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
         BoxRotation -> 4.71238898038469],RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
          Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
@@ -3463,6 +3832,273 @@ Cell[BoxData[
          RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
           0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
          FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.5, 0.5, 0.5}}}, {{0, 
+          0}, {2, 1}}, {0, 1}], Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"]},
+    {
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.5, 0.5, 0.5}}}, {{0, 
+          0}, {2, 1}}, {0, 1}], Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469],RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
+         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
+         Directive[
+           GrayLevel[0.5, 0.4]], 
+         Method -> {
+          "DefaultBoundaryStyle" -> Automatic, 
+           "DefaultGraphicsInteraction" -> {
+            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+             "Effects" -> {
+              "Highlight" -> {"ratio" -> 2}, 
+               "HighlightPoint" -> {"ratio" -> 2}, 
+               "Droplines" -> {
+                "freeformCursorMode" -> True, 
+                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
+        BoxRotation -> 4.71238898038469]},
+      "RowDefault"], 
+     TemplateBox[{RotationBox[
+        GraphicsBox[
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3616,8 +4252,9 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3634,7 +4271,7 @@ Cell[BoxData[
            "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
         BoxRotation -> 4.71238898038469],RotationBox[
         GraphicsBox[
-         RasterBox[{{{0., 0., 0.}, {1., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
          Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
@@ -3655,8 +4292,9 @@ Cell[BoxData[
     {
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0., 0., 
+          0.7071067811865475}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3693,8 +4331,9 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3731,8 +4370,9 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3883,9 +4523,8 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3923,9 +4562,8 @@ Cell[BoxData[
     {
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.5, 0.5, 0.5}}}, {{0, 
+          0}, {2, 1}}, {0, 1}], Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -3962,9 +4600,8 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -4001,9 +4638,8 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -4157,8 +4793,9 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -4196,8 +4833,9 @@ Cell[BoxData[
     {
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0., 0., 
+          0.7071067811865475}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -4234,8 +4872,9 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -4272,8 +4911,9 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -4424,9 +5064,8 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -4464,9 +5103,8 @@ Cell[BoxData[
     {
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.5, 0.5, 0.5}}}, {{0, 
+          0}, {2, 1}}, {0, 1}], Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -4503,9 +5141,8 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -4542,9 +5179,8 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -4698,273 +5334,6 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"]},
-    {
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.5, 0.5, 0.5}}}, {{0, 
-          0}, {2, 1}}, {0, 1}], Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
          RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
           0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
          FrameLabel -> {None, None}, 
@@ -5003,201 +5372,6 @@ Cell[BoxData[
         BoxRotation -> 4.71238898038469]},
       "RowDefault"]},
     {
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
          RasterBox[{{{0.7071067811865475, 0., 0.}, {0., 0., 
@@ -5239,47 +5413,9 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"]},
-    {
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -5316,46 +5452,9 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469],RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
-         FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
-         Directive[
-           GrayLevel[0.5, 0.4]], 
-         Method -> {
-          "DefaultBoundaryStyle" -> Automatic, 
-           "DefaultGraphicsInteraction" -> {
-            "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-             "Effects" -> {
-              "Highlight" -> {"ratio" -> 2}, 
-               "HighlightPoint" -> {"ratio" -> 2}, 
-               "Droplines" -> {
-                "freeformCursorMode" -> True, 
-                 "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-           "DefaultPlotStyle" -> Automatic}, PlotRangePadding -> None], 
-        BoxRotation -> 4.71238898038469]},
-      "RowDefault"], 
-     TemplateBox[{RotationBox[
-        GraphicsBox[
-         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
-         Frame -> False, FrameLabel -> {None, None}, 
+         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
+          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
+         FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -5506,9 +5605,8 @@ Cell[BoxData[
       "RowDefault"], 
      TemplateBox[{RotationBox[
         GraphicsBox[
-         RasterBox[{{{0.7071067811865475, 0., 0.}, {0.7071067811865475, 0., 
-          0.}}}, {{0, 0}, {2, 1}}, {0, 1}], Frame -> False, 
-         FrameLabel -> {None, None}, 
+         RasterBox[{{{1., 0., 0.}, {0., 0., 0.}}}, {{0, 0}, {2, 1}}, {0, 1}], 
+         Frame -> False, FrameLabel -> {None, None}, 
          FrameTicks -> {{None, None}, {None, None}}, GridLinesStyle -> 
          Directive[
            GrayLevel[0.5, 0.4]], 
@@ -5564,9 +5662,9 @@ Cell[BoxData[
    3.771076488270287*^9, 3.771076912634666*^9, 3.771077085423222*^9, {
    3.771077221732051*^9, 3.771077280239253*^9}, 3.7710773107387323`*^9, 
    3.7710784550810127`*^9, {3.771078562232727*^9, 3.771078587556522*^9}, {
-   3.771079954831752*^9, 3.771079972095911*^9}},
+   3.771079954831752*^9, 3.771079972095911*^9}, 3.771097425971963*^9},
  CellLabel->
-  "Out[923]=",ExpressionUUID->"be9b8229-635d-47bd-845c-590fbad813ae"]
+  "Out[210]=",ExpressionUUID->"7fd373d3-2fb3-47f8-b08b-16a923026883"]
 }, Open  ]]
 },
 WindowSize->{1440, 799},
@@ -5613,54 +5711,57 @@ Cell[15676, 423, 571, 14, 30, "Input",ExpressionUUID->"8819f517-95cf-4669-839e-5
 Cell[16250, 439, 3782, 83, 241, "Input",ExpressionUUID->"b695a637-7490-4753-823d-8deb253e0d44"],
 Cell[CellGroupData[{
 Cell[20057, 526, 454, 9, 30, "Input",ExpressionUUID->"04c8625f-4c4c-449b-af96-632ef8a50a0f"],
-Cell[20514, 537, 5583, 123, 90, "Output",ExpressionUUID->"82030449-1241-4b57-8952-af8c770e92d3"]
+Cell[20514, 537, 5609, 124, 90, "Output",ExpressionUUID->"ffa15eb5-6a0e-4319-b444-6a27fe90aab0"]
 }, Open  ]],
-Cell[26112, 663, 542, 12, 30, "Input",ExpressionUUID->"0bc187f8-d3ec-406f-b0d8-e5589ea0f41b"],
-Cell[26657, 677, 1883, 38, 73, "Input",ExpressionUUID->"aeb325f0-7672-4962-bef9-7e7f23c42f4d"],
-Cell[28543, 717, 507, 10, 30, "Input",ExpressionUUID->"dc14a61f-bc37-4682-8e9f-1c6c7b65889a"],
-Cell[29053, 729, 732, 16, 52, "Input",ExpressionUUID->"066391a2-65e6-4b52-b20e-6d66351def9c"],
+Cell[26138, 664, 542, 12, 30, "Input",ExpressionUUID->"0bc187f8-d3ec-406f-b0d8-e5589ea0f41b"],
+Cell[26683, 678, 1883, 38, 73, "Input",ExpressionUUID->"aeb325f0-7672-4962-bef9-7e7f23c42f4d"],
 Cell[CellGroupData[{
-Cell[29810, 749, 6350, 140, 125, InheritFromParent,ExpressionUUID->"49553fcd-591c-4daa-8e08-55ec87ffef52"],
-Cell[36163, 891, 595, 20, 54, "Output",ExpressionUUID->"2ae2ed92-e94a-4db9-953e-9cc7e20123fc"]
+Cell[28591, 720, 529, 10, 30, "Input",ExpressionUUID->"dc14a61f-bc37-4682-8e9f-1c6c7b65889a"],
+Cell[29123, 732, 5009, 111, 118, "Output",ExpressionUUID->"cd512e06-e0e7-42c9-a37c-56a750e7a725"]
+}, Open  ]],
+Cell[34147, 846, 755, 16, 52, "Input",ExpressionUUID->"066391a2-65e6-4b52-b20e-6d66351def9c"],
+Cell[CellGroupData[{
+Cell[34927, 866, 6394, 142, 125, "Input",ExpressionUUID->"49553fcd-591c-4daa-8e08-55ec87ffef52"],
+Cell[41324, 1010, 623, 21, 54, "Output",ExpressionUUID->"08f66770-fdb6-4bbe-b2c1-79a34a317e78"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[36795, 916, 6360, 141, 125, "Input",ExpressionUUID->"2010fe58-0ff2-4291-9053-58df9f6662d0"],
-Cell[43158, 1059, 1005, 18, 41, "Message",ExpressionUUID->"93ff7529-f593-441b-936a-9424c9c901c5"],
-Cell[44166, 1079, 1005, 18, 41, "Message",ExpressionUUID->"80af2799-6524-4d56-ab6f-9e727ae7990a"],
-Cell[45174, 1099, 627, 12, 24, "Message",ExpressionUUID->"bc6fd705-9e5d-41c6-8158-f40728daf092"],
-Cell[45804, 1113, 672, 13, 24, "Message",ExpressionUUID->"de9afe3b-31d9-4b3a-8712-233cd9dbc91b"],
-Cell[46479, 1128, 1798, 29, 79, "Message",ExpressionUUID->"f9f944e5-f585-4a42-9e28-f6b9a0ebcb32"],
-Cell[48280, 1159, 29477, 590, 85, "Output",ExpressionUUID->"5419ae64-747e-49aa-95bf-dbf28288946d"]
+Cell[41984, 1036, 6404, 143, 125, "Input",ExpressionUUID->"2010fe58-0ff2-4291-9053-58df9f6662d0"],
+Cell[48391, 1181, 1030, 19, 41, "Message",ExpressionUUID->"95872185-6057-4cc3-8257-ed277ed970f9"],
+Cell[49424, 1202, 1032, 19, 41, "Message",ExpressionUUID->"7b873e27-37c0-45d1-86f9-f6cf970a311f"],
+Cell[50459, 1223, 650, 13, 24, "Message",ExpressionUUID->"44b11373-3ad8-463e-bbf8-1b44ea8d0ca8"],
+Cell[51112, 1238, 696, 14, 24, "Message",ExpressionUUID->"3a009430-7476-4f4c-9773-5678e8be1fb7"],
+Cell[51811, 1254, 1823, 30, 79, "Message",ExpressionUUID->"dea6c155-91c4-4c82-853e-f3134a27ca47"],
+Cell[53637, 1286, 29503, 591, 85, "Output",ExpressionUUID->"855ebcfc-3733-4910-b39e-d4c06ec8735b"]
 }, Open  ]],
-Cell[77772, 1752, 251, 5, 30, "Input",ExpressionUUID->"fc229178-a8c7-46b8-8325-af2103703afe"],
-Cell[78026, 1759, 816, 17, 30, "Input",ExpressionUUID->"1d38a911-9c0d-4ae4-b626-8ab79b153d0c"],
-Cell[78845, 1778, 651, 15, 30, "Input",ExpressionUUID->"aa18ae5c-e697-4a76-8aaa-8017f74fa892"],
-Cell[79499, 1795, 613, 14, 30, "Input",ExpressionUUID->"40574d42-0c1b-46dd-ba18-786a6e4bee33"],
-Cell[80115, 1811, 212, 4, 30, "Input",ExpressionUUID->"6fb9b97a-ed12-40b9-8393-8db93df5a29b"],
-Cell[80330, 1817, 978, 27, 52, "Input",ExpressionUUID->"51748e1d-ad74-458d-ab67-19a69dde671c"],
+Cell[83155, 1880, 251, 5, 30, "Input",ExpressionUUID->"fc229178-a8c7-46b8-8325-af2103703afe"],
+Cell[83409, 1887, 816, 17, 30, "Input",ExpressionUUID->"1d38a911-9c0d-4ae4-b626-8ab79b153d0c"],
+Cell[84228, 1906, 651, 15, 30, "Input",ExpressionUUID->"aa18ae5c-e697-4a76-8aaa-8017f74fa892"],
+Cell[84882, 1923, 613, 14, 30, "Input",ExpressionUUID->"40574d42-0c1b-46dd-ba18-786a6e4bee33"],
+Cell[85498, 1939, 212, 4, 30, "Input",ExpressionUUID->"6fb9b97a-ed12-40b9-8393-8db93df5a29b"],
+Cell[85713, 1945, 978, 27, 52, "Input",ExpressionUUID->"51748e1d-ad74-458d-ab67-19a69dde671c"],
 Cell[CellGroupData[{
-Cell[81333, 1848, 419, 9, 30, "Input",ExpressionUUID->"206f6afb-7c29-4aee-beb8-859706b52670"],
-Cell[81755, 1859, 8956, 321, 256, "Output",ExpressionUUID->"c7d5f68b-2925-4603-9934-9c99a3c6b544"]
+Cell[86716, 1976, 419, 9, 30, "Input",ExpressionUUID->"206f6afb-7c29-4aee-beb8-859706b52670"],
+Cell[87138, 1987, 8120, 291, 256, "Output",ExpressionUUID->"2c855eb0-5dd4-478c-b05f-8d748dbe0d4b"]
 }, Open  ]],
-Cell[90726, 2183, 3778, 105, 94, "Input",ExpressionUUID->"f9208db7-c90e-4362-bf58-54b1ae97bbb3"],
-Cell[94507, 2290, 678, 15, 30, "Input",ExpressionUUID->"17a43603-21c5-46d0-bab1-9583e7a8c758"],
-Cell[95188, 2307, 600, 12, 30, "Input",ExpressionUUID->"87392fff-68ec-4e2a-aaa8-547e833cac0b"],
-Cell[95791, 2321, 406, 9, 30, "Input",ExpressionUUID->"6e2db2ba-7bd5-4af1-881c-f151cbca63d9"],
-Cell[96200, 2332, 329, 9, 30, "Input",ExpressionUUID->"c1447067-5bb6-4982-89e2-70b3ab989ae0"],
-Cell[96532, 2343, 327, 9, 30, "Input",ExpressionUUID->"3c48d876-5deb-4f26-acff-07572eaf3bc3"],
-Cell[96862, 2354, 530, 13, 30, "Input",ExpressionUUID->"0bf520ba-9247-43e6-8432-7851095bae37"],
-Cell[97395, 2369, 360, 8, 30, "Input",ExpressionUUID->"6835368a-7ddd-41a7-aa05-7922c3b3ab26"],
-Cell[97758, 2379, 523, 10, 30, "Input",ExpressionUUID->"b5b1dee5-5f9e-4d19-9bd7-fd51f531f6c7"],
-Cell[98284, 2391, 843, 19, 30, "Input",ExpressionUUID->"f3d4f13e-312a-4756-a3a3-c753542d383e"],
-Cell[99130, 2412, 351, 8, 30, "Input",ExpressionUUID->"a800fc15-7e27-40a1-afb3-384b72291dbc"],
-Cell[99484, 2422, 883, 19, 30, "Input",ExpressionUUID->"16280340-7eb9-4162-8d68-76b35dce9233"],
-Cell[100370, 2443, 556, 14, 30, "Input",ExpressionUUID->"b70de0f1-aa53-4dfd-8351-5df1fe64309d"],
-Cell[100929, 2459, 409, 9, 30, "Input",ExpressionUUID->"63cc24fe-b974-4f9f-a0a2-ec4826f3403a"],
-Cell[101341, 2470, 350, 8, 30, "Input",ExpressionUUID->"df04c144-c725-4af0-9b0c-88d2efbd6ad3"],
-Cell[101694, 2480, 862, 17, 30, "Input",ExpressionUUID->"4517be07-57ac-40d7-9b6c-8b0fbdddb82d"],
+Cell[95273, 2281, 3778, 105, 94, "Input",ExpressionUUID->"f9208db7-c90e-4362-bf58-54b1ae97bbb3"],
+Cell[99054, 2388, 678, 15, 30, "Input",ExpressionUUID->"17a43603-21c5-46d0-bab1-9583e7a8c758"],
+Cell[99735, 2405, 600, 12, 30, "Input",ExpressionUUID->"87392fff-68ec-4e2a-aaa8-547e833cac0b"],
+Cell[100338, 2419, 406, 9, 30, "Input",ExpressionUUID->"6e2db2ba-7bd5-4af1-881c-f151cbca63d9"],
+Cell[100747, 2430, 329, 9, 30, "Input",ExpressionUUID->"c1447067-5bb6-4982-89e2-70b3ab989ae0"],
+Cell[101079, 2441, 327, 9, 30, "Input",ExpressionUUID->"3c48d876-5deb-4f26-acff-07572eaf3bc3"],
+Cell[101409, 2452, 530, 13, 30, "Input",ExpressionUUID->"0bf520ba-9247-43e6-8432-7851095bae37"],
+Cell[101942, 2467, 360, 8, 30, "Input",ExpressionUUID->"6835368a-7ddd-41a7-aa05-7922c3b3ab26"],
+Cell[102305, 2477, 523, 10, 30, "Input",ExpressionUUID->"b5b1dee5-5f9e-4d19-9bd7-fd51f531f6c7"],
+Cell[102831, 2489, 843, 19, 30, "Input",ExpressionUUID->"f3d4f13e-312a-4756-a3a3-c753542d383e"],
+Cell[103677, 2510, 351, 8, 30, "Input",ExpressionUUID->"a800fc15-7e27-40a1-afb3-384b72291dbc"],
+Cell[104031, 2520, 883, 19, 30, "Input",ExpressionUUID->"16280340-7eb9-4162-8d68-76b35dce9233"],
+Cell[104917, 2541, 556, 14, 30, "Input",ExpressionUUID->"b70de0f1-aa53-4dfd-8351-5df1fe64309d"],
+Cell[105476, 2557, 409, 9, 30, "Input",ExpressionUUID->"63cc24fe-b974-4f9f-a0a2-ec4826f3403a"],
+Cell[105888, 2568, 350, 8, 30, "Input",ExpressionUUID->"df04c144-c725-4af0-9b0c-88d2efbd6ad3"],
+Cell[106241, 2578, 862, 17, 30, "Input",ExpressionUUID->"4517be07-57ac-40d7-9b6c-8b0fbdddb82d"],
 Cell[CellGroupData[{
-Cell[102581, 2501, 2775, 68, 73, "Input",ExpressionUUID->"092f4cfa-d368-47f1-b935-d06667f09160"],
-Cell[105359, 2571, 139339, 2997, 1081, "Output",ExpressionUUID->"be9b8229-635d-47bd-845c-590fbad813ae"]
+Cell[107128, 2599, 2775, 68, 73, "Input",ExpressionUUID->"092f4cfa-d368-47f1-b935-d06667f09160"],
+Cell[109906, 2669, 139461, 2997, 1081, "Output",ExpressionUUID->"7fd373d3-2fb3-47f8-b08b-16a923026883"]
 }, Open  ]]
 }
 ]
