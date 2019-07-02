@@ -2349,7 +2349,7 @@ applyProjectorsToState[projectors_, qs_, qmeas_, trials_] := Module[
 	{dm, probs},
 	dm = qs["DensityMatrix"];
 	probs = Map[Tr[#.dm]&, projectors];
-	RandomChoice[probs -> qmeas["Eigenvalues"], trials]
+	RandomChoice[Re[probs] -> qmeas["Eigenvalues"], trials]
 	];
 
 
@@ -2366,7 +2366,7 @@ applyPOVMToState[povm_, qs_, qmeas_, trials_] := Module[
 	{dm, probs},
 	dm = qs["DensityMatrix"];
 	probs = Map[Tr[#.dm]&, povm];
-	RandomChoice[probs -> Range[Length[probs]], trials]
+	RandomChoice[Re[probs] -> Range[Length[probs]], trials]
 	];
 
 
