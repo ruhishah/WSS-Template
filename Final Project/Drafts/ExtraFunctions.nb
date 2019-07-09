@@ -1,0 +1,201 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      7234,        193]
+NotebookOptionsPosition[      5815,        163]
+NotebookOutlinePosition[      6153,        178]
+CellTagsIndexPosition[      6110,        175]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Useful Functions", "Section",
+ CellChangeTimes->{{3.771593350595632*^9, 
+  3.771593356515131*^9}},ExpressionUUID->"235b2837-002a-4271-a550-\
+ac55bf75c81d"],
+
+Cell[CellGroupData[{
+
+Cell["Operators", "Subsubsection",
+ CellChangeTimes->{{3.771593360169348*^9, 
+  3.7715933671984377`*^9}},ExpressionUUID->"bc1043d2-c323-4a69-bfe5-\
+f4ddd4f26afd"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"operatorHadamard", " ", "=", " ", 
+   RowBox[{"QuantumMatrixOperation", "[", "\"\<Hadamard\>\"", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.770928483357411*^9, 3.770928496763225*^9}, 
+   3.7709956054396143`*^9, 3.7710189644286137`*^9, 3.771019072422287*^9, {
+   3.771070605404904*^9, 3.771070618664029*^9}, {3.771070674581102*^9, 
+   3.771070696904295*^9}, 3.7710849285191174`*^9, 3.7710869974385853`*^9},
+ CellLabel->"In[11]:=",ExpressionUUID->"b54a039a-04c3-48a5-baa3-c2fc37cac68d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"operatorRotate", " ", "=", " ", 
+   RowBox[{"QuantumMatrixOperation", "[", 
+    RowBox[{"{", 
+     RowBox[{"\"\<RotZ\>\"", ",", 
+      RowBox[{"Pi", "/", "4"}]}], "}"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.770928002775247*^9, 3.770928039840279*^9}, 
+   3.770995606903975*^9, 3.7710849295188303`*^9, 3.771087000249517*^9},
+ CellLabel->"In[12]:=",ExpressionUUID->"bd463ef4-834a-406a-b1d1-eeb86f8bc1a2"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"operatorCNOT", " ", "=", " ", 
+   RowBox[{"QuantumMatrixOperation", "[", "\"\<CNOT\>\"", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.770909345057536*^9, 3.770909374826009*^9}, {
+   3.770910561107986*^9, 3.770910571255918*^9}, 3.770995608292297*^9, 
+   3.7710849307370567`*^9, {3.771087002185103*^9, 3.77108700441682*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"bc5bedfb-34d1-40e6-8108-7efa70e56ee0"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"operatorPauliZ", " ", "=", " ", 
+   RowBox[{"QuantumMatrixOperation", "[", "\"\<SigmaZ\>\"", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.7710731017067547`*^9, 3.771073124170629*^9}, 
+   3.771084931640287*^9, 3.771087006589275*^9},
+ CellLabel->"In[14]:=",ExpressionUUID->"62181b5f-ee20-4e0d-b126-534ffbfee0ed"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"operatorPauliY", " ", "=", " ", 
+   RowBox[{"QuantumMatrixOperation", "[", "\"\<SigmaY\>\"", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.771074064054146*^9, 3.771074076808795*^9}, 
+   3.771084932973768*^9, 3.771087008403767*^9},
+ CellLabel->"In[15]:=",ExpressionUUID->"e8b1bd68-c324-4989-8c63-76a2e1ca5804"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"operatorPauliX", " ", "=", " ", 
+   RowBox[{"QuantumMatrixOperation", "[", "\"\<SigmaX\>\"", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.771100784576724*^9, 3.771100797721717*^9}, {
+  3.7711605472869873`*^9, 3.771160554730472*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"4e843bd8-c3d1-4604-bef7-d8dce1c68e8c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"operatorSqrtNOT", " ", "=", " ", 
+   RowBox[{"QuantumMatrixOperation", "[", 
+    RowBox[{
+     RowBox[{"1", "/", "2"}], "*", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", "+", "I"}], ",", 
+         RowBox[{"1", "-", "I"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", "-", "I"}], ",", 
+         RowBox[{"1", "+", "I"}]}], "}"}]}], "}"}]}], "]"}]}], ";"}]], "Input",\
+
+ CellChangeTimes->{{3.771073837804797*^9, 3.771073878686013*^9}, 
+   3.771073944267435*^9, 3.771084936258782*^9, 3.771087010683069*^9},
+ CellLabel->"In[17]:=",ExpressionUUID->"a950d556-6a86-44fd-91d3-cbfc05b516d1"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"operatorFourier", " ", "=", " ", 
+   RowBox[{"QuantumMatrixOperation", "[", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Fourier\>\"", ",", "2"}], "}"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.770910574563219*^9, 3.770910590203474*^9}, {
+   3.770912080478979*^9, 3.770912082296468*^9}, {3.770912449896916*^9, 
+   3.7709124507922363`*^9}, {3.770921609211791*^9, 3.770921629509136*^9}, 
+   3.770995609827469*^9, {3.771018957417427*^9, 3.7710189600872993`*^9}, {
+   3.771019035797819*^9, 3.7710190415720797`*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"93cee6e4-9870-4f1b-a15c-fc707857ce08"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Fixing QFDS", "Subsubsection",
+ CellChangeTimes->{{3.771593452311556*^9, 
+  3.771593460560349*^9}},ExpressionUUID->"08884be9-3f37-4164-9900-\
+8806c7de03e1"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fixStupidity", "[", "expression_", "]"}], ":=", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", "expression", ")"}], "//.", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Sqrt", "[", "x_", "]"}], "\[Rule]", "x"}], ",", 
+      RowBox[{
+       RowBox[{"Power", "[", 
+        RowBox[{"x_", ",", 
+         RowBox[{"Rational", "[", 
+          RowBox[{"m_Integer", ",", "n_Integer"}], "]"}]}], "]"}], "\[Rule]", 
+       "x"}], ",", 
+      RowBox[{
+       RowBox[{"Power", "[", 
+        RowBox[{"x_", ",", 
+         RowBox[{"Rational", "[", 
+          RowBox[{
+           RowBox[{"-", "m_Integer"}], ",", "n_Integer"}], "]"}]}], "]"}], 
+       "\[Rule]", 
+       RowBox[{"1", "/", "x"}]}]}], "}"}]}], ")"}]}]], "Input",
+ CellLabel->"In[19]:=",ExpressionUUID->"1f9fb781-57a8-4c28-9078-d6e475b812b1"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 688},
+WindowMargins->{{68, Automatic}, {Automatic, 44}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 11, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 161, 3, 67, "Section",ExpressionUUID->"235b2837-002a-4271-a550-ac55bf75c81d"],
+Cell[CellGroupData[{
+Cell[769, 29, 162, 3, 45, "Subsubsection",ExpressionUUID->"bc1043d2-c323-4a69-bfe5-f4ddd4f26afd"],
+Cell[934, 34, 527, 9, 30, "Input",ExpressionUUID->"b54a039a-04c3-48a5-baa3-c2fc37cac68d"],
+Cell[1464, 45, 447, 9, 30, "Input",ExpressionUUID->"bd463ef4-834a-406a-b1d1-eeb86f8bc1a2"],
+Cell[1914, 56, 442, 8, 30, "Input",ExpressionUUID->"bc5bedfb-34d1-40e6-8108-7efa70e56ee0"],
+Cell[2359, 66, 351, 7, 30, "Input",ExpressionUUID->"62181b5f-ee20-4e0d-b126-534ffbfee0ed"],
+Cell[2713, 75, 349, 7, 30, "Input",ExpressionUUID->"e8b1bd68-c324-4989-8c63-76a2e1ca5804"],
+Cell[3065, 84, 352, 7, 30, "Input",ExpressionUUID->"4e843bd8-c3d1-4604-bef7-d8dce1c68e8c"],
+Cell[3420, 93, 696, 19, 30, "Input",ExpressionUUID->"a950d556-6a86-44fd-91d3-cbfc05b516d1"],
+Cell[4119, 114, 625, 11, 30, "Input",ExpressionUUID->"93cee6e4-9870-4f1b-a15c-fc707857ce08"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4781, 130, 162, 3, 45, "Subsubsection",ExpressionUUID->"08884be9-3f37-4164-9900-8806c7de03e1"],
+Cell[4946, 135, 841, 24, 107, "Input",ExpressionUUID->"1f9fb781-57a8-4c28-9078-d6e475b812b1"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
